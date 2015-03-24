@@ -43,7 +43,38 @@ Open the file:
 <FASTQC example?>
 ```
 
-### Should we have a bit on how to interpret a FASTQC analysis here, or should this occur later?
+### Interpret FASTQC results
+
+Let's have a look at the results.
+
+````
+<AWESOME BOXPLOT>
+````
+
+This is the boxplot analysis for your FASTQ data. Phred quality score is on the ordinate axis.  The purpose of this plot is to look at the overall quality of the seuqence
+
+```
+<COOL TILE PLOT>
+```
+
+This is a tile plot for your FASTQ data. The purpose of this plot is to determine whether problems were encountered during sequencing
+
+```
+<AMAZING OTHER STUFF>
+```
+### Possible Quality Issues
+
+Some problems you might encounter.  A nice summary of issues can be found at:
+
+* http://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html
+* http://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html
+* http://www.bioinformatics.babraham.ac.uk/projects/fastqc/RNA-Seq_fastqc.html
+* http://www.bioinformatics.babraham.ac.uk/projects/fastqc/small_rna_fastqc.html
+
+*Question* : Are any Illumina adapters present in your data?
+
+*Question* : Are any Illumina adapters present in your data?
+
 
 ### Analysis complete (?)
 

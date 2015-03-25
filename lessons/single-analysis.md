@@ -66,15 +66,14 @@ This is a tile plot for your FASTQ data. The purpose of this plot is to determin
 
 Some problems you might encounter.  A nice summary of issues can be found at:
 
-* http://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html
-* http://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html
-* http://www.bioinformatics.babraham.ac.uk/projects/fastqc/RNA-Seq_fastqc.html
-* http://www.bioinformatics.babraham.ac.uk/projects/fastqc/small_rna_fastqc.html
+* [Good sequence run](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html)
+* [Bad sequence run](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html)
+* [RNA-Seq](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/RNA-Seq_fastqc.html)
+* [Small RNA](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/small_rna_fastqc.html)
+
+The last two are examples where failing tests do not mean the sample is bad (depends on the technology, experiment, etc)
 
 *Question* : Are any Illumina adapters present in your data?
-
-*Question* : Are any Illumina adapters present in your data?
-
 
 ### Analysis complete (?)
 

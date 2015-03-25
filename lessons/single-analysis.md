@@ -20,6 +20,8 @@ INSERT TOP WINDOW
 fastqc <PATH TO FOO.FASTQ> -o <WORKDIR>
 ```
 
+**Note** - If they are taught (and they probably should be) the output dir should follow the same data organization standards talked about (or that will be discussed) in the data organization module.
+
 ### FASTQC Results
 
 Note that the output is in a specific working directory, and is present at both an HTML file and a `*.zip` file
@@ -62,6 +64,7 @@ This is a tile plot for your FASTQ data. The purpose of this plot is to determin
 ```
 <AMAZING OTHER STUFF>
 ```
+
 ### Possible Quality Issues
 
 Some problems you might encounter.  A nice summary of issues can be found at:

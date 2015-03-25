@@ -1,7 +1,8 @@
 # Pre-Assessment
 
 ## Attitude:
-Do you feel confident accessing a computer system that is not your personal computer?
+Please rate your level of confidence accessing a computer system that is not your personal computer.
+(Not at all confident, Not confident, Neutral, Confident, Very Confident)
 
 Do you have a need to run analysis on a remote computer system?
     a) No, I'm happy with my computer

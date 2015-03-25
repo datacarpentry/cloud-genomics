@@ -1,7 +1,8 @@
 # Post Assessment
 
 ## Attitude:
-As compared to previous to this lesson, how much more confident accessing a computer system that is not your personal computer (Scale 1 never again - 5 super confident)?
+Please rate your level of confidence in accessing a computer system not on your personal computer now compared to prior to the lesson. (Much less confident, less confident, about the same, more confident,much more confident?
+
 
 Do you have definitive plans to run an analysis using a computer system offered by your institution or a public cloud?
     a) No, I'm happy with my computer

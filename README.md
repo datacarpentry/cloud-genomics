@@ -2,7 +2,7 @@
 Lesson on Cloud/HPC for genomics lessons
 
 Contributors:
-* Chris Fields
+* [Chris Fields](http://www.bioperl.org/wiki/User:Cjfields)
 * Bob Freeman
 * Adina Howe
 * Andréa Matsunaga

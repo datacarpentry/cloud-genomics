@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+      <title>Connecting to the cloud in 5 min or less</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+<link href="./css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="./css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="./css/swc.css" />
+<link rel="stylesheet" type="text/css" href="./css/swc-bootstrap.css" />
+<meta charset="UTF-8" />
+<meta http-equiv="last-modified" content="" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="./css/lesson.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+  <a href="http://datacarpentry.org" title="Data Carpentry">
+    <img alt="Data Carpentry banner" src="./img/DC1_logo_small.png" height="50px" />
+  </a>
+</div>
+
+
+      <div class="row-fluid">
+        <div class="span10 offset1">
+	  <!-- start content -->
+          
+          <h1>Connecting to the cloud in 5 min or less</h1>
+          
+          <h2>Learning Objectives</h2>
+
+<ul>
+<li>Understand benefits of working on a remote computer system</li>
+<li>Be able to connect to a cloud instance</li>
+<li>Check the available resources and file system on your remote machine</li>
+</ul>
+
+<h2>Lesson</h2>
+
+<p>There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops that are more powerful than the sum of the world&#39;s computing capacity 20 years ago, but many analyses (especially in genomics) won&#39;t work on these laptops and must be run on remote machines. </p>
+
+<p>You&#39;ll know you need to start working on the cloud when...</p>
+
+<ul>
+<li>Your computer does not have enough resources to run the desired analysis (memory, processors, disk space, network bandwidth).</li>
+<li>Your computer is taking hours or days to get through an analysis.</li>
+<li>You cannot install software on your computer (application does not have support for your operating system, conflicts with other existing applications, etc.)</li>
+</ul>
+
+<p>The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or an ATM involves remote computing). The topic is fascinating but this lesson says &#39;5 minutes or less&#39; so let&#39;s get connected. </p>
+
+<h2>Exercises</h2>
+
+<p><strong>A. Connecting to a remote machine</strong></p>
+
+<p>This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. </p>
+
+<blockquote>
+<p>To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on <strong>XXXXXX</strong> for instructions on how to do this yourself. </p>
+</blockquote>
+
+<p><strong>User Credentials</strong>
+Credentials are case sensitive:</p>
+
+<ul>
+<li>Username: dcuser</li>
+<li>Password: data4Carp</li>
+</ul>
+
+<p><strong>Connecting using PC</strong><br>
+<em>Prerequisites</em>: You must have an SSH client. There are several free options and we will use PuTTY [<a href="http://www.chiark.greenend.org.uk/%7Esgtatham/putty/download.html">Download Putty.exe</a>]</p>
+
+<ol>
+<li>Open PuTTY; In the &#39;Host Name (or IP address)&#39; section paste in the IP address provided by your instructor (or the ip address of an instance you have provisioned yourself). <em>Keep the default selection &#39;SSH&#39; and Port (22)</em>. 
+<img src="./img/putty_screenshot_1.png" alt="Putty Image"></li>
+<li>Click &#39;Open&#39; and you will be presented with a security warning. Select &#39;Yes&#39; to continue to connect. 
+<img src="./img/putty_screenshot_2.png" alt="Putty security screen"></li>
+<li>In the final step, you will be asked to provide a login and password. <strong>Note:</strong> When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. ****) or moving cursors. Just continue typing. 
+<img src="./img/putty_screenshot_3.png" alt="Putty login"></li>
+<li>You should now be connected!</li>
+</ol>
+
+<p><strong>Connecting using Mac/Linux</strong><br>
+<em>Prerequisites</em>: Mac and Linux operating systems will already have terminals installed. Simply search for &#39;Terminal&#39; and/or look for the terminal icon.<br> 
+<img src="./img/terminal.png" alt="terminal icon"></p>
+
+<ol>
+<li><p>open the terminal and type the following command substituting &#39;ip_address&#39; for the ip address your instructor will provide (or the ip address of an instance you have provisioned yourself). <em>Be sure to pay attention to capitalization and spaces</em></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ ssh dcuser@ip_address
+</code></pre></div></li>
+<li><p>You will receive a security message that looks something like the message below. Type &#39;yes&#39; to proceed.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">The authenticity of host &#39;ec2-52-91-14-206.compute-1.amazonaws.com (52.91.14.206)&#39; can&#39;t be established. ECDSA key fingerprint is SHA256:S2mMV8mCThjJHm0sUmK2iOE5DBqs8HiJr6pL3x/XxkI. Are you sure you want to continue connecting (yes/no)?
+</code></pre></div></li>
+<li><p>In the final step, you will be asked to provide a login and password. <strong>Note:</strong> When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. ****) or moving cursors. Just continue typing.</p></li>
+<li><p>You should now be connected!</p></li>
+</ol>
+
+<p><strong>B. Verifying your connection and environment</strong> </p>
+
+<p>When you connect, it is typical to receive a welcome screen. The Data Carpentry Amazon instances display this message upon connecting:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">Welcome to Ubuntu 14.04.3 LTS <span class="o">(</span>GNU/Linux 3.13.0-48-generic x86_64<span class="o">)</span>
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Sun Jan <span class="m">24</span> 21:38:35 UTC 2016
+
+  System load:  0.0                Processes:           151
+  Usage of /:   48.4% of 98.30GB   Users logged in:     0
+  Memory usage: 6%                 IP address <span class="k">for</span> eth0: 172.31.62.209
+  Swap usage:   0%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+<span class="m">12</span> packages can be updated.
+<span class="m">10</span> updates are security updates.
+
+
+Last login: Sun Jan <span class="m">24</span> 21:38:36 <span class="m">2016</span> from
+</code></pre></div>
+<p>You should also have a blinking cursor awaiting your command</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">dcuser@ip-172-31-62-209 ~ <span class="err">$</span>
+</code></pre></div>
+<h2>Bonus material</h2>
+
+<p>Now that we have connected we can move on to the Unix shell lesson. There are however a few commands that tell you a little about the machine you have connected to:</p>
+
+<ul>
+<li><code>whoami</code> - shows your username on computer you have connected to:</li>
+</ul>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">dcuser@ip-172-31-62-209 ~ <span class="nv">$ </span>whoami
+dcuser
+</code></pre></div>
+<ul>
+<li> <code>df -h</code> - shows space on hard drive* </li>
+</ul>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">dcuser@ip-172-31-62-209 ~ <span class="nv">$ </span>df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G   12K  2.0G   1% /dev
+tmpfs           396M  792K  395M   1% /run
+/dev/xvda1       99G   48G   47G  51% /
+none            4.0K     <span class="m">0</span>  4.0K   0% /sys/fs/cgroup
+none            5.0M     <span class="m">0</span>  5.0M   0% /run/lock
+none            2.0G  144K  2.0G   1% /run/shm
+none            100M   36K  100M   1% /run/user
+</code></pre></div>
+<p>* Under the column &#39;Mounted on&#39; row that has &#39;/&#39; as the value shows the value for the main disk. </p>
+
+<ul>
+<li><code>cat /proc/cpuinfo</code> - shows detail information on how many processors (CPUs) the machine has</li>
+</ul>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">dcuser@ip-172-31-62-209 ~ <span class="nv">$ </span>cat /proc/cpuinfo
+processor  : 0
+vendor_id   : GenuineIntel
+cpu family  : 6
+model       : 62
+model name  : Intel<span class="o">(</span>R<span class="o">)</span> Xeon<span class="o">(</span>R<span class="o">)</span> CPU E5-2670 v2 @ 2.50GHz
+stepping    : 4
+microcode   : 0x415
+cpu MHz     : 2494.060
+cache size  : <span class="m">25600</span> KB
+physical id : 0
+siblings    : 2
+core id     : 0
+cpu cores   : 2
+apicid      : 0
+initial apicid  : 0
+fpu     : yes
+fpu_exception   : yes
+cpuid level : 13
+wp      : yes
+flags       : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm xsaveopt fsgsbase smep erms
+bogomips    : 4988.12
+clflush size    : 64
+cache_alignment : 64
+address sizes   : <span class="m">46</span> bits physical, <span class="m">48</span> bits virtual
+power management:
+
+processor   : 1
+vendor_id   : GenuineIntel
+cpu family  : 6
+model       : 62
+model name  : Intel<span class="o">(</span>R<span class="o">)</span> Xeon<span class="o">(</span>R<span class="o">)</span> CPU E5-2670 v2 @ 2.50GHz
+stepping    : 4
+microcode   : 0x415
+cpu MHz     : 2494.060
+cache size  : <span class="m">25600</span> KB
+physical id : 0
+siblings    : 2
+core id     : 1
+cpu cores   : 2
+apicid      : 2
+initial apicid  : 2
+fpu     : yes
+fpu_exception   : yes
+cpuid level : 13
+wp      : yes
+flags       : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm xsaveopt fsgsbase smep erms
+bogomips    : 4988.12
+clflush size    : 64
+cache_alignment : 64
+address sizes   : <span class="m">46</span> bits physical, <span class="m">48</span> bits virtual
+power management:
+</code></pre></div>
+<ul>
+<li><code>tree -L 1</code> - shows a tree view of the file system 1 level below your current location. </li>
+</ul>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">dcuser@ip-172-31-62-209 ~ <span class="nv">$ </span>tree -L 1
+.
+├── dc_sample_data
+├── Desktop
+├── Downloads
+├── FastQC
+├── R
+└── Trimmomatic-0.32
+
+<span class="m">6</span> directories, <span class="m">0</span> files
+</code></pre></div>
+<h3>Resources:</h3>
+
+<p>Cloud computing offerings:</p>
+
+<ul>
+<li>Amazon EC2: http://aws.amazon.com/ec2/</li>
+<li>Microsoft Azure: https://azure.microsoft.com/en-us/</li>
+<li>Google Cloud Platform: https://cloud.google.com/</li>
+<li>CyVerse (iPlant Collaborative) Atmosphere: http://www.cyverse.org/atmosphere</li>
+</ul>
+
+<p>Learn more about cloud computing in bioinformatics
+Fusaro VA, Patil P, Gafni E, Wall DP, Tonellato PJ (2011) <strong>Biomedical Cloud Computing With Amazon Web Services</strong>. PLoS Comput Biol 7(8): e1002147. doi: 10.1371/journal.pcbi.1002147 </p>
+
+	  <!-- end content -->
+	</div>
+      </div>
+
+      <div class="footer">
+  <a class="label swc-blue-bg" href="">Facebook</a>
+  <a class="label swc-blue-bg" href="">Google+</a>
+  <a class="label swc-blue-bg" href="">Twitter</a>
+  <a class="label swc-blue-bg" href="">GitHub</a>
+  <a class="label swc-blue-bg" href="./LICENSE.html">License</a>
+  <a class="bugreport label swc-blue-bg" href="mailto:?subject=bug%20in%20index.md">Bug Report</a>
+</div>
+
+    </div>
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.9.1.min.js"></script>
+<script src="./js/bootstrap/bootstrap.min.js"></script>
+
+  </body>
+</html>

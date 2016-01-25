@@ -204,10 +204,10 @@ dcuser@ip-172-31-62-209 ~ $ tree -L 1
 
 Cloud computing offerings:
 
-* Amazon EC2: http://aws.amazon.com/ec2/
-* Microsoft Azure: https://azure.microsoft.com/en-us/
-* Google Cloud Platform: https://cloud.google.com/
-* CyVerse (iPlant Collaborative) Atmosphere: http://www.cyverse.org/atmosphere
+* Amazon EC2: [http://aws.amazon.com/ec2/](http://aws.amazon.com/ec2/)
+* Microsoft Azure: [https://azure.microsoft.com/en-us/](https://azure.microsoft.com/en-us/)
+* Google Cloud Platform: [https://cloud.google.com/](https://cloud.google.com/)
+* CyVerse (iPlant Collaborative) Atmosphere: [http://www.cyverse.org/atmosphere](http://www.cyverse.org/atmosphere)
 
 Learn more about cloud computing in bioinformatics<br>
 Fusaro VA, Patil P, Gafni E, Wall DP, Tonellato PJ (2011) **Biomedical Cloud Computing With Amazon Web Services**. PLoS Comput Biol 7(8): e1002147. doi: 10.1371/journal.pcbi.1002147 

@@ -209,7 +209,7 @@ Cloud computing offerings:
 * Google Cloud Platform: https://cloud.google.com/
 * CyVerse (iPlant Collaborative) Atmosphere: http://www.cyverse.org/atmosphere
 
-Learn more about cloud computing in bioinformatics
+Learn more about cloud computing in bioinformatics<br>
 Fusaro VA, Patil P, Gafni E, Wall DP, Tonellato PJ (2011) **Biomedical Cloud Computing With Amazon Web Services**. PLoS Comput Biol 7(8): e1002147. doi: 10.1371/journal.pcbi.1002147 
 
 

@@ -40,11 +40,11 @@ Credentials are case sensitive:
 **Connecting using PC**<br>
 *Prerequisites*: You must have an SSH client. There are several free options and we will use PuTTY [[Download Putty.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)]
 
-1. Open PuTTY; In the 'Host Name (or IP address)' section paste in the IP address provided by your instructor (or the ip address of an instance you have provisioned yourself). *Keep the default selection 'SSH' and Port (22)*. 
+1. Open PuTTY; In the 'Host Name (or IP address)' section paste in the IP address provided by your instructor (or the ip address of an instance you have provisioned yourself). *Keep the default selection 'SSH' and Port (22)*. <br>
 ![Putty Image](./img/putty_screenshot_1.png)
-2. Click 'Open' and you will be presented with a security warning. Select 'Yes' to continue to connect. 
+2. Click 'Open' and you will be presented with a security warning. Select 'Yes' to continue to connect. <br>
 ![Putty security screen](./img/putty_screenshot_2.png)
-3. In the final step, you will be asked to provide a login and password. **Note:** When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. ****) or moving cursors. Just continue typing. 
+3. In the final step, you will be asked to provide a login and password. **Note:** When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. ****) or moving cursors. Just continue typing.<br> 
 ![Putty login](./img/putty_screenshot_3.png)
 4. You should now be connected!
 

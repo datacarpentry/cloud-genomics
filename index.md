@@ -186,15 +186,16 @@ power management:
 
 ```bash
 dcuser@ip-172-31-62-209 ~ $ tree -L 1
-.
+
 ├── dc_sample_data
 ├── Desktop
 ├── Downloads
 ├── FastQC
+├── openrefine-2.6-beta.1
 ├── R
 └── Trimmomatic-0.32
 
-6 directories, 0 files
+7 directories, 0 files
 ``` 
 
 

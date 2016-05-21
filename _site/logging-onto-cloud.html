@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+      <title>Launching and logging onto a cloud instance</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+<link href="./css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="./css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="./css/swc.css" />
+<link rel="stylesheet" type="text/css" href="./css/swc-bootstrap.css" />
+<meta charset="UTF-8" />
+<meta http-equiv="last-modified" content="" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="./css/lesson.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+  <a href="http://datacarpentry.org" title="Data Carpentry">
+    <img alt="Data Carpentry banner" src="./img/DC1_logo_small.png" height="50px" />
+  </a>
+</div>
+
+
+      <div class="row-fluid">
+        <div class="span10 offset1">
+	  <!-- start content -->
+          
+          <h1>Launching and logging onto a cloud instance</h1>
+          
+          <h2>Launching cloud VMs on your own</h2>
+
+<p>Objectives:</p>
+
+<ul>
+<li>Choose a cloud platform and learn how to access</li>
+<li>Launch an instance </li>
+<li>Identify the address of your cloud instance </li>
+<li>Log in to your cloud instance</li>
+</ul>
+
+<p><strong>Important Caveat</strong>: For many of the above steps, your instructor will have completed these tasks for you. If you are learning on your own, or trying this after the workshop, see the exercises and instructions below. </p>
+
+<h3>Choosing a cloud platform</h3>
+
+<p>The most important thing about <em>The Cloud</em> is choice - instead of purchasing a physical computer, you can obtain on-demand computing at almost any scale. This power comes with advantages and disadvantages:</p>
+
+<p><strong>Advantages of Cloud Computing</strong>
+* Access large amounts of computing power on demand
+* Full administrative rights - install anything
+* Use pre-configured images (software already installed)</p>
+
+<p><strong>Disadvantages of Cloud Computing</strong>
+* Cloud computing costs money (you must keep track of your costs)
+* If you need help, you may not have a local system administrator 
+* Images may be poorly documented (you may not be clear on what is installed, or how to use it)</p>
+
+<h3>Cloud platform choices</h3>
+
+<p>There are several cloud providers to choose from. Some scientific clouds may either be free or allocate resources competitively. Commercial clouds are can be very powerful, but choice can be overwhelming. We will cover as much as we you need to get through the Data Carpentry lessons, but you will ultimately need to learn things not covered here so see the documentation below:</p>
+
+<h4>Commercial Clouds</h4>
+
+<ul>
+<li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html">Amazon Web Services</a></li>
+<li><a href="https://cloud.google.com/compute/docs/quickstart">Google Cloud</a></li>
+</ul>
+
+<h4>Open Science Clouds</h4>
+
+<ul>
+<li><a href="https://pods.iplantcollaborative.org/wiki/display/atmman/Getting+Started">Atmosphere</a></li>
+<li><a href="http://jetstream-cloud.org/">JetStream</a>*</li>
+</ul>
+
+<p>* Coming in 2016</p>
+
+<h2>Launching an Cloud Instance (Virtual Machine)</h2>
+
+<blockquote>
+<p><strong>Tip:</strong> Keep in mind, if you are attending a workshop this will have already been done for you!</p>
+</blockquote>
+
+<p>We will provide instructions for working on the <em>Amazon</em> and the <em>Atmosphere</em> cloud. Follow the instructions for your platform of choice.</p>
+
+<h3>Launching an instance on Amazon Web Services</h3>
+
+<p><strong>Prerequisites</strong></p>
+
+<ul>
+<li>Form of payment (credit card)*</li>
+<li>Understanding of Amazon&#39;s billing and payment (See: <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-getting-started.html">Getting started with AWS Billing and Cost Management</a>)</li>
+</ul>
+
+<p>* You can use some of Amazon Web Services for free, or see if you qualify for an AWS Grant (See: <a href="https://aws.amazon.com/grants/">https://aws.amazon.com/grants/</a> ) if you are using AWS for education. The free level of service <em>will not</em> be sufficient for working with the amount of data we are using for our lessons. </p>
+
+<h4>Create an AWS account</h4>
+
+<ol>
+<li>Go to Amazon Web Services <a href="https://aws.amazon.com/">https://aws.amazon.com/</a></li>
+<li>Follow the button to sign up for an account - you will need to agree to Amazon&#39;s terms and conditions and provide credit card information. </li>
+</ol>
+
+<h4>Sign into AWS and Launch an Instance</h4>
+
+<ol>
+<li>Sign into AWS EC2 Dashboard: <a href="https://console.aws.amazon.com/ec2/">https://console.aws.amazon.com/ec2/</a></li>
+<li>Click the &#39;Launch Instance&#39; button<p><img src="./img/logging-onto-cloud_1.png" width="500"></p></li>
+<li>In &#39;Step 1&#39; you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for &#39;Community AMIs&#39; and then search for <strong>ami-6516b30e</strong>; select this image
+<p><img src=".img/logging-onto-cloud_2.png"width="500"></p></li>
+<li><p>For &#39;Choose and Instance Type&#39; select <strong>t2.medium</strong>; then click &#39;Review and Launch&#39; 
+<p><img src="./img/logging-onto-cloud_3.png"width="500"></p>  </p>
+
+<blockquote>
+<p><strong>Tip:</strong> You can select larger instances, but these will cost more to run. Also for the &#39;Review Instance Launch&#39; you will get some warning about instance security. We will not go into detail here about security groups. However, you should know that when you launch an instance, you will want to take steps to make sure no one maliciously accesses your instance. For example, never give your security credentials (next step) to another user.</p>
+</blockquote></li>
+<li><p>For the &#39;Review Instance Launch&#39; step, click &#39;Launch&#39;</p></li>
+<li><p>You will be asked to Select an existing key pair or create a new key pair. Select &#39;Proceed without a key pair&#39; and select the acknowledgement you are given. Then click &#39;Launch Instances&#39; 
+<p><img src="./img/logging-onto-cloud_4.png"width="500"></p></p></li>
+</ol>
+
+<p>You instance will now be launched. You should follow the links to &#39;Create billing alerts&#39;. </p>
+
+<h4>Connect to Amazon Instance</h4>
+
+<p><strong>Instructions for MAC</strong></p>
+
+<ol>
+<li>Log into your AWC EC2 Dashboard <a href="https://console.aws.amazon.com/ec2/">https://console.aws.amazon.com/ec2/</a></li>
+<li>You should see that you have one instance, to proceed the instance state must be &#39;running&#39; (if you just launched the instance it will take <5 min for the instance to start running)
+<p><img src="./img/logging-onto-cloud_5.png"width="500"></p></li>
+<li>At the bottom of the dashboard, you should see a <strong>Public DNS</strong> which will look something like <em>ec2.12.2.45.678.compute-1.amazonaws.com</em>. Copy that address (you may wish make a note of it as you will need this each time you connect. 
+<p><img src="./img/logging-onto-cloud_6.png"width="500"></p></li>
+<li>Open the terminal application on your Mac and use &#39;ssh&#39; to connect. Your command will be:</li>
+</ol>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>ssh dcuser@your.amazon.dns
+</code></pre></div>
+<ol>
+<li>Your computer will be unable to verify the authenticity of the host... type <strong>yes</strong> to continue connecting</li>
+<li>Then enter the password for this computer: &#39;data4Carp&#39;</li>
+</ol>
+
+<p>You should now be connected to your personal instance. You can confirm this with the following commands; <code>whoami</code>,<code>pwd</code>,<code>ls</code>, which should yield the following results:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">Last login: Thu Jul 30 13:21:08 2015 from 8.sub-70-197-200.myvzw.com
+<span class="gp">$ </span>whoami
+dcuser
+<span class="gp">$ </span><span class="nb">pwd</span>
+/home/dcuser
+<span class="gp">$ </span>ls
+dc_sample_data  FastQC  Trimmomatic-0.32
+<span class="gp">$ </span>
+</code></pre></div>
+<p><strong>Instructions for PC</strong></p>
+
+<ol>
+<li>Download the PuTTY application at: <a href="http://the.earth.li/%7Esgtatham/putty/latest/x86/putty.exe">http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe</a></li>
+<li>Log into your AWC EC2 Dashboard <a href="https://console.aws.amazon.com/ec2/">https://console.aws.amazon.com/ec2/</a></li>
+<li>You should see that you have one instance, make sure instance state is &#39;running&#39; (if you just launched the instance it will take <5 min for the instance to start running)
+<p><img src="./img/logging-onto-cloud_5.png"width="500"></p></li>
+<li>At the bottom of the dashboard, you should see a <strong>Public DNS</strong> which will look something like <em>ec2.12.2.45.678.compute-1.amazonaws.com</em>. Copy that address (you may wish make a note of it as you will need this each time you connect. 
+<p><img src="./img/logging-onto-cloud_6.png"width="500"></p></li>
+<li>Start PuTTY. In the section &#39;Specify the destination you want to connect to&#39; for &#39;Host Name (or IP address)&#39; paste in the DNS address and click &#39;Open&#39;</li>
+<li>When prompted to login as, enter &#39;dcuser&#39;; you may be notified that the authenticity of the host cannot be verified - if so, ignore the warning an continue connecting</li>
+<li>When prompted for a password enter &#39;data4Carp&#39;</li>
+</ol>
+
+<p>You should now be connected to your personal instance. You can confirm this with the following commands; <code>whoami</code>,<code>pwd</code>,<code>ls</code>, which should yield the following results:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">Last login: Thu Jul 30 13:21:08 2015 from 8.sub-70-197-200.myvzw.com
+<span class="gp">$ </span>whoami
+dcuser
+<span class="gp">$ </span><span class="nb">pwd</span>
+/home/dcuser
+<span class="gp">$ </span>ls
+dc_sample_data  FastQC  Trimmomatic-0.32
+<span class="gp">$ </span>
+</code></pre></div>
+<h1><strong>Very Important Warning - Avoid Unwanted Charges</strong></h1>
+
+<p>Please remember, for as long as this instance is running, you will be charged for your usage. You can see an estimate of the current charge from your AWS EC2 dashboard by clicking your name (Account name) on the upper right of the dashboard and selecting &#39;Billing &amp; Cost Management&#39;. <strong>DO NOT FORGET TO TERMINATE YOUR INSTANCE WHEN YOU ARE DONE</strong></p>
+
+<h3>Terminating your instance</h3>
+
+<p>When you are finished with your instance, you must terminate. Follow the following steps. </p>
+
+<ol>
+<li>Sign into AWS and go to the EC2 Dashboard: <a href="https://console.aws.amazon.com/ec2/">https://console.aws.amazon.com/ec2/</a></li>
+<li>Under &#39;Resources&#39; select &#39;Running Instances&#39;</li>
+<li>Select the instance you wish to terminate, then click &#39;Actions&#39;
+<p><img src="./img/logging-onto-cloud_7.png"width="500"></p></li>
+<li><p>Under &#39;Instance State&#39; select terminate. </p>
+
+<blockquote>
+<p><strong>Warning:</strong> This will delete any data on this instance, so you must move any data you wish to save off the instance.</p>
+
+<p><strong>Tip:</strong> You can use iCommands to move data between your computer, a cloud instance, and the iPlant Data Store. iCommands is installed on the Data Carpentry Amazon AMI. You can download and see documentation for iCommands <a href="https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands">here</a> - there is also some documentation on setting up iCommands in the Atmosphere section below</p>
+</blockquote></li>
+<li><p>Select &#39;Yes, Terminate&#39; to terminate the instance. </p></li>
+</ol>
+
+<h3>Launching an instance on Atmosphere</h3>
+
+<p><strong>Prerequisites</strong></p>
+
+<ul>
+<li>You must have an iPlant account (register at <a href="https://user.cyverse.org/">https://user.cyverse.org/</a> ) - You must also request access to Atmosphere (see <a href="https://wiki.cyverse.org/wiki/display/atmman/Atmosphere+Manual+Table+of+Contents">documentation</a> <strong>CyVerse requires Atmosphere users to have a valid .edu or .org email address</strong> ) </li>
+</ul>
+
+<h4>Sign into Atmosphere and launch an instance</h4>
+
+<ol>
+<li>Sign into Atmosphere at: <a href="http://atmo.iplantcollaborative.org/">http://atmo.iplantcollaborative.org/</a></li>
+<li>Select &#39;Launch New Instance&#39;
+<p><img src="./img/logging-onto-cloud_8.png"width="500"></p></li>
+<li>Search for the &#39;TSW Workshop Williams 1.2&#39; image; Select this image. 
+<p><img src="./img/logging-onto-cloud_9.png"width="500"></p></li>
+<li><p>Click Launch and then select the following options in the launch wizard:
+<p><img src="./img/logging-onto-cloud_10.png"width="500"></p></p>
+
+<ul>
+<li>Instance Name:Enter a name(optional) </li>
+<li>Base Image Version: 1.0</li>
+<li>Project: Choose an existing or create a new project. </li>
+<li>Provider: iPlant Cloud - Tucson</li>
+<li>Instance Size: small2
+Click Launch. </li>
+</ul>
+
+<blockquote>
+<p><strong>Tip:</strong> You can select a larger instance, but you must have sufficient resources (no exceeded quotas). If Atmosphere is at high capacity, you may not be able to launch an instance if the instance size exceeds what is currently free on the cloud provider</p>
+</blockquote></li>
+</ol>
+
+<p>Your instance should be ready in 10-15 minutes. When your instance status is listed as &#39;active&#39; you will be able to connect. </p>
+
+<h4>Connect to Atmosphere instance</h4>
+
+<p><strong>Instructions for Mac\Linux</strong></p>
+
+<ol>
+<li>If necessary, log into your Atmosphere at: <a href="https://atmo.iplantcollaborative.org/application/images">https://atmo.iplantcollaborative.org/application/images</a></li>
+<li>Click on &#39;Projects&#39; and select the project that contains your instance. </li>
+<li>Verifying that your instance status is <strong>&#39;active&#39;</strong>, copy the IP address (e.g. 128.123.12.34) to your clipboard. 
+<p><img src="./img/logging-onto-cloud_11.png"width="500"></p></li>
+<li><p>Open the terminal application  and use &#39;ssh&#39; to connect. Your command will be:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>ssh iplantusername@your.atmosphere.ipaddress
+</code></pre></div></li>
+<li><p>Your computer will be unable to verify the authenticity of the host... type <strong>yes</strong> to continue connecting</p></li>
+<li><p>When prompted for a password, enter your iPlant username. </p></li>
+</ol>
+
+<p>You should now be connected to your personal instance. You can confirm this with the following commands; <code>whoami</code>,<code>pwd</code>, which should yield the following results:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">Welcome to Ubuntu 12.04.2 LTS <span class="o">(</span>GNU/Linux 3.2.0-37-virtual x86_64<span class="o">)</span>
+
+New release <span class="s1">'14.04.2 LTS'</span> available.
+Run <span class="s1">'do-release-upgrade'</span> to upgrade to it.
+
+    _   _                             _
+   / <span class="se">\ </span>| |_ _ __ ___   ___  ___ _ __ | |__   ___ _ __ ___
+  / _ <span class="se">\|</span> __| <span class="s1">'_ ` _ \ / _ \/ __| '</span>_ <span class="se">\|</span> <span class="s1">'_ \ / _ \ '</span>__/ _ <span class="se">\</span>
+ / ___ <span class="se">\ </span>|_| | | | | | <span class="o">(</span>_<span class="o">)</span> <span class="se">\_</span>_ <span class="se">\ </span>|_<span class="o">)</span> | | | |  __/ | |  __/
+/_/   <span class="se">\_\_</span>_|_| |_| |_|<span class="se">\_</span>__/|___/ .__/|_| |_|<span class="se">\_</span>__|_|  <span class="se">\_</span>__|
+                               |_|
+
+iPlant Collaborative 
+
+The user manual is located here: http://goo.gl/2pT72
+For assistance, contact support@iplantcollaborative.org.  
+
+Last login: Fri Aug 14 10:16:50 2015 from dhcp140-78.cshl.edu
+<span class="gp">iplantusername@vm65-164:~$ </span>whoami
+iplantusername
+<span class="gp">iplantusername@vm65-164:~$ </span><span class="nb">pwd</span>
+/home/iplantusername
+</code></pre></div>
+<p><strong>Note</strong>: In the above example &#39;iplantusername&#39; will be your actual iPlant username. </p>
+
+<p><strong>Instructions for PC</strong></p>
+
+<ol>
+<li>Download the PuTTY application at: <a href="http://the.earth.li/%7Esgtatham/putty/latest/x86/putty.exe">http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe</a></li>
+<li>If necessary, log into your Atmosphere at: <a href="http://atmo.iplantcollaborative.org/">http://atmo.iplantcollaborative.org/</a></li>
+<li>Click on &#39;Projects&#39; and select the project that contains your instance. </li>
+<li>Verifying that your instance status is <strong>&#39;active&#39;</strong>, copy the IP address (e.g. 128.123.12.34) to your clipboard. 
+<p><img src="./img/logging-onto-cloud_11.png"width="500"></p></li>
+<li>Start PuTTY. In the section &#39;Specify the destination you want to connect to&#39; for &#39;Host Name (or IP address)&#39; paste in the DNS address and click &#39;Open&#39;</li>
+<li>When prompted to login as, enter your iPlant username; you may be notified that the authenticity of the host cannot be verified - if so, ignore the warning an continue connecting</li>
+<li>When prompted for a password enter your iPlant password. </li>
+</ol>
+
+<p>You should now be connected to your personal instance. You can confirm this with the following commands; <code>whoami</code>,<code>pwd</code>, which should yield the following results:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">Welcome to Ubuntu 12.04.2 LTS <span class="o">(</span>GNU/Linux 3.2.0-37-virtual x86_64<span class="o">)</span>
+
+New release <span class="s1">'14.04.2 LTS'</span> available.
+Run <span class="s1">'do-release-upgrade'</span> to upgrade to it.
+
+    _   _                             _
+   / <span class="se">\ </span>| |_ _ __ ___   ___  ___ _ __ | |__   ___ _ __ ___
+  / _ <span class="se">\|</span> __| <span class="s1">'_ ` _ \ / _ \/ __| '</span>_ <span class="se">\|</span> <span class="s1">'_ \ / _ \ '</span>__/ _ <span class="se">\</span>
+ / ___ <span class="se">\ </span>|_| | | | | | <span class="o">(</span>_<span class="o">)</span> <span class="se">\_</span>_ <span class="se">\ </span>|_<span class="o">)</span> | | | |  __/ | |  __/
+/_/   <span class="se">\_\_</span>_|_| |_| |_|<span class="se">\_</span>__/|___/ .__/|_| |_|<span class="se">\_</span>__|_|  <span class="se">\_</span>__|
+                               |_|
+
+iPlant Collaborative 
+
+The user manual is located here: http://goo.gl/2pT72
+For assistance, contact support@iplantcollaborative.org.  
+
+Last login: Fri Aug 14 10:16:50 2015 from dhcp140-78.cshl.edu
+<span class="gp">iplantusername@vm65-164:~$ </span>whoami
+iplantusername
+<span class="gp">iplantusername@vm65-164:~$ </span><span class="nb">pwd</span>
+/home/iplantusername
+</code></pre></div>
+<p><strong>Note</strong>: In the above example &#39;iplantusername&#39; will be your actual CyVerse username. </p>
+
+<h4>Bringing sample data into your Atmosphere instance</h4>
+
+<p>The sample dataset is <strong>NOT</strong> included on the Atmosphere instance. The very first time you load the instance, you will need to copy data from the public CyVerse Data Store into your instance using the following instructions. </p>
+
+<h2>Setup iCommands</h2>
+
+<p><strong>Prerequisites</strong>
+* You must be connected to your Atmosphere instance</p>
+
+<p>iCommands will allow you to quickly transfer data into your Atmosphere instance: </p>
+
+<ol>
+<li><p>Initialize iCommands using the following command</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>iinit
+</code></pre></div></li>
+<li><p>You will then be asked to setup your account and will need to enter the following information</p>
+
+<table><thead>
+<tr>
+<th>Prompt</th>
+<th>Entry</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>irodsHost</td>
+<td>data.iplantcollaborative.org</td>
+</tr>
+<tr>
+<td>port</td>
+<td>1247</td>
+</tr>
+<tr>
+<td>zone</td>
+<td>iplant</td>
+</tr>
+<tr>
+<td>irodsUserName</td>
+<td>your iplant username</td>
+</tr>
+<tr>
+<td>Current iRODS password</td>
+<td>your iplant password</td>
+</tr>
+</tbody></table></li>
+<li><p>Verify that you have connected to your iPlant Data Store; view the contents of your home directory using the following the <code>ils</code> command:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>ils
+</code></pre></div>
+<h2>Copy Sample Data to your instance</h2></li>
+<li><p>Enter the following command:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>iget -rPVT /iplant/home/shared/iplant_training/data_carpentry_ngs/dc_sampledata_lite .
+</code></pre></div></li>
+<li><p>using <code>ls</code> you should be able to verify you have downloaded the dc<em>sampledata</em>lite directories and files. </p></li>
+</ol>
+
+<blockquote>
+<p><strong>Tip</strong>: You can use iCommands to move data between your computer, a cloud instance, and the CyVerse Data Store. iCommands is installed on the Data Carpentry Amazon AMI. You can download and see documentation for iCommands <a href="https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands">here</a> </p>
+</blockquote>
+
+<h3>Terminating your Atmosphere instance</h3>
+
+<p>When you are finished with your instance, you must terminate. Follow the following steps. </p>
+
+<ol>
+<li>If necessary, sign into Atmosphere: <a href="http://atmo.iplantcollaborative.org/">http://atmo.iplantcollaborative.org/</a></li>
+<li><p>Under &#39;My Instances&#39; select the instance you wish to terminate and the click the black &#39;X&#39; or find the &#39;Terminate&#39; button and click. </p>
+
+<blockquote>
+<p><strong>Warning:</strong> This will delete any data on this instance, so you must move any data you wish to save off the instance (for example by using iCommands). </p>
+</blockquote></li>
+<li><p>After reading the warning and confirming you are ready, click &#39;Terminate&#39; to terminate the instance. </p></li>
+</ol>
+
+	  <!-- end content -->
+	</div>
+      </div>
+
+      <div class="footer">
+  <a class="label swc-blue-bg" href="">Facebook</a>
+  <a class="label swc-blue-bg" href="">Google+</a>
+  <a class="label swc-blue-bg" href="">Twitter</a>
+  <a class="label swc-blue-bg" href="">GitHub</a>
+  <a class="label swc-blue-bg" href="./LICENSE.html">License</a>
+  <a class="bugreport label swc-blue-bg" href="mailto:?subject=bug%20in%20logging-onto-cloud.md">Bug Report</a>
+</div>
+
+    </div>
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.9.1.min.js"></script>
+<script src="./js/bootstrap/bootstrap.min.js"></script>
+
+  </body>
+</html>

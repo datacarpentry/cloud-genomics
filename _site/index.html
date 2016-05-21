@@ -78,11 +78,11 @@ Credentials are case sensitive:</p>
 <em>Prerequisites</em>: You must have an SSH client. There are several free options and we will use PuTTY [<a href="http://www.chiark.greenend.org.uk/%7Esgtatham/putty/download.html">Download Putty.exe</a>]</p>
 
 <ol>
-<li>Open PuTTY; In the &#39;Host Name (or IP address)&#39; section paste in the IP address provided by your instructor (or the ip address of an instance you have provisioned yourself). <em>Keep the default selection &#39;SSH&#39; and Port (22)</em>. 
+<li>Open PuTTY; In the &#39;Host Name (or IP address)&#39; section paste in the IP address provided by your instructor (or the ip address of an instance you have provisioned yourself). <em>Keep the default selection &#39;SSH&#39; and Port (22)</em>. <br>
 <img src="./img/putty_screenshot_1.png" alt="Putty Image"></li>
-<li>Click &#39;Open&#39; and you will be presented with a security warning. Select &#39;Yes&#39; to continue to connect. 
+<li>Click &#39;Open&#39; and you will be presented with a security warning. Select &#39;Yes&#39; to continue to connect. <br>
 <img src="./img/putty_screenshot_2.png" alt="Putty security screen"></li>
-<li>In the final step, you will be asked to provide a login and password. <strong>Note:</strong> When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. ****) or moving cursors. Just continue typing. 
+<li>In the final step, you will be asked to provide a login and password. <strong>Note:</strong> When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. ****) or moving cursors. Just continue typing.<br> 
 <img src="./img/putty_screenshot_3.png" alt="Putty login"></li>
 <li>You should now be connected!</li>
 </ol>
@@ -93,10 +93,10 @@ Credentials are case sensitive:</p>
 
 <ol>
 <li><p>open the terminal and type the following command substituting &#39;ip_address&#39; for the ip address your instructor will provide (or the ip address of an instance you have provisioned yourself). <em>Be sure to pay attention to capitalization and spaces</em></p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ ssh dcuser@ip_address
+<div class="highlight"><pre><code class="language-" data-lang="">$ ssh dcuser@ip_address
 </code></pre></div></li>
 <li><p>You will receive a security message that looks something like the message below. Type &#39;yes&#39; to proceed.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">The authenticity of host &#39;ec2-52-91-14-206.compute-1.amazonaws.com (52.91.14.206)&#39; can&#39;t be established. ECDSA key fingerprint is SHA256:S2mMV8mCThjJHm0sUmK2iOE5DBqs8HiJr6pL3x/XxkI. Are you sure you want to continue connecting (yes/no)?
+<div class="highlight"><pre><code class="language-" data-lang="">The authenticity of host 'ec2-52-91-14-206.compute-1.amazonaws.com (52.91.14.206)' can't be established. ECDSA key fingerprint is SHA256:S2mMV8mCThjJHm0sUmK2iOE5DBqs8HiJr6pL3x/XxkI. Are you sure you want to continue connecting (yes/no)?
 </code></pre></div></li>
 <li><p>In the final step, you will be asked to provide a login and password. <strong>Note:</strong> When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. ****) or moving cursors. Just continue typing.</p></li>
 <li><p>You should now be connected!</p></li>
@@ -107,13 +107,13 @@ Credentials are case sensitive:</p>
 <p>When you connect, it is typical to receive a welcome screen. The Data Carpentry Amazon instances display this message upon connecting:</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">Welcome to Ubuntu 14.04.3 LTS <span class="o">(</span>GNU/Linux 3.13.0-48-generic x86_64<span class="o">)</span>
 
- * Documentation:  https://help.ubuntu.com/
+ <span class="k">*</span> Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jan <span class="m">24</span> 21:38:35 UTC 2016
+  System information as of Sun Jan 24 21:38:35 UTC 2016
 
   System load:  0.0                Processes:           151
-  Usage of /:   48.4% of 98.30GB   Users logged in:     0
-  Memory usage: 6%                 IP address <span class="k">for</span> eth0: 172.31.62.209
+  Usage of /:   48.4% of 98.30GB   Users logged <span class="k">in</span>:     0
+  Memory usage: 6%                 IP address <span class="k">for </span>eth0: 172.31.62.209
   Swap usage:   0%
 
   Graph this data and manage this system at:
@@ -122,11 +122,11 @@ Credentials are case sensitive:</p>
   Get cloud support with Ubuntu Advantage Cloud Guest:
     http://www.ubuntu.com/business/services/cloud
 
-<span class="m">12</span> packages can be updated.
-<span class="m">10</span> updates are security updates.
+12 packages can be updated.
+10 updates are security updates.
 
 
-Last login: Sun Jan <span class="m">24</span> 21:38:36 <span class="m">2016</span> from
+Last login: Sun Jan 24 21:38:36 2016 from
 </code></pre></div>
 <p>You should also have a blinking cursor awaiting your command</p>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">dcuser@ip-172-31-62-209 ~ <span class="err">$</span>
@@ -149,8 +149,8 @@ Filesystem      Size  Used Avail Use% Mounted on
 udev            2.0G   12K  2.0G   1% /dev
 tmpfs           396M  792K  395M   1% /run
 /dev/xvda1       99G   48G   47G  51% /
-none            4.0K     <span class="m">0</span>  4.0K   0% /sys/fs/cgroup
-none            5.0M     <span class="m">0</span>  5.0M   0% /run/lock
+none            4.0K     0  4.0K   0% /sys/fs/cgroup
+none            5.0M     0  5.0M   0% /run/lock
 none            2.0G  144K  2.0G   1% /run/shm
 none            100M   36K  100M   1% /run/user
 </code></pre></div>
@@ -168,7 +168,7 @@ model name  : Intel<span class="o">(</span>R<span class="o">)</span> Xeon<span c
 stepping    : 4
 microcode   : 0x415
 cpu MHz     : 2494.060
-cache size  : <span class="m">25600</span> KB
+cache size  : 25600 KB
 physical id : 0
 siblings    : 2
 core id     : 0
@@ -183,7 +183,7 @@ flags       : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat 
 bogomips    : 4988.12
 clflush size    : 64
 cache_alignment : 64
-address sizes   : <span class="m">46</span> bits physical, <span class="m">48</span> bits virtual
+address sizes   : 46 bits physical, 48 bits virtual
 power management:
 
 processor   : 1
@@ -194,7 +194,7 @@ model name  : Intel<span class="o">(</span>R<span class="o">)</span> Xeon<span c
 stepping    : 4
 microcode   : 0x415
 cpu MHz     : 2494.060
-cache size  : <span class="m">25600</span> KB
+cache size  : 25600 KB
 physical id : 0
 siblings    : 2
 core id     : 1
@@ -209,35 +209,36 @@ flags       : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat 
 bogomips    : 4988.12
 clflush size    : 64
 cache_alignment : 64
-address sizes   : <span class="m">46</span> bits physical, <span class="m">48</span> bits virtual
+address sizes   : 46 bits physical, 48 bits virtual
 power management:
 </code></pre></div>
 <ul>
 <li><code>tree -L 1</code> - shows a tree view of the file system 1 level below your current location. </li>
 </ul>
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">dcuser@ip-172-31-62-209 ~ <span class="nv">$ </span>tree -L 1
-.
+
 ├── dc_sample_data
 ├── Desktop
 ├── Downloads
 ├── FastQC
+├── openrefine-2.6-beta.1
 ├── R
 └── Trimmomatic-0.32
 
-<span class="m">6</span> directories, <span class="m">0</span> files
+7 directories, 0 files
 </code></pre></div>
 <h3>Resources:</h3>
 
 <p>Cloud computing offerings:</p>
 
 <ul>
-<li>Amazon EC2: http://aws.amazon.com/ec2/</li>
-<li>Microsoft Azure: https://azure.microsoft.com/en-us/</li>
-<li>Google Cloud Platform: https://cloud.google.com/</li>
-<li>CyVerse (iPlant Collaborative) Atmosphere: http://www.cyverse.org/atmosphere</li>
+<li>Amazon EC2: <a href="http://aws.amazon.com/ec2/">http://aws.amazon.com/ec2/</a></li>
+<li>Microsoft Azure: <a href="https://azure.microsoft.com/en-us/">https://azure.microsoft.com/en-us/</a></li>
+<li>Google Cloud Platform: <a href="https://cloud.google.com/">https://cloud.google.com/</a></li>
+<li>CyVerse (iPlant Collaborative) Atmosphere: <a href="http://www.cyverse.org/atmosphere">http://www.cyverse.org/atmosphere</a></li>
 </ul>
 
-<p>Learn more about cloud computing in bioinformatics
+<p>Learn more about cloud computing in bioinformatics<br>
 Fusaro VA, Patil P, Gafni E, Wall DP, Tonellato PJ (2011) <strong>Biomedical Cloud Computing With Amazon Web Services</strong>. PLoS Comput Biol 7(8): e1002147. doi: 10.1371/journal.pcbi.1002147 </p>
 
 	  <!-- end content -->

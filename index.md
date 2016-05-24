@@ -39,18 +39,20 @@ Credentials are case sensitive:
 - Username: dcuser
 - Password: data4Carp
 
-**Connecting using PC**<br>
+#### **Connecting using PC**<br>
 *Prerequisites*: You must have an SSH client. There are several free options and we will use PuTTY [[Download Putty.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)]
 
 1. Open PuTTY; In the 'Host Name (or IP address)' section paste in the IP address provided by your instructor (or the ip address of an instance you have provisioned yourself). *Keep the default selection 'SSH' and Port (22)*. <br>
-![Putty Image](./img/putty_screenshot_1.png)
+<p><img src="./img/putty_screenshot_1.png"width="500"></p>
 2. Click 'Open' and you will be presented with a security warning. Select 'Yes' to continue to connect. <br>
-![Putty security screen](./img/putty_screenshot_2.png)
+<p><img src="./img/putty_screenshot_2.png"width="500"></p>
 3. In the final step, you will be asked to provide a login and password. **Note:** When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. ****) or moving cursors. Just continue typing.<br> 
-![Putty login](./img/putty_screenshot_3.png)
+<p><img src="./img/putty_screenshot_3.png"width="500"></p>
 4. You should now be connected!
 
-**Connecting using Mac/Linux**<br>
+---
+
+#### **Connecting using Mac/Linux**<br>
 *Prerequisites*: Mac and Linux operating systems will already have terminals installed. Simply search for 'Terminal' and/or look for the terminal icon.<br> 
 ![terminal icon](./img/terminal.png)
 

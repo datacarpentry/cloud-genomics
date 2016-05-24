@@ -9,6 +9,8 @@ minutes: 5
 
 - Understand benefits of working on a remote computer system
 - Be able to connect to a cloud instance
+    - via SSH
+    - via VNC
 - Check the available resources and file system on your remote machine
 
 ## Lesson
@@ -25,7 +27,7 @@ The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or
 
 ## Exercises
 
-**A. Connecting to a remote machine**
+### **A. Connecting to a remote machine via SSH**
 
 This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
 
@@ -65,8 +67,19 @@ Credentials are case sensitive:
 4. You should now be connected!
 
 
+### **B. Connecting to a remote machine via VNC** 
+[VNC](https://en.wikipedia.org/wiki/Virtual_Network_Computing) - Virtual Network Computing is a technology that allows you to connect to and share the desktop of a remote computer. To use VNC the computer you are connecting to must be running a VNC server. To view the desktop, you will need to download a VNC viewing client such as RealVNCs [VNC Viewer](https://www.realvnc.com/download/viewer/). 
 
-**B. Verifying your connection and environment** 
+1. To start the VNC server on your remote computer enter the command:
+```
+$ vncserver
+```
+2. Open [VNC Viewer](https://www.realvnc.com/download/viewer/); enter the same IP address you used to connect to the remote computer via SSH **+ ':1'** (e.g. ec2-11-11-111-11.compute-1.amazonaws.com:1)
+3. Confirm you wish to connect to the instance (you may need to say yes to confirm the first time you connect to a new instance). 
+4. You should now be viewing the desktop of your instance. 
+<img src="./img/dc_desktop.png"width="500">
+
+### **C. Verifying your connection and environment** 
 
 When you connect, it is typical to receive a welcome screen. The Data Carpentry Amazon instances display this message upon connecting:
 

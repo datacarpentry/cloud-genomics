@@ -314,8 +314,10 @@ $ iget -rPVT /iplant/home/shared/iplant_training/data_carpentry_ngs/dc_sampledat
 When you are finished with your instance, you must terminate. Follow the following steps. 
 
 1. If necessary, sign into Atmosphere: [http://atmo.iplantcollaborative.org/](http://atmo.iplantcollaborative.org/)
-2. Under 'My Instances' select the instance you wish to terminate and the click the black 'X' or find the 'Terminate' button and click. 
+2. Locate your instance (e.g. select 'Projects' and then select the project that contains the instance you will terminate.)
+3. Click on the instance name to get to the 'Actions' menu. You may then select the 'Delete' button to terminate the instance.  
 
     > **Warning:** This will delete any data on this instance, so you must move any data you wish to save off the instance (for example by using iCommands). 
 5. After reading the warning and confirming you are ready, click 'Terminate' to terminate the instance. 
 
+ 

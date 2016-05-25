@@ -43,9 +43,8 @@ There are several cloud providers to choose from. Some scientific clouds may eit
 
 #### Open Science Clouds
 * [Atmosphere](https://pods.iplantcollaborative.org/wiki/display/atmman/Getting+Started)
-* [JetStream](http://jetstream-cloud.org/)*
+* [JetStream](http://jetstream-cloud.org/)
 
-\* Coming in 2016
 
 
 ## Launching an Cloud Instance (Virtual Machine)
@@ -73,7 +72,7 @@ We will provide instructions for working on the *Amazon* and the *Atmosphere* cl
 #### Sign into AWS and Launch an Instance
 1. Sign into AWS EC2 Dashboard: [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 2. Click the 'Launch Instance' button<p><img src="./img/logging-onto-cloud_1.png" width="500"></p>
-3. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for **ami-6516b30e**; select this image
+3. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for **ami-5bc63136**; select this image
 <p><img src="./img/logging-onto-cloud_2.png"width="500"></p>
 4. For 'Choose and Instance Type' select **t2.medium**; then click 'Review and Launch' 
 <p><img src="./img/logging-onto-cloud_3.png"width="500"></p>  
@@ -92,14 +91,14 @@ You instance will now be launched. You should follow the links to 'Create billin
 1. Log into your AWC EC2 Dashboard [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 2. You should see that you have one instance, to proceed the instance state must be 'running' (if you just launched the instance it will take <5 min for the instance to start running)
  <p><img src="./img/logging-onto-cloud_5.png"width="500"></p>
-3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect. 
+3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect.) 
  <p><img src="./img/logging-onto-cloud_6.png"width="500"></p>
 4. Open the terminal application on your Mac and use 'ssh' to connect. Your command will be:
 
    ```bash
 $ ssh dcuser@your.amazon.dns
 ```
-5. Your computer will be unable to verify the authenticity of the host... type **yes** to continue connecting
+5. Your computer will be unable to verify the authenticity of the host; type **yes** to continue connecting
 6. Then enter the password for this computer: 'data4Carp'
 
 You should now be connected to your personal instance. You can confirm this with the following commands; ``whoami``,``pwd``,``ls``, which should yield the following results:
@@ -111,7 +110,8 @@ dcuser
 $ pwd
 /home/dcuser
 $ ls
-dc_sample_data	FastQC	Trimmomatic-0.32
+dc_sample_data	Downloads  openrefine-2.6-beta.1  Trimmomatic-0.32
+Desktop		FastQC	   R
 $ 
 ```
 **Instructions for PC**
@@ -120,7 +120,7 @@ $
 1. Log into your AWC EC2 Dashboard [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 2. You should see that you have one instance, make sure instance state is 'running' (if you just launched the instance it will take <5 min for the instance to start running)
     <p><img src="./img/logging-onto-cloud_5.png"width="500"></p>
-3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect. 
+3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect.) 
     <p><img src="./img/logging-onto-cloud_6.png"width="500"></p>
 4. Start PuTTY. In the section 'Specify the destination you want to connect to' for 'Host Name (or IP address)' paste in the DNS address and click 'Open'
 5. When prompted to login as, enter 'dcuser'; you may be notified that the authenticity of the host cannot be verified - if so, ignore the warning an continue connecting
@@ -135,7 +135,8 @@ dcuser
 $ pwd
 /home/dcuser
 $ ls
-dc_sample_data	FastQC	Trimmomatic-0.32
+dc_sample_data	Downloads  openrefine-2.6-beta.1  Trimmomatic-0.32
+Desktop		FastQC	   R
 $ 
 ```
 

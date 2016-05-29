@@ -75,7 +75,7 @@ Credentials are case sensitive:
 
 1. To start the VNC server on your remote computer enter the command:
 ```
-$ vncserver
+$ vncstart
 ```
 2. Open [VNC Viewer](https://www.realvnc.com/download/viewer/); enter the same IP address you used to connect to the remote computer via SSH **+ ':1'** (e.g. ec2-11-11-111-11.compute-1.amazonaws.com:1)
 3. Confirm you wish to connect to the instance (you may need to say yes to confirm the first time you connect to a new instance, and/or if the connection is unencrypted). Enter your username (dcuser) and password. 

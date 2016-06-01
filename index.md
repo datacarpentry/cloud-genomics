@@ -32,7 +32,7 @@ The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or
 
 This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
 
-> To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on **XXXXXX** for instructions on how to do this yourself. 
+> To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on [launching cloud instances on your own](https://jasonjwilliamsny.github.io/cloud-genomics/logging-onto-cloud.html) for instructions on how to do this yourself. 
 
 **User Credentials**
 Credentials are case sensitive:

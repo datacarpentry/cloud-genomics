@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 markdown: kramdown
+=======
+markdown: redcarpet
+>>>>>>> 309a0bf277e4f171094fc01fae0301c0befbf283
 redcarpet:
   extensions: ["tables"]

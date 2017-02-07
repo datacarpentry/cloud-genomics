@@ -3,6 +3,11 @@ title: "Cloud Introduction"
 author: "Data Carpentry"
 date: "Tuesday, March 24, 2015"
 ---
+## Learning Objectives
+* Describe reasons why using a remote computer system is useful.
+* Understand terms related to cloud and high-performance (HPC) computing. 
+* Describe the differences between HPC and cloud computing.
+* Access resources related to HPC and cloud computing.
 
 ### What are some of reasons to access a remote computer system?
 

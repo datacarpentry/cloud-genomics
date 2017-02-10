@@ -3,6 +3,11 @@ title: "Cloud Introduction"
 author: "Data Carpentry"
 date: "Tuesday, March 24, 2015"
 ---
+## Learning Objectives
+* Describe reasons why using a remote computer system is useful.
+* Understand terms related to cloud and high-performance (HPC) computing. 
+* Describe the differences between HPC and cloud computing.
+* Access resources related to HPC and cloud computing.
 
 ### What are some of reasons to access a remote computer system?
 
@@ -12,7 +17,7 @@ date: "Tuesday, March 24, 2015"
 
 ### Main Computational Resources
 
-![Computer Node](https://raw.githubusercontent.com/datacarpentry/cloud-genomics/master/lessons/images/Computer.png)
+![Computer Node](https://raw.githubusercontent.com/datacarpentry/cloud-genomics/gh-pages/lessons/images/Computer.png)
 
  * Find how much disk space is available in your system. Check that you have enough space to get and extract the input file of :
 
@@ -347,7 +352,7 @@ sys	0m0.432s
 | Request for resource and time allocation | Pay-per-use |
 | etc. | etc.|
 
-![HPC vs. Cloud](https://raw.githubusercontent.com/datacarpentry/cloud-genomics/master/lessons/images/HpcVsCloud.png)
+![HPC vs. Cloud](https://raw.githubusercontent.com/datacarpentry/cloud-genomics/gh-pages/lessons/images/HpcVsCloud.png)
 
 
 ### Resources:

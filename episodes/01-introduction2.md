@@ -1,3 +1,15 @@
+---
+title: "Introduction 2"
+teaching: 0
+exercises: 0
+questions:
+- "Key question"
+objectives:
+- "First objective."
+keypoints:
+- "First key point."
+---
+
 ### What are some of reasons to access a remote computer system?
 
 -   Your computer does not have enough resources to run the desired

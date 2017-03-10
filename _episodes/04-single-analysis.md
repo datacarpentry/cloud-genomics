@@ -1,3 +1,16 @@
+---
+title: "Single analysis"
+teaching: 0
+exercises: 0
+questions:
+- "Key question"
+objectives:
+- "First objective."
+keypoints:
+- "First key point."
+---
+
+
 # Quality assessment / quality control of a single dataset
 
 - [Recap so far](#recap-so-far)

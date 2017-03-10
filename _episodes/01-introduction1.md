@@ -1,8 +1,13 @@
 ---
-layout: lesson
-root: .
-title: Connecting to the cloud in 5 min or less
-minutes: 5
+title: "Introduction"
+teaching: 0
+exercises: 0
+questions:
+- "Key question"
+objectives:
+- "First objective."
+keypoints:
+- "First key point."
 ---
 
 ## Learning Objectives

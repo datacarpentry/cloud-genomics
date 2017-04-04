@@ -47,20 +47,21 @@ Credentials are case sensitive:
 
 #### **Connecting using PC**<br>
 *Prerequisites*: You must have an SSH client. There are several free options and we will use PuTTY [[Download Putty.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)]
+**(RMF)THIS NEEDS TO GO INTO INSTALLATION INSTRUCTIONS**
 
 1. Open PuTTY; In the 'Host Name (or IP address)' section paste in the IP address provided by your instructor (or the ip address of an instance you have provisioned yourself). *Keep the default selection 'SSH' and Port (22)*. <br>
-<p><img src="./img/putty_screenshot_1.png"width="500"></p>
+<p><img src="../fig/putty_screenshot_1.png" width="500"></p>
 2. Click 'Open' and you will be presented with a security warning. Select 'Yes' to continue to connect. <br>
-<p><img src="./img/putty_screenshot_2.png"width="500"></p>
+<p><img src="../fig/putty_screenshot_2.png" width="500"></p>
 3. In the final step, you will be asked to provide a login and password. **Note:** When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. ****) or moving cursors. Just continue typing.<br> 
-<p><img src="./img/putty_screenshot_3.png"width="500"></p>
+<p><img src="../fig/putty_screenshot_3.png" width="500"></p>
 4. You should now be connected!
 
 ---
 
 #### **Connecting using Mac/Linux**<br>
 *Prerequisites*: Mac and Linux operating systems will already have terminals installed. Simply search for 'Terminal' and/or look for the terminal icon.<br> 
-![terminal icon](./img/terminal.png)
+![terminal icon](../fig/terminal.png)
 
 
 1. open the terminal and type the following command substituting 'ip_address' for the ip address your instructor will provide (or the ip address of an instance you have provisioned yourself). *Be sure to pay attention to capitalization and spaces*
@@ -69,14 +70,17 @@ Credentials are case sensitive:
         
 2. You will receive a security message that looks something like the message below. Type 'yes' to proceed.
 
-        The authenticity of host 'ec2-52-91-14-206.compute-1.amazonaws.com (52.91.14.206)' can't be established. ECDSA key fingerprint is SHA256:S2mMV8mCThjJHm0sUmK2iOE5DBqs8HiJr6pL3x/XxkI. Are you sure you want to continue connecting (yes/no)?
+        The authenticity of host 'ec2-52-91-14-206.compute-1.amazonaws.com (52.91.14.206)' can't be established.
+        ECDSA key fingerprint is SHA256:S2mMV8mCThjJHm0sUmK2iOE5DBqs8HiJr6pL3x/XxkI.
+        Are you sure you want to continue connecting (yes/no)?
 
 3. In the final step, you will be asked to provide a login and password. **Note:** When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. ****) or moving cursors. Just continue typing.
 4. You should now be connected!
 
 
 ### **B. Connecting to a remote machine via VNC** 
-[VNC](https://en.wikipedia.org/wiki/Virtual_Network_Computing) - Virtual Network Computing is a technology that allows you to connect to and share the desktop of a remote computer. To use VNC the computer you are connecting to must be running a VNC server. To view the desktop, you will need to download a VNC viewing client such as RealVNCs [VNC Viewer](https://www.realvnc.com/download/viewer/). 
+[VNC](https://en.wikipedia.org/wiki/Virtual_Network_Computing) - Virtual Network Computing is a technology that allows you to connect to and share the desktop of a remote computer. To use VNC the computer you are connecting to must be running a VNC server. To view the desktop, you will need to download a VNC viewing client such as RealVNCs [VNC Viewer](https://www.realvnc.com/download/viewer/).
+**(RMF)INCLUDE INSTALL INSTRUCTIONS
 
 1. To start the VNC server on your remote computer enter the command:
 ```
@@ -85,7 +89,7 @@ $ vncstart
 2. Open [VNC Viewer](https://www.realvnc.com/download/viewer/); enter the same IP address you used to connect to the remote computer via SSH **+ ':1'** (e.g. ec2-11-11-111-11.compute-1.amazonaws.com:1)
 3. Confirm you wish to connect to the instance (you may need to say yes to confirm the first time you connect to a new instance, and/or if the connection is unencrypted). Enter your username (dcuser) and password. 
 4. You should now be viewing the desktop of your instance. 
-<p><img src="./img/dc_desktop.png"width="500"></p>
+<p><img src="../fig/dc_desktop.png" width="500"></p>
 
 ### **C. Verifying your connection and environment** 
 

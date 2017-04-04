@@ -3,23 +3,14 @@ title: "Introduction"
 teaching: 0
 exercises: 0
 questions:
-- "Key question"
+- What is cloud computing?
+- How do I log into a remote server?
 objectives:
-- "First objective."
-keypoints:
-- "First key point."
----
-
-## Learning Objectives
-
 - Understand benefits of working on a remote computer system
-- Be able to connect to a cloud instance
-    - via SSH
-    - via VNC
+- Be able to connect to a cloud instance via SSH or VNC
 - Check the available resources and file system on your remote machine
 - Keep background processes working in the cloud with `tmux`
-
-## Lesson
+---
 
 There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) won't work on these laptops and must be run on remote machines. 
 
@@ -64,7 +55,7 @@ Credentials are case sensitive:
 ![terminal icon](../fig/terminal.png)
 
 
-1. open the terminal and type the following command substituting 'ip_address' for the ip address your instructor will provide (or the ip address of an instance you have provisioned yourself). *Be sure to pay attention to capitalization and spaces*
+1. Open the terminal and type the following command substituting 'ip_address' for the ip address your instructor will provide (or the ip address of an instance you have provisioned yourself). *Be sure to pay attention to capitalization and spaces*
 
         $ ssh dcuser@ip_address
         
@@ -80,13 +71,13 @@ Credentials are case sensitive:
 
 ### **B. Connecting to a remote machine via VNC** 
 [VNC](https://en.wikipedia.org/wiki/Virtual_Network_Computing) - Virtual Network Computing is a technology that allows you to connect to and share the desktop of a remote computer. To use VNC the computer you are connecting to must be running a VNC server. To view the desktop, you will need to download a VNC viewing client such as RealVNCs [VNC Viewer](https://www.realvnc.com/download/viewer/).
-**(RMF)INCLUDE INSTALL INSTRUCTIONS
+**(RMF)INCLUDE DOWNLOAD AND INSTALL INSTRUCTIONS FOR VNC**
 
 1. To start the VNC server on your remote computer enter the command:
 ```
 $ vncstart
 ```
-2. Open [VNC Viewer](https://www.realvnc.com/download/viewer/); enter the same IP address you used to connect to the remote computer via SSH **+ ':1'** (e.g. ec2-11-11-111-11.compute-1.amazonaws.com:1)
+2. Open [VNC Viewer](https://www.realvnc.com/download/viewer/); enter the same IP address you used to connect to the remote computer via SSH **+ ':1'** (e.g. `ec2-11-11-111-11.compute-1.amazonaws.com:1`)
 3. Confirm you wish to connect to the instance (you may need to say yes to confirm the first time you connect to a new instance, and/or if the connection is unencrypted). Enter your username (dcuser) and password. 
 4. You should now be viewing the desktop of your instance. 
 <p><img src="../fig/dc_desktop.png" width="500"></p>

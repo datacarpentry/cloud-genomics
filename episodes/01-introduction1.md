@@ -13,7 +13,7 @@ objectives:
 ---
 <script>
 function change_content_by_platform(form_control){
-    if (document.getElementById(form_control).value == "aws" or !form_control) {
+    if (document.getElementById(form_control).value == "aws" || !form_control) {
         document.getElementById("div_aws").style.display = 'block';
         document.getElementById("div_cyverse").style.display = 'none';
         document.getElementById("div_pc").style.display = 'none';

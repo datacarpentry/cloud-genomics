@@ -68,11 +68,15 @@ Credentials are case sensitive:
 </span>
 
 <span id="div_cyvers" style="display:none;">
+
 CyVerse!!
+
 </span>
 
 <span id="div_hpc" style="display:none;">
+
 HPC Cluster!!
+
 </span>
 
 

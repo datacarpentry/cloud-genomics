@@ -67,12 +67,13 @@ Credentials are case sensitive:
 - Username: dcuser
 - Password: data4Carp
 </div>
-<div id="div_cyvers" style ="display=none">
+<div id="div_cyvers" style="display:none;">
 CyVerse!!
 </div>
-<div id="div_hpc" style ="display=none">
+<div id="div_hpc" style="display:none;">
 HPC Cluster!!
 </div>
+
 
 #### **Connecting using PC**<br>
 *Prerequisites*: You must have an SSH client. There are several free options and we will use PuTTY [[Download Putty.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)]

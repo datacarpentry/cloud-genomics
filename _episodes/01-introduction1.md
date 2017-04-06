@@ -14,17 +14,17 @@ objectives:
 <script>
 function change_content_by_platform(){
     if (document.getElementById('platformid').value == "aws") {
-        document.getElementById("id_aws").style.display = 'block';
-        document.getElementById("id_cyverse").style.display = 'none';
-        document.getElementById("id_hpc").style.display = 'none';
+        document.getElementById("div_aws").style.display = 'block';
+        document.getElementById("div_cyverse").style.display = 'none';
+        document.getElementById("div_pc").style.display = 'none';
     } else if (document.getElementById('platformid').value == "cyverse") {
-        document.getElementById("id_aws").style.display = 'none';
-        document.getElementById("id_cyverse").style.display = 'block';
-        document.getElementById("id_hpc").style.display = 'none';
+        document.getElementById("div_aws").style.display = 'none';
+        document.getElementById("div_cyverse").style.display = 'block';
+        document.getElementById("div_hpc").style.display = 'none';
     } else if (document.getElementById('platformid').value == "hpc") {
-        document.getElementById("id_aws").style.display = 'none';
-        document.getElementById("id_cyverse").style.display = 'none';
-        document.getElementById("id_hpc").style.display = 'block';
+        document.getElementById("div_aws").style.display = 'none';
+        document.getElementById("div_cyverse").style.display = 'none';
+        document.getElementById("div_hpc").style.display = 'block';
     } else {
         alert("Error: Missing platform value for 'change_content_by_platform' script!");
     }
@@ -57,7 +57,7 @@ Please select the platform you wish to use for the exercises:
 
 This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
 
-<div id="aws">
+<div id="div_aws">
 > To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on [launching cloud instances on your own](../discuss/) for instructions on how to do this yourself. 
 
 **User Credentials**
@@ -66,10 +66,10 @@ Credentials are case sensitive:
 - Username: dcuser
 - Password: data4Carp
 </div>
-<div id="cyvers">
+<div id="div_cyvers">
 CyVerse!!
 </div>
-<div id="hpc">
+<div id="div_hpc">
 HPC Cluster!!
 </div>
 

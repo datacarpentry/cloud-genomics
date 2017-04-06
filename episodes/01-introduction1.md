@@ -12,7 +12,7 @@ objectives:
 - Keep background processes working in the cloud with `tmux`
 ---
 <script language="javascript" type="text/javascript">
-function set_page_view_defaults {
+function set_page_view_defaults() {
     document.getElementById('div_aws').style.display = 'block';
     document.getElementById('div_cyverse').style.display = 'none';
     document.getElementById('div_pc').style.display = 'none';

@@ -11,29 +11,39 @@ objectives:
 - Check the available resources and file system on your remote machine
 - Keep background processes working in the cloud with `tmux`
 ---
-<script>
+<script language="javascript" type="text/javascript">
+function set_page_view_defaults {
+    document.getElementById('div_aws').style.display = 'block';
+    document.getElementById('div_cyverse').style.display = 'none';
+    document.getElementById('div_pc').style.display = 'none';
+};
+
 function change_content_by_platform(form_control){
-    if (!form_control || document.getElementById(form_control).value == "aws") {
-        document.getElementById("div_aws").style.display = 'block';
-        document.getElementById("div_cyverse").style.display = 'none';
-        document.getElementById("div_pc").style.display = 'none';
-    } else if (document.getElementById(form_control).value == "cyverse") {
-        document.getElementById("div_aws").style.display = 'none';
-        document.getElementById("div_cyverse").style.display = 'block';
-        document.getElementById("div_hpc").style.display = 'none';
-    } else if (document.getElementById(form_control).value == "hpc") {
-        document.getElementById("div_aws").style.display = 'none';
-        document.getElementById("div_cyverse").style.display = 'none';
-        document.getElementById("div_hpc").style.display = 'block';
+    if (!form_control || document.getElementById(form_control).value == 'aws') {
+        set_page_view_defaults();
+    } else if (document.getElementById(form_control).value == 'cyverse') {
+        document.getElementById('div_aws').style.display = 'none';
+        document.getElementById('div_cyverse').style.display = 'block';
+        document.getElementById('div_hpc').style.display = 'none';
+    } else if (document.getElementById(form_control).value == 'hpc') {
+        document.getElementById('div_aws').style.display = 'none';
+        document.getElementById('div_cyverse').style.display = 'none';
+        document.getElementById('div_hpc').style.display = 'block';
     } else {
-        alert("Error: Missing platform value for 'change_content_by_platform' script!");
+        alert("Error: Missing platform value for 'change_content_by_platform()' script!");
     }
 }
-//window.onload = function() {
-//    document.getElementById('date').onchange = validateDate;
-//};
-body.onload = change_content_by_platform();
+
+window.onload = set_page_view_defaults();
 </script>
+
+function() {
+    document.getElementById("div_aws").style.display = 'block';
+    document.getElementById("div_cyverse").style.display = 'none';
+    document.getElementById("div_pc").style.display = 'none';
+};
+
+
 There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) won't work on these laptops and must be run on remote machines. 
 
 You'll know you need to start working on the cloud when...

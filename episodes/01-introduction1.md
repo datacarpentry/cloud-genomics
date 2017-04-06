@@ -46,10 +46,10 @@ The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or
 
 Please select the platform you wish to use for the exercises:
 
-<select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform')" />
-    <option value="aws" id="id_aws" selected> AWS </option>
-    <option value="cyverse" id="id_cyverse"> CyVerse </option>
-    <option value="hpc" id="id_hpc"> HPC/HTC cluster </option>
+<select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;">
+<option value="aws" id="id_aws" selected> AWS </option>
+<option value="cyverse" id="id_cyverse"> CyVerse </option>
+<option value="hpc" id="id_hpc"> HPC/HTC cluster </option>
 </select>
 
 ## Exercises
@@ -58,7 +58,7 @@ Please select the platform you wish to use for the exercises:
 
 This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
 
-<div id="div_aws">
+<div id="div_aws" style="display:block;">
 > To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on [launching cloud instances on your own](../discuss/) for instructions on how to do this yourself. 
 
 **User Credentials**
@@ -67,13 +67,16 @@ Credentials are case sensitive:
 - Username: dcuser
 - Password: data4Carp
 </div>
+
 <div id="div_cyvers" style="display:none;">
 CyVerse!!
 </div>
+
 <div id="div_hpc" style="display:none;">
 HPC Cluster!!
 </div>
 
+style="display:none;"style="color:blue;"
 
 #### **Connecting using PC**<br>
 *Prerequisites*: You must have an SSH client. There are several free options and we will use PuTTY [[Download Putty.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)]

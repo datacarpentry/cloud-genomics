@@ -46,11 +46,7 @@ The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or
 
 Please select the platform you wish to use for the exercises:
 
-<select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;">
-<option value="aws" id="id_aws" selected> AWS </option>
-<option value="cyverse" id="id_cyverse"> CyVerse </option>
-<option value="hpc" id="id_hpc"> HPC/HTC cluster </option>
-</select>
+<select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws" id="id_aws" selected> AWS </option><option value="cyverse" id="id_cyverse"> CyVerse </option><option value="hpc" id="id_hpc"> HPC/HTC cluster </option></select>
 
 ## Exercises
 

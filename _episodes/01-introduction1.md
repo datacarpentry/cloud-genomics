@@ -15,7 +15,7 @@ objectives:
 function set_page_view_defaults() {
     document.getElementById('div_aws').style.display = 'block';
     document.getElementById('div_cyverse').style.display = 'none';
-    document.getElementById('div_pc').style.display = 'none';
+    document.getElementById('div_hpc').style.display = 'none';
 };
 
 function change_content_by_platform(form_control){
@@ -55,7 +55,7 @@ The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or
 
 This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
 
-<span id="div_aws" style="display:block;">
+<span id='div_aws' style="display:block;">some text goes here
 > To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on [launching cloud instances on your own](../discuss/) for instructions on how to do this yourself. 
 
 **User Credentials**
@@ -65,11 +65,11 @@ Credentials are case sensitive:
 - Password: data4Carp
 </span>
 
-<span id="div_cyvers" style="display:none;">
+<span id='div_cyverse' style="display:none;">
 CyVerse!!
 </span>
 
-<span id="div_hpc" style="display:none;">
+<span id='div_hpc' style="display:none;">
 HPC Cluster!!
 </span>
 

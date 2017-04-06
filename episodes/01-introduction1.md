@@ -14,7 +14,7 @@ objectives:
 <script>
 function change_content_by_platform(form_control){
     if (document.getElementById(form_control).value == "aws")
-      or form_control == null {
+      or !form_control {
         document.getElementById("div_aws").style.display = 'block';
         document.getElementById("div_cyverse").style.display = 'none';
         document.getElementById("div_pc").style.display = 'none';
@@ -46,7 +46,7 @@ You'll know you need to start working on the cloud when...
 The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or an ATM involves remote computing). The topic is fascinating but this lesson says '5 minutes or less' so let's get connected. 
 
 Please select the platform you wish to use for the exercises:
-<select id="id_platform" name="platformlist" onchange="change_content_by_platform("id_platform")" />
+<select id="id_platform" name="platformlist" onchange="change_content_by_platform("id_platform")">
     <option value="aws" id="id_aws" selected> AWS </option>
     <option value="cyverse" id="id_cyverse"> CyVerse </option>
     <option value="hpc" id="id_hpc"> HPC/HTC cluster </option>

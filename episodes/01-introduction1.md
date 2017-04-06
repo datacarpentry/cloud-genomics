@@ -11,7 +11,30 @@ objectives:
 - Check the available resources and file system on your remote machine
 - Keep background processes working in the cloud with `tmux`
 ---
-
+<script>
+function change_content_by_platform(){
+    ....
+    if (document.getElementById('platformid').value == "aws") {
+        document.getElementById("id_aws").style.display = 'block';
+        document.getElementById("id_cyverse").style.display = 'none';
+        document.getElementById("id_hpc").style.display = 'none';
+    } else if (document.getElementById('platformid').value == "cyverse") {
+        document.getElementById("id_aws").style.display = 'none';
+        document.getElementById("id_cyverse").style.display = 'block';
+        document.getElementById("id_hpc").style.display = 'none';
+    } else if (document.getElementById('platformid').value == "hpc") {
+        document.getElementById("id_aws").style.display = 'none';
+        document.getElementById("id_cyverse").style.display = 'none';
+        document.getElementById("id_hpc").style.display = 'block';
+    } else {
+        alert("Error: Missing platform value for 'change_content_by_platform' script!");
+    }
+}
+//window.onload = function() {
+//    document.getElementById('date').onchange = validateDate;
+//};
+window.onload = change_content_by_platform
+</script>
 There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) won't work on these laptops and must be run on remote machines. 
 
 You'll know you need to start working on the cloud when...
@@ -22,12 +45,20 @@ You'll know you need to start working on the cloud when...
 
 The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or an ATM involves remote computing). The topic is fascinating but this lesson says '5 minutes or less' so let's get connected. 
 
+Please select the platform you wish to use for the exercises:
+<select id="platformid" name="platformlist" onchange="change_content_by_platform()">
+    <option value="aws" id="id_aws" selected> AWS </option>
+    <option value="cyverse" id="id_cyverse"> CyVerse </option>
+    <option value="hpc" id="id_hpc"> HPC/HTC cluster </option>
+</select>
+
 ## Exercises
 
 ### **A. Connecting to a remote machine via SSH**
 
 This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
 
+<div id="aws">
 > To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on [launching cloud instances on your own](../discuss/) for instructions on how to do this yourself. 
 
 **User Credentials**
@@ -35,6 +66,13 @@ Credentials are case sensitive:
 
 - Username: dcuser
 - Password: data4Carp
+</div>
+<div id="cyvers">
+CyVerse!!
+</div>
+<div id="hpc">
+HPC Cluster!!
+</div>
 
 #### **Connecting using PC**<br>
 *Prerequisites*: You must have an SSH client. There are several free options and we will use PuTTY [[Download Putty.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)]

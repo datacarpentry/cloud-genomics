@@ -37,13 +37,6 @@ function change_content_by_platform(form_control){
 window.onload = set_page_view_defaults();
 </script>
 
-function() {
-    document.getElementById("div_aws").style.display = 'block';
-    document.getElementById("div_cyverse").style.display = 'none';
-    document.getElementById("div_pc").style.display = 'none';
-};
-
-
 There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) won't work on these laptops and must be run on remote machines. 
 
 You'll know you need to start working on the cloud when...

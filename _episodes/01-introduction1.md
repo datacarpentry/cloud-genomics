@@ -13,15 +13,15 @@ objectives:
 ---
 <script>
 function change_content_by_platform(){
-    if (document.getElementById('platformid').value == "aws") {
+    if (document.getElementById('id_platform').value == "aws") {
         document.getElementById("div_aws").style.display = 'block';
         document.getElementById("div_cyverse").style.display = 'none';
         document.getElementById("div_pc").style.display = 'none';
-    } else if (document.getElementById('platformid').value == "cyverse") {
+    } else if (document.getElementById('id_platform').value == "cyverse") {
         document.getElementById("div_aws").style.display = 'none';
         document.getElementById("div_cyverse").style.display = 'block';
         document.getElementById("div_hpc").style.display = 'none';
-    } else if (document.getElementById('platformid').value == "hpc") {
+    } else if (document.getElementById('id_platform').value == "hpc") {
         document.getElementById("div_aws").style.display = 'none';
         document.getElementById("div_cyverse").style.display = 'none';
         document.getElementById("div_hpc").style.display = 'block';
@@ -32,7 +32,6 @@ function change_content_by_platform(){
 //window.onload = function() {
 //    document.getElementById('date').onchange = validateDate;
 //};
-window.onload = change_content_by_platform()
 </script>
 There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) won't work on these laptops and must be run on remote machines. 
 
@@ -45,7 +44,7 @@ You'll know you need to start working on the cloud when...
 The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or an ATM involves remote computing). The topic is fascinating but this lesson says '5 minutes or less' so let's get connected. 
 
 Please select the platform you wish to use for the exercises:
-<select id="platformid" name="platformlist" onchange="change_content_by_platform()" onload="change_content_by_platform()" />
+<select id="id_platform" name="platformlist" onchange="change_content_by_platform()" onload="change_content_by_platform()" />
     <option value="aws" id="id_aws" selected> AWS </option>
     <option value="cyverse" id="id_cyverse"> CyVerse </option>
     <option value="hpc" id="id_hpc"> HPC/HTC cluster </option>

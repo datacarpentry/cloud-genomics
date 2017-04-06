@@ -34,7 +34,7 @@ function change_content_by_platform(form_control){
     }
 }
 
-window.onload = set_page_view_defaults();
+window.onload = set_page_view_defaults;
 </script>
 
 There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) won't work on these laptops and must be run on remote machines. 
@@ -55,23 +55,28 @@ The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or
 
 This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
 
-<span id='div_aws' style="display:block;">some text goes here
-> To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on [launching cloud instances on your own](../discuss/) for instructions on how to do this yourself. 
 
-**User Credentials**
+<div id='div_aws' style="display:block;">
+
+<blockquote>
+ To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on [launching cloud instances on your own](../discuss/) for instructions on how to do this yourself. 
+<blockquote>
+
+<strong>User Credentials</strong>
 Credentials are case sensitive:
 
 - Username: dcuser
 - Password: data4Carp
-</span>
 
-<span id='div_cyverse' style="display:none;">
+</div>
+
+<div id='div_cyverse' style="display:none;">
 CyVerse!!
-</span>
+</div>
 
-<span id='div_hpc' style="display:none;">
+<div id='div_hpc' style="display:none;">
 HPC Cluster!!
-</span>
+</div>
 
 
 #### **Connecting using PC**<br>

@@ -18,10 +18,12 @@ objectives:
 
 // Note: This will only work in platforms that have
 // implemented NodeList.prototype[Symbol.iterator]
+
 function setClassDisplayMode(className, displayValue){
     var classList = document.getElementsByClassName(className);
     for (let oneItem of classList) {
-        oneItem.style.display = displayValue
+        oneItem.style.display = displayValue;
+    }
 }
 
 function set_page_view_defaults() {

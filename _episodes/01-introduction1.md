@@ -97,14 +97,6 @@ HPC Cluster!!
 
 </div>
 
-More spacer text
-
-<div id='div_aws' style="display:block" markdown="1">
-
-Duplicate 'div_aws' ID. Let's see what happens?
-
-</div>
-
 
 
 #### **Connecting using PC**<br>

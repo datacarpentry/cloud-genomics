@@ -106,7 +106,7 @@ HPC Cluster!!
 
 some text in-between #3
 
-<div class='div_aws' style="display:none" markdown="1">
+<div class='div_aws' style="display:block" markdown="1">
 
 Another AWS section
 

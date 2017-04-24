@@ -55,6 +55,7 @@ The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or
 
 This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
 
+{::options parse_block_html="true" /}
 
 <div id='div_aws' style="display:block;">
 
@@ -68,7 +69,9 @@ Credentials are case sensitive:
 - Username: dcuser
 - Password: data4Carp
 
-</div>
+</div id='div_aws'>
+
+some text in-betwen
 
 <div id='div_cyverse' style="display:none;">
 

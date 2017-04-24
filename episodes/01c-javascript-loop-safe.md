@@ -25,7 +25,7 @@ function setClassDisplayMode(className, displayValue){
         alert("Error: Bad class name ",className," sent to 'setClassDisplayMode()' script!");
     } else {
         for (var index = 0; index < classList.length; ++index) {
-            oneItem[index].style.display = displayValue;
+            classList[index].style.display = displayValue;
         }
     }
 }

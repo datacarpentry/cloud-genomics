@@ -69,7 +69,9 @@ Credentials are case sensitive:
 - Username: dcuser
 - Password: data4Carp
 
-</div id='div_aws'>
+
+</div>
+
 
 some text in-betwen
 

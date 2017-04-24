@@ -71,11 +71,31 @@ Credentials are case sensitive:
 </div>
 
 <div id='div_cyverse' style="display:none;">
+
 CyVerse!!
+
+- are MD lists formatted properly?
+- list item 2?
+
+* what about bullet ones?
+* bullet item 2?
+
+**bold** items go Here
+
+* emphasized items here *
+
+`quoting code`
+
+> a block section of quoted text
+
+and an in-line URL and anchor to [the DataCarpentry website](http://www.datacarpentry.org/)
+
 </div>
 
 <div id='div_hpc' style="display:none;">
+
 HPC Cluster!!
+
 </div>
 
 

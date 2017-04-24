@@ -55,7 +55,7 @@ The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or
 
 This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
 
-<span id="div_aws" style="display:block" markdown="1">
+<div id="div_aws" style="display:block" markdown="1">
 
 > To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on [launching cloud instances on your own](../discuss/) for instructions on how to do this yourself. 
 
@@ -65,7 +65,7 @@ Credentials are case sensitive:
 - Username: dcuser
 - Password: data4Carp
 
-</span>
+</div>
 
 some text in-between
 
@@ -96,6 +96,15 @@ and an in-line URL and anchor to [the DataCarpentry website](http://www.datacarp
 HPC Cluster!!
 
 </div>
+
+More spacer text
+
+<div id='div_aws' style="display:block" markdown="1">
+
+Duplicate 'div_aws' ID. Let's see what happens?
+
+</div>
+
 
 
 #### **Connecting using PC**<br>

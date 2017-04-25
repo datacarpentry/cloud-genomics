@@ -21,9 +21,13 @@ objectives:
 
 function setClassDisplayMode(className, displayValue){
     var classList = document.getElementsByClassName(className);
-    classList.forEach( function(element){
+    //classList.forEach( function(element){
+    //    element.style.display = displayValue; 
+    //});
+    Array.prototype.forEach.call(classList, function(element){
         element.style.display = displayValue; 
-    });
+        }
+    ); 
 }
 
 function set_page_view_defaults() {

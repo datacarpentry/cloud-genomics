@@ -1,5 +1,5 @@
 ---
-title: "Data to and from "
+title: "Introuducing FASTQ format and error profiles"
 teaching: 0
 exercises: 0
 questions:
@@ -8,12 +8,6 @@ objectives:
 - "First objective."
 keypoints:
 - "First key point."
----
-
----
-title: "Introuducing FASTQ format and error profiles"
-author: "Mary Piper, Meeta Mistry"
-date: "Thursday, March 31, 2016"
 ---
 
 Approximate time: 

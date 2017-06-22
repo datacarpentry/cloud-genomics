@@ -73,21 +73,7 @@ This is the first and last place in these lessons where it will matter if you ar
 
 #### CyVerse
 
-- are MD lists formatted properly?
-- list item 2?
-
-* what about bullet ones?
-* bullet item 2?
-
-**bold** items go Here
-
-*emphasized items here*
-
-`quoting code`
-
-> a block section of quoted text
-
-and an in-line URL and anchor to [the DataCarpentry website](http://www.datacarpentry.org/)
+> **There needs to be content**
 
 </div>
 
@@ -95,7 +81,7 @@ and an in-line URL and anchor to [the DataCarpentry website](http://www.datacarp
 
 #### HPC Cluster
 
-**content?**
+> **There needs to be content**
 
 </div>
 

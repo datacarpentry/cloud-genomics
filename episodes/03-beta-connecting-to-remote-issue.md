@@ -1,5 +1,5 @@
 ---
-title: "Connecting to Remote Instance"
+title: "Connecting to a Remote Instance"
 teaching: 0
 exercises: 0
 questions:
@@ -46,31 +46,32 @@ You'll know you need to start working on the cloud when...
 
 The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or an ATM involves remote computing). The topic is fascinating but this lesson says '5 minutes or less' so let's get connected. 
 
+This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
+
 **Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws" id="id_aws" selected> AWS </option><option value="cyverse" id="id_cyverse"> CyVerse </option><option value="hpc" id="id_hpc"> HPC/HTC cluster </option></select>**
 
 ## Exercises
 
 ### **A. Connecting to a remote machine via SSH**
 
-This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
-
 <div id="div_aws" style="display:block" markdown="1">
 
+#### AWS
+
 > To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on [launching cloud instances on your own](../discuss/) for instructions on how to do this yourself. 
-
-**User Credentials**
-Credentials are case sensitive:
-
-- Username: dcuser
-- Password: data4Carp
+>
+> **User Credentials**
+> Credentials are case sensitive:
+>
+>  - Username: dcuser
+>  - Password: data4Carp
 
 </div>
 
-some text in-between
 
 <div id='div_cyverse' style="display:none" markdown="1">
 
-CyVerse!!
+#### CyVerse
 
 - are MD lists formatted properly?
 - list item 2?
@@ -80,7 +81,7 @@ CyVerse!!
 
 **bold** items go Here
 
-* emphasized items here *
+*emphasized items here*
 
 `quoting code`
 
@@ -92,10 +93,11 @@ and an in-line URL and anchor to [the DataCarpentry website](http://www.datacarp
 
 <div id='div_hpc' style="display:none" markdown="1">
 
-HPC Cluster!!
+#### HPC Cluster
+
+**content?**
 
 </div>
-
 
 
 #### **Connecting using PC**<br>

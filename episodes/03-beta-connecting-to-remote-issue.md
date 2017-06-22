@@ -1,9 +1,8 @@
 ---
-title: "Why of cloud computing"
+title: "Connecting to Remote Instance"
 teaching: 0
 exercises: 0
 questions:
-- What is cloud computing?
 - How do I log into a remote server?
 objectives:
 - Understand benefits of working on a remote computer system

@@ -27,7 +27,7 @@ keypoints:
 
 ### Our computing environment
 
-We're using the `dataCgen-qc` (ami-3c1c3454) Amazon Machine Image for this analysis. The directory structure looks like this:
+We're using the `dataCgen-qc` (ami-3c1c3454) [Amazon Machine Image](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) for this analysis. The directory structure looks like this:
 
 ```
 /home/ec2-user/
@@ -103,9 +103,9 @@ cd qc
 ls -l
 ```
 
-The results are presented in an HTML file, but we can only open HTML files in browser, so we need to transfer this data back to our local machine and open it in chrome or firefox or something.
+The results are presented in an HTML file, but HTML files can only be opended in a browser. We need to transfer this data to our local machine and open it in a browser, e.g. Chrome or Firefox.
 
-One way to do this is using the command line:
+One way to do this is by using the command line:
 
 ```bash
 # On your remote server, where is your data?
@@ -117,7 +117,7 @@ scp -i /path/to/key.pem username@ipaddress:~/path/to/html/file.html /some/local/
 scp -i ~/key.pem ec2-user@123.45.67.890:/home/ec2-user/data/SRR/qc .
 ```
 
-Alternatively, we could use a file transfer client (e.g., <https://cyberduck.io/>) to transfer the data graphically, as in the [instructions here](http://angus.readthedocs.org/en/2014/amazon/transfer-files-between-instance.html). Essentially, you'll want to open a new SFTP connection to the DNS address you were given using the key file to "get into" the instance and transfer the data.
+Alternatively, we could use a file transfer client (e.g., <https://cyberduck.io/>) to transfer the data using a graphical user interface, as in these [instructions here](http://angus.readthedocs.org/en/2014/amazon/transfer-files-between-instance.html). Essentially, you'll want to open a new SFTP connection to the DNS address you were given using the key file to "get into" the instance and transfer the data.
 
 ### Interpreting FastQC results
 
@@ -137,7 +137,7 @@ We're going to use a tool called Trimmomatic to trim and filter our sequence dat
 - **Software**: <http://www.usadellab.org/cms/?page=trimmomatic>
 - **Manual**: <http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf> 
 
-Trimmomatic is a fast, multithreaded command line tool that can be used to trim and crop Illumina (FASTQ) data as well as to remove adapters. 
+Trimmomatic is a fast, multithreaded command line tool that can be used to trim and crop Illumina (FASTQ) data, as well as to remove adapters. 
 
 The FastQC report above found evidence of adapter contamination, but adapter removal is a bit tricky so we're going to skip that here (but you should check out the manual above and try it on your own using the `TruSeq-3-PE-2.fa` adapter file in the Trimmomatic directory).
 

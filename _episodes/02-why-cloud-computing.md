@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Why of cloud computing"
 teaching: 0
 exercises: 0
 questions:

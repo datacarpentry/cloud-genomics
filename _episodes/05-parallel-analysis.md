@@ -3,35 +3,26 @@ title: "Parallel analysis"
 teaching: 0
 exercises: 0
 questions:
-- "Key question"
+- "Why would we use parallel computing?"
+- "How can we use parallel computing?"
 objectives:
-- "First objective."
+- "List the advantages of parallel computing as compared to serial computing."
+- "Determine if your analysis can take advantage of multiple CPU cores."
+- "Differentiate between a process and a thread in relation to CPU cores."
+- "Define the terms *process* and *job*."
+- "Monitor and kill processes."
+- "Run programs in the foreground and in the background."
+- "Describe best practices for running multiple analyses at once (from multiple screens to background)"
+- "Launching programs via gnu_parallel"
+- "(HPC) Run programs as jobs on a cluster."
+- "(HPC) Run programs as jobs via a job scheduler."
+
 keypoints:
-- "First key point."
+- "Parallel computing saves time with concurrent processing."
 ---
 
 
 ## Starting a Parallel Analysis
-
-### Learning objectives
-
-* ?Running programs in the foreground vs background
-* Difference between a process and a thread, and how this related to CPU cores
-* Process management
-* How to determine if your application can take advantage of multiple CPU cores
-* Running jobs in the background vs running jobs across a cluster
-* Best practices for running multiple analysis (from multiple screens to background)
-* (HPC) A process is a job is a process
-* (HPC) Running programs as jobs on a cluster
-
-### Skills to be acquired
-
-* Running an analysis on a large # of jobs serially
-* Running analyses in parallel (background)
-* Monitoring and killing processes
-* Launching programs via gnu_parallel
-* (HPC) Running programs as jobs via scheduler
-
 
 ### Running a number of programs serially
 

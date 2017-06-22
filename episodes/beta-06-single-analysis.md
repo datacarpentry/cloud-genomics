@@ -62,6 +62,8 @@ The run that starts with `SRR519926` is a paired-end 2x250bp MiSeq run on _Esche
 
 Since this was done several years ago when 2x250 reads were relatively new, I would expect the quality to degrade rather severely toward the end of the reads. There may also be some other issues that we're unaware of. Let's take a look at the quality of the data with [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/).
 
+[Additional information about using FastQC and Trimmomatic can be found here.](
+
 ## Quality assessment
 
 ### Check available resources

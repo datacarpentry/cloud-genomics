@@ -79,3 +79,5 @@ Topic: process vs. thread (is your application threaded and can I tell?)
 
 ### ? Python multiprocessing; Rparallel; Rbatchjobs; Rmpi; Rsnow
 
+other ideas
+

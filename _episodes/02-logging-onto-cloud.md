@@ -324,5 +324,5 @@ When you are finished with your instance, you must terminate. Follow the followi
 2. Under 'My Instances' select the instance you wish to terminate and the click the black 'X' or find the 'Terminate' button and click. 
 
     > **Warning:** This will delete any data on this instance, so you must move any data you wish to save off the instance (for example by using iCommands). 
-5. After reading the warning and confirming you are ready, click 'Terminate' to terminate the instance. 
+5. After reading the warning and confirming you are ready, then click 'Terminate' to terminate the instance.
 

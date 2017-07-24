@@ -80,14 +80,14 @@ We will provide instructions for working on the *Amazon* and the *Atmosphere* cl
 3. Click the 'Launch Instance' button
     ![](./images/logging-onto-cloud_1.png)
 4. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for **ami-6516b30e**; select this image. 
-    ![](./images/logging-onto-cloud_2.png)
+    ![](fig/logging-onto-cloud_2.png)
 5. For 'Choose and Instance Type' select **t2.medium**; then click 'Review and Launch' 
-    ![](./images/logging-onto-cloud_3.png)   
+    ![](fig/logging-onto-cloud_3.png)   
   
     > **Tip:** You can select larger instances, but these will cost more to run. Also for the 'Review Instance Launch' you will get some warning about instance security. We will not go into detail here about security groups. However, you should know that when you launch an instance, you will want to take steps to make sure no one maliciously accesses your instance. For example, never give your security credentials (next step) to another user.
 6. For the 'Review Instance Launch' step, click 'Launch'
 7. You will be asked to Select an existing key pair or create a new key pair. Select 'Proceed without a key pair' and select the acknowledgement you are given. Then click 'Launch Instances' 
-    ![](./images/logging-onto-cloud_4.png)
+    ![](fig/logging-onto-cloud_4.png)
 
 You instance will now be launched. You should follow the links to 'Create billing alerts'. 
 
@@ -97,9 +97,9 @@ You instance will now be launched. You should follow the links to 'Create billin
 
 1. Log into your AWC EC2 Dashboard [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 2. You should see that you have one instance, to proceed the instance state must be 'running' (if you just launched the instance it will take <5 min for the instance to start running)
-    ![](./images/logging-onto-cloud_5.png)
+    ![](fig/logging-onto-cloud_5.png)
 3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect. 
-    ![](./images/logging-onto-cloud_6.png)
+    ![](fig/logging-onto-cloud_6.png)
 4. Open the terminal application on your Mac and use 'ssh' to connect. Your command will be:
 
    ```bash
@@ -125,9 +125,9 @@ $
 1. Download the PuTTY application at: [http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
 1. Log into your AWC EC2 Dashboard [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 2. You should see that you have one instance, make sure instance state is 'running' (if you just launched the instance it will take <5 min for the instance to start running)
-    ![](./images/logging-onto-cloud_5.png)
+    ![](fig/logging-onto-cloud_5.png)
 3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect. 
-    ![](./images/logging-onto-cloud_6.png)
+    ![](fig/logging-onto-cloud_6.png)
 4. Start PuTTY. In the section 'Specify the destination you want to connect to' for 'Host Name (or IP address)' paste in the DNS address and click 'Open'
 5. When prompted to login as, enter 'dcuser'; you may be notified that the authenticity of the host cannot be verified - if so, ignore the warning an continue connecting
 6. When prompted for a password enter 'data4Carp'
@@ -155,7 +155,7 @@ When you are finished with your instance, you must terminate. Follow the followi
 1. Sign into AWS and go to the EC2 Dashboard: [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 2. Under 'Resources' select 'Running Instances'
 3. Select the instance you wish to terminate, then click 'Actions'
-    ![](./images/logging-onto-cloud_7.png)
+    ![](fig/logging-onto-cloud_7.png)
 4. Under 'Instance State' select terminate. 
 
     > **Warning:** This will delete any data on this instance, so you must move any data you wish to save off the instance.
@@ -174,12 +174,12 @@ When you are finished with your instance, you must terminate. Follow the followi
 1. Sign into Atmosphere at: [https://atmo.cyverse.org/](https://atmo.cyverse.org/)
 
 2. Under 'Select an Image', search for the 'TSW Workshop Williams 1.2' image; Select this image. 
-    ![](./images/logging-onto-cloud_8.png)
+    ![](fig/logging-onto-cloud_8.png)
 3. Under instance size select **'small2'** size. 
 
     > **Tip:** You can select a larger instance, but you must have sufficient resources (no exceeded quotas). If Atmosphere is at high capacity, you may not be able to launch an instance if the instance size exceeds what is currently free on the cloud provider
 5. If desired, you may name your instance; click 'Launch Instance'
-    ![](./images/logging-onto-cloud_9.png)
+    ![](fig/logging-onto-cloud_9.png)
 
 Your instance should be ready in 10-15 minutes. When your instance status is listed as 'active' you will be able to connect. 
 
@@ -191,7 +191,7 @@ Your instance should be ready in 10-15 minutes. When your instance status is lis
 1. If necessary, log into your Atmosphere at: [https://atmo.cyverse.org/](https://atmo.cyverse.org/)
 
 2. Verifying that your instance status is **'active'**, copy the IP address (e.g. 128.123.12.34) to your clipboard. 
-    ![](./images/logging-onto-cloud_10.png)
+    ![](fig/logging-onto-cloud_10.png)
 3. Open the terminal application on your Mac and use 'ssh' to connect. Your command will be:
 
     ```bash
@@ -237,7 +237,7 @@ cyverseusername@vm65-164:~$ pwd
 1. If necessary, log into your Atmosphere at: [https://atmo.cyverse.org/](https://atmo.cyverse.org/)
 
 2. Verifying that your instance status is **'active'**, copy the IP address (e.g. 128.123.12.34) to your clipboard. 
-    ![](./images/logging-onto-cloud_10.png)
+    ![](fig/logging-onto-cloud_10.png)
 4. Start PuTTY. In the section 'Specify the destination you want to connect to' for 'Host Name (or IP address)' paste in the DNS address and click 'Open'
 5. When prompted to login as, enter your CyVerse username; you may be notified that the authenticity of the host cannot be verified - if so, ignore the warning an continue connecting
 6. When prompted for a password enter your CyVerse password. 

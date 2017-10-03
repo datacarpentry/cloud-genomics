@@ -26,12 +26,14 @@ keypoints:
 The most important thing about *The Cloud* is choice - instead of purchasing a physical computer, you can obtain on-demand computing at almost any scale. This power comes with advantages and disadvantages:
 
 **Advantages of Cloud Computing**
+
 * Access large amounts of computing power on demand
 * Full administrative rights - install anything
 * Use pre-con../figured images (software already installed)
  
 
 **Disadvantages of Cloud Computing**
+
 * Cloud computing costs money (you must keep track of your costs)
 * If you need help, you may not have a local system administrator 
 * Images may be poorly documented (you may not be clear on what is installed, or how to use it)
@@ -47,9 +49,7 @@ There are several cloud providers to choose from. Some scientific clouds may eit
 
 #### Open Science Clouds
 * [Atmosphere](https://pods.iplantcollaborative.org/wiki/display/atmman/Getting+Started)
-* [JetStream](http://jetstream-cloud.org/)*
-
-\* Coming in 2016
+* [JetStream](http://jetstream-cloud.org/)
 
 
 ## Launching an Cloud Instance (Virtual Machine)
@@ -78,7 +78,7 @@ We will provide instructions for working on the *Amazon* and the *Atmosphere* cl
 1. Sign into AWS EC2 Dashboard: [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 2. Ensure that you're in the Northern Virginia region.  Your current region, which is the physical location where your computer will be launched, is listed in the upper right corner of your screen next to "Support".  If something other than "N. Virginia" is listed, click on the region name to change it. Otherwise you will be unable to find the Data Carpentry image used in this lesson.
 3. Click the 'Launch Instance' button
-    ![](./images/logging-onto-cloud_1.png)
+    ![](../fig/logging-onto-cloud_1.png)
 4. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for **ami-6516b30e**; select this image. 
     ![](../fig/logging-onto-cloud_2.png)
 5. For 'Choose and Instance Type' select **t2.medium**; then click 'Review and Launch' 
@@ -102,24 +102,25 @@ You instance will now be launched. You should follow the links to 'Create billin
     ![](../fig/logging-onto-cloud_6.png)
 4. Open the terminal application on your Mac and use 'ssh' to connect. Your command will be:
 
-   ```bash
-$ ssh dcuser@your.amazon.dns
-```
+       $ ssh dcuser@your.amazon.dns
+    {: .bash}
+
 5. Your computer will be unable to verify the authenticity of the host... type **yes** to continue connecting
 6. Then enter the password for this computer: 'data4Carp'
 
 You should now be connected to your personal instance. You can confirm this with the following commands; ``whoami``,``pwd``,``ls``, which should yield the following results:
 
-```bash
-Last login: Thu Jul 30 13:21:08 2015 from 8.sub-70-197-200.myvzw.com
-$ whoami
-dcuser
-$ pwd
-/home/dcuser
-$ ls
-dc_sample_data	FastQC	Trimmomatic-0.32
-$ 
-```
+    Last login: Thu Jul 30 13:21:08 2015 from 8.sub-70-197-200.myvzw.com
+    $ whoami
+    dcuser
+    $ pwd
+    /home/dcuser
+    $ ls
+    dc_sample_data	FastQC	Trimmomatic-0.32
+    $
+{: .bash}
+
+
 **Instructions for PC**
 
 1. Download the PuTTY application at: [http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
@@ -134,19 +135,24 @@ $
 
 You should now be connected to your personal instance. You can confirm this with the following commands; ``whoami``,``pwd``,``ls``, which should yield the following results:
 
-```bash
-Last login: Thu Jul 30 13:21:08 2015 from 8.sub-70-197-200.myvzw.com
-$ whoami
-dcuser
-$ pwd
-/home/dcuser
-$ ls
-dc_sample_data	FastQC	Trimmomatic-0.32
-$ 
-```
+    Last login: Thu Jul 30 13:21:08 2015 from 8.sub-70-197-200.myvzw.com
+    $ whoami
+    dcuser
+    $ pwd
+    /home/dcuser
+    $ ls
+    dc_sample_data	FastQC	Trimmomatic-0.32
+    $
+{: .bash}
 
-#**Very Important Warning - Avoid Unwanted Charges**
-Please remember, for as long as this instance is running, you will be charged for your usage. You can see an estimate of the current charge from your AWS EC2 dashboard by clicking your name (Account name) on the upper right of the dashboard and selecting 'Billing & Cost Management'. **DO NOT FORGET TO TERMINATE YOUR INSTANCE WHEN YOU ARE DONE**
+
+> ## **Very Important Warning - Avoid Unwanted Charges**
+>
+> Please remember, for as long as this instance is running, you will be charged for your usage. You can see an estimate of the current charge from your AWS EC2 dashboard by clicking your name (Account name) on the upper right of the dashboard and selecting 'Billing & Cost Management'.
+>
+> **DO NOT FORGET TO TERMINATE YOUR INSTANCE WHEN YOU ARE DONE**
+{: .callout .error}
+
 
 ### Terminating your instance
 
@@ -194,39 +200,36 @@ Your instance should be ready in 10-15 minutes. When your instance status is lis
     ![](../fig/logging-onto-cloud_10.png)
 3. Open the terminal application on your Mac and use 'ssh' to connect. Your command will be:
 
-    ```bash
+        $ ssh cyverseusername@your.atmosphere.ipaddress
+    {: .bash}
 
-$ ssh cyverseusername@your.atmosphere.ipaddress
-
-```
 5. Your computer will be unable to verify the authenticity of the host... type **yes** to continue connecting
 6. When prompted for a password, enter your CyVerse username. 
 
 You should now be connected to your personal instance. You can confirm this with the following commands; ``whoami``,``pwd``, which should yield the following results:
 
-```bash
-    _   _                             _
-   / \ | |_ _ __ ___   ___  ___ _ __ | |__   ___ _ __ ___
-  / _ \| __| '_ ` _ \ / _ \/ __| '_ \| '_ \ / _ \ '__/ _ \
- / ___ \ |_| | | | | | (_) \__ \ |_) | | | |  __/ | |  __/
-/_/   \_\__|_| |_| |_|\___/|___/ .__/|_| |_|\___|_|  \___|
-                               |_|
-
-iPlant Collaborative 
-
-The user manual is located here: http://goo.gl/2pT72
-
-To backup user data or volumes on a instance: https://goo.gl/hEcS59
-
-For assistance, contact support@iplantcollaborative.org.  
-
-Last login: Fri Aug 14 10:16:50 2015 from dhcp140-78.cshl.edu
-
-cyverseusername@vm65-164:~$ whoami
-cyverseusername
-cyverseusername@vm65-164:~$ pwd
-/home/cyverseusername
-```
+        _   _                             _
+       / \ | |_ _ __ ___   ___  ___ _ __ | |__   ___ _ __ ___
+      / _ \| __| '_ ` _ \ / _ \/ __| '_ \| '_ \ / _ \ '__/ _ \
+     / ___ \ |_| | | | | | (_) \__ \ |_) | | | |  __/ | |  __/
+    /_/   \_\__|_| |_| |_|\___/|___/ .__/|_| |_|\___|_|  \___|
+                                   |_|
+    
+    iPlant Collaborative 
+    
+    The user manual is located here: http://goo.gl/2pT72
+    
+    To backup user data or volumes on a instance: https://goo.gl/hEcS59
+    
+    For assistance, contact support@iplantcollaborative.org.  
+    
+    Last login: Fri Aug 14 10:16:50 2015 from dhcp140-78.cshl.edu
+    
+    cyverseusername@vm65-164:~$ whoami
+    cyverseusername
+    cyverseusername@vm65-164:~$ pwd
+    /home/cyverseusername
+{: .bash}
 **Note**: In the above example 'cyverseusername' will be your actual CyVerse username. 
 
 
@@ -243,30 +246,29 @@ cyverseusername@vm65-164:~$ pwd
 6. When prompted for a password enter your CyVerse password. 
 
 You should now be connected to your personal instance. You can confirm this with the following commands; ``whoami``,``pwd``, which should yield the following results:
-
-```bash
-    _   _                             _
-   / \ | |_ _ __ ___   ___  ___ _ __ | |__   ___ _ __ ___
-  / _ \| __| '_ ` _ \ / _ \/ __| '_ \| '_ \ / _ \ '__/ _ \
- / ___ \ |_| | | | | | (_) \__ \ |_) | | | |  __/ | |  __/
-/_/   \_\__|_| |_| |_|\___/|___/ .__/|_| |_|\___|_|  \___|
-                               |_|
-
-iPlant Collaborative 
-
-The user manual is located here: http://goo.gl/2pT72
-
-To backup user data or volumes on a instance: https://goo.gl/hEcS59
-
-For assistance, contact support@iplantcollaborative.org.  
-
-Last login: Fri Aug 14 10:16:50 2015 from dhcp140-78.cshl.edu
-
-cyverseusername@vm65-164:~$ whoami
-cyverseusername
-cyverseusername@vm65-164:~$ pwd
-/home/cyverseusername
-```
+    
+        _   _                             _
+       / \ | |_ _ __ ___   ___  ___ _ __ | |__   ___ _ __ ___
+      / _ \| __| '_ ` _ \ / _ \/ __| '_ \| '_ \ / _ \ '__/ _ \
+     / ___ \ |_| | | | | | (_) \__ \ |_) | | | |  __/ | |  __/
+    /_/   \_\__|_| |_| |_|\___/|___/ .__/|_| |_|\___|_|  \___|
+                                   |_|
+    
+    iPlant Collaborative 
+    
+    The user manual is located here: http://goo.gl/2pT72
+    
+    To backup user data or volumes on a instance: https://goo.gl/hEcS59
+    
+    For assistance, contact support@iplantcollaborative.org.  
+    
+    Last login: Fri Aug 14 10:16:50 2015 from dhcp140-78.cshl.edu
+    
+    cyverseusername@vm65-164:~$ whoami
+    cyverseusername
+    cyverseusername@vm65-164:~$ pwd
+    /home/cyverseusername
+{: .bash}
 **Note**: In the above example 'cyverseusername' will be your actual CyVerse username. 
 
 
@@ -283,9 +285,9 @@ iCommands will allow you to quickly transfer data into your Atmosphere instance:
 
 1. Initialize iCommands using the following command
 
-    ```bash 
-$ iinit
-```
+        $ iinit
+    {: .bash}
+
 2. You will then be asked to setup your account and will need to enter the following information
 
     |Prompt|Entry|
@@ -298,16 +300,16 @@ $ iinit
 
 3. Verify that you have connected to your CyVerse Data Store; view the contents of your home directory using the following the ``ils`` command:
 
-    ```bash
-$ ils
-```
+        $ ils
+    {: .bash}
+
 ## Copy Sample Data to your instance
 
 1. Enter the following command:
    
-    ```bash
-$ iget -rPVT /iplant/home/shared/iplant_training/data_carpentry_ngs/dc_sampledata_lite .
-```
+        $ iget -rPVT /iplant/home/shared/iplant_training/data_carpentry_ngs/dc_sampledata_lite .
+    {: .bash}
+
 2. using ``ls`` you should be able to verify you have downloaded the dc_sampledata_lite directories and files. 
 
 

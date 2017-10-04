@@ -1,9 +1,9 @@
 ---
-title: "Single analysis"
+title: "Single analysis alternate"
 teaching: 0
 exercises: 0
 questions:
-- "Key question"
+- "Is this, or episode 7 the required episode?"
 objectives:
 - "First objective."
 keypoints:

@@ -37,13 +37,16 @@ function change_content_by_platform(form_control){
 window.onload = set_page_view_defaults;
 </script>
 
-There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) won't work on these laptops and must be run on remote machines. 
+There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops or desktops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) are too large to run on these laptops/desktops and require larger machines, often several of them, where remote access is the only practical solution.
+
+In recent years computational power became a commodity and entire companies were built around a business model that allows you to "rent" computers for as long as you require, at relatively low cost. This is the basic principle behind the **cloud**. You define your computational requirements and off you go.
 
 You'll know you need to start working on the cloud when...
 
 - Your computer does not have enough resources to run the desired analysis (memory, processors, disk space, network bandwidth).
 - Your computer is taking hours or days to get through an analysis.
 - You cannot install software on your computer (application does not have support for your operating system, conflicts with other existing applications, etc.)
+- You cannot afford the infrastructure (hardware, bandwidth, power supply) required to acquire and maintain sufficiently large computers for your analysis.
 
 The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or an ATM involves remote computing). The topic is fascinating but this lesson says '5 minutes or less' so let's get connected. 
 
@@ -53,11 +56,12 @@ The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or
 
 ### **A. Connecting to a remote machine via SSH**
 
-This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect, we will all be on the same operating system/computing environment. 
+We will use a protocol called Secure Shell (SSH) that, as the name implies, provides you with a secure way to use a [shell](http://swcarpentry.github.io/shell-novice). In our case, the shell will be running on a remote machine. 
+This protocol is available in several software for every operating system. This is the first and last place in these lessons where it will matter if you are using PC, Mac, or Linux. After we connect using SSH, we will all be on the same operating system/computing environment. 
 
 <div id="div_aws" style="display:block" markdown="1">
 
-> To save time, your instructor will have launched an remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on [launching cloud instances on your own](../discuss/) for instructions on how to do this yourself. 
+> To save time, your instructor will have launched a remote computer (instance) for you prior to the workshop. If you are following these lessons on your own, or after the workshop see the lesson on [launching cloud instances on your own](../discuss/) for instructions on how to do this yourself. 
 
 **User Credentials**
 Credentials are case sensitive:

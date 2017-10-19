@@ -1,6 +1,6 @@
 ---
 title: "Why of cloud computing"
-teaching: 0
+teaching: 5
 exercises: 0
 questions:
 - What is cloud computing?

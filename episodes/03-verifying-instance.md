@@ -1,7 +1,7 @@
 ---
 title: "Fine tuning your Cloud Setup"
 teaching: 5
-exercises: 0
+exercises: 10
 questions:
 - Is my remote computer correctly configured?
 - How do I keep my processing going when I leave?
@@ -15,6 +15,9 @@ objectives:
 Once you're connected to your new remote instance, it's a good idea to double check that
 the settings are what you wanted, and that everything is working smoothly before you start
 your project.
+
+For this workshop, your instructor did all the verification before the workshop
+even started, but this is an important skill for when you start running your own instances.
 
 
 ## Verifying your connection
@@ -69,7 +72,7 @@ dcuser@ip-172-31-62-209 ~ $ whoami
 dcuser
 ```
 
--  `df -h` - shows space on hard drive* 
+-  `df -h` - shows space on hard drive*
 
 ```bash
 dcuser@ip-172-31-62-209 ~ $ df -h
@@ -83,7 +86,7 @@ none            2.0G  144K  2.0G   1% /run/shm
 none            100M   36K  100M   1% /run/user
 ```
 
-\* Under the column 'Mounted on' row that has '/' as the value shows the value for the main disk. 
+\* Under the column 'Mounted on' row that has '/' as the value shows the value for the main disk.
 
 - `cat /proc/cpuinfo` - shows detail information on how many processors (CPUs) the machine has
 
@@ -141,7 +144,7 @@ cache_alignment	: 64
 address sizes	: 46 bits physical, 48 bits virtual
 power management:
 ```
-- `tree -L 1` - shows a tree view of the file system 1 level below your current location. 
+- `tree -L 1` - shows a tree view of the file system 1 level below your current location.
 
 ```bash
 dcuser@ip-172-31-62-209 ~ $ tree -L 1
@@ -155,20 +158,20 @@ dcuser@ip-172-31-62-209 ~ $ tree -L 1
 └── Trimmomatic-0.32
 
 7 directories, 0 files
-``` 
+```
 
 ## Staying Connected to the Cloud
 
-Depending on how you connect to the cloud, you may have processes and jobs that are 
-running, and will need to continue running for sometime. If you have collected to your 
-cloud desktop via VNC, jobs you start will continue to run. If you are connecting via SSH, 
-if you end the SSH connection (e.g. you exit your SSH session, you loose your connection 
-to the internet, you close your laptop, etc.), jobs that are still running when you 
-disconnect. There are a few ways to keep cloud processes running in the background. 
-Many times when we refer to a background process we are talking about what is 
-[described at this tutorial](http://www.cyberciti.biz/faq/linux-command-line-run-in-background/) - 
-running a command and returning to shell prompt. Here we describe a program that will 
-allow us to run our entire shell and keep that process running even if we disconnect: `tmux`. 
+Depending on how you connect to the cloud, you may have processes and jobs that are
+running, and will need to continue running for sometime. If you have collected to your
+cloud desktop via VNC, jobs you start will continue to run. If you are connecting via SSH,
+if you end the SSH connection (e.g. you exit your SSH session, you loose your connection
+to the internet, you close your laptop, etc.), jobs that are still running when you
+disconnect. There are a few ways to keep cloud processes running in the background.
+Many times when we refer to a background process we are talking about what is
+[described at this tutorial](http://www.cyberciti.biz/faq/linux-command-line-run-in-background/) -
+running a command and returning to shell prompt. Here we describe a program that will
+allow us to run our entire shell and keep that process running even if we disconnect: `tmux`.
 
 ### tmux
 
@@ -181,10 +184,10 @@ A 'session' can be thought of as a window for `tmux`, you might open an terminal
 
 ```bash
     $ tmux new -s session_name
-``` 
+```
 This creates a session with the name 'session_name'
 
-As you work, this session will stay active until you close this session. Even if you disconnect from your machine, the jobs you start in this session will run till completion. 
+As you work, this session will stay active until you close this session. Even if you disconnect from your machine, the jobs you start in this session will run till completion.
 
 **Seeing active sessions**
 
@@ -222,4 +225,3 @@ $ tmux kill-session -t session_name
 FIXME: This is another program that has mostly the same capabilities as tmux, and we should add
 a list of the same commands that we have for tmux incase they end up on a system that only
 has screen.
-

@@ -121,7 +121,7 @@ please follow the instructions for your system
 
 ## Uploading Data to your Virtual Machine
 
-If your using a PC, we recommend you use the *PSCP* program. This program is from the same suite of
+If you're using a PC, we recommend you use the *PSCP* program. This program is from the same suite of
 tools as the putty program we have been using to connect.
 
 1. If you haven't done so, download pscp from [http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)

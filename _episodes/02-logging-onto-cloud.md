@@ -38,7 +38,7 @@ If you're returning post-workshop and want to launch your own instance, use [lau
 
 ## Background to AWS
 
-Setting up a new AWS instance requires a credit card, and AWS account, and up to
+Setting up a new AWS instance requires a credit card, an AWS account, and up to
 a day of verification time, but you've already spent most of this workshop working in the cloud!
 To save time, your instructor launched a remote computer (instance) for you prior
 to the workshop, and connected it to our lesson data. You've already logged into it at

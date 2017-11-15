@@ -26,26 +26,26 @@ Many universities and businesses operate their own computing clusters that are a
 at low or no cost. If your employer maintains a computing cluster, this will almost always be the least
 expensive option.
 
-However, most HPCs put limits on:
+However, most HPCCs (High Performance Computing Clusters) put limits on:
  - the number of processors a user can utilize at once
  - the amount of disk storage per user
  - the amount of time a single process can run
  - what programs can be installed, and by whom
  - who can have accounts and access data
 
- HPCs are also a shared resource, so even when you have access, your programs are unlikely to run
- immediately. Most HPCs run some kind of scheduler, that you submit your processing jobs to, and
+ HPCCs are also a shared resource, so even when you have access, your programs are unlikely to run
+ immediately. Most HPCCs run some kind of scheduler, that you submit your processing jobs to, and
  it runs them as resources become available. In order to submit a job, you generally will need to
  know not only what program you want to run, but with how many processors and for how long.
  While interacting with the scheduler is no more difficult than interacting with the shell,
- it will have it's own set of commands and syntax that you'll need to learn; and these vary
- widely between HPCs.
+ it will have its own set of commands and syntax that you'll need to learn; and these vary
+ widely among HPCCs.
 
- There are also many upsides to using an HPC. As previously mentioned, they're generally the least
- expensive option, but they often come with more perks. For instance, many HPCs offer free or low-cost
- training, storage space, back-up options, and technical support. If your HPC has a scheduler, you
+ There are also many upsides to using an HPCC. As previously mentioned, they're generally the least
+ expensive option, but they often come with more perks. For instance, many HPCCs offer free or low-cost
+ training, storage space, back-up options, and technical support. If your HPCC has a scheduler, you
  can also queue up many sequential jobs all at once, and you don't have to worry about racking up
- fees on instances that are sitting idle. It's often also much easier to pay for HPC use than to
+ fees on instances that are sitting idle. It's often also much easier to pay for HPCC use than to
  pay for Amazon using grant money, however universities are getting better about AWS payments.
 
 ### Public Computing Clusters

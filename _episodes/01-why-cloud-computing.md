@@ -7,6 +7,8 @@ questions:
 - What are the tradeoffs of cloud computing?
 objectives:
 - Understand benefits of working on a remote computer system
+keypoints:
+- Cloud computing increases processing speed and efficiency
 ---
 
 There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops or desktops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) are too large to run on these laptops/desktops and require larger machines, often several of them, where remote access is the only practical solution.

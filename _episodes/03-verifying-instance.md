@@ -8,6 +8,9 @@ questions:
 objectives:
 - Check the available resources and file system on your remote machine
 - Keep background processes working in the cloud with `tmux`
+keypoints:
+- Always check a new instance to verify it started correctly
+- Using a program like `tmux` can keep your work going even if your internet connection is bad
 ---
 
 # Is this the right cloud?

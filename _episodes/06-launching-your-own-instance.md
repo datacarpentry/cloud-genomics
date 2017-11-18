@@ -6,8 +6,10 @@ questions:
 - How do I use cloud resources on my own?
 objectives:
 - Be able to launch an Amazon instance
-- In beta: Be able to launch an Atmosphere/Cyverse instance
-- Coming soon: Be able to connect to an HPC
+- In beta- Be able to launch an Atmosphere/Cyverse instance
+- Coming soon- Be able to connect to an HPC
+keypoints:
+- Always terminate your instance when your analysis is complete
 ---
 
 

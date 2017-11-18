@@ -9,6 +9,8 @@ objectives:
 - Describe the advantages and disadvantages of various cloud computing platforms.
 - Determine what resources a project will require
 - Match required resources to computing platforms
+keypoints:
+- Choose your cloud resource to best fit your budget and flexibility requirements
 ---
 
 

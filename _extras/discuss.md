@@ -72,9 +72,10 @@ We will provide instructions for working on the *Amazon* and the *Atmosphere* cl
 
 #### Sign into AWS and Launch an Instance
 1. Sign into AWS EC2 Dashboard: [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
+
 2. Click the 'Launch Instance' button  
 <img src="../fig/logging-onto-cloud_1.png" width="500">
-3. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for **ami-07b4456a**; select this image  
+3. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for **ami-373ab74d**; select this image  
 <img src="../fig/logging-onto-cloud_2.png" width="500">
 4. For 'Choose and Instance Type' select **t2.medium**; then click 'Review and Launch'  
 <img src="../fig/logging-onto-cloud_3.png" width="500">  

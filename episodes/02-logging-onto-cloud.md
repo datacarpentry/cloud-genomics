@@ -37,7 +37,7 @@ window.onload = set_page_view_defaults;
 
 This lesson covers how to log into, and out of, an *already running* Amazon instance.
 
-If you're returning post-workshop and want to launch your own instance, use [launching cloud instances on your own](06-launching-your-own-instance)
+If you're returning post-workshop and want to launch your own instance, use [launching cloud instances on your own](../discuss/)
 
 ## Background to AWS
 

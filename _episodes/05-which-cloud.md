@@ -54,6 +54,30 @@ However, most HPCCs (High Performance Computing Clusters) put limits on:
 
 #### [XSEDE](https://www.xsede.org/)
 
+The Extreme Science and Engineering Discovery Environment (XSEDE) is an NSF funded HPCC, so
+it is open to any US-based researcher, and shares most of the same benefits and drawbacks
+of a university or corporate HPCC. If your university or corporation doesn't have it's
+own HPCC resources, XSEDE will likely be your cheapest option.
+
+Although any US-based researcher can use XSEDE, first [they'll need an account](https://portal.xsede.org/#/guest).
+Like the HPCC options described above, XSEDE uses a scheduler to start jobs, and puts limits on
+how many resources any one user can utilize at once.
+
+XSEDE can also be a bit intimidating at first because you will need to know what resources
+you need, and for how long, before you get started. XSEDE runs like a mini version of the
+NSF grant system. In order to qualify to submit large jobs, you'll have to submit a [allocation request](https://portal.xsede.org/allocations/research), in the form of a short proposal.
+Also like an NSF grant, if your proposal is accepted, that means you have access to whatever
+resources you were approved for, for the time frame you requested.
+
+Don't let that paragraph scare you off though. XSEDE has two different allocation tracks. If
+you aren't sure exactly what you'll need for your big project, you can request a [startup allocation](https://portal.xsede.org/allocations/startup) which only requires an abstract
+rather than a proposal, and grants you a year to try out your new pipeline or analysis. These
+are usually granted in a week or so.
+
+If that still sounds a little too daunting, XSEDE also has [trial allocations](https://iujetstream.atlassian.net/wiki/spaces/JWT/pages/76149919/Jetstream+Trial+Access+Allocation)
+which give you access to only a tiny fraction of XSEDES power, but are plenty large enough to
+test your code and see if a larger allocation is worth pursuing. These allocations are granted
+more or less immediately by simply filling in a form and agreeing to the usage rules.
 
 ### Commercial Clouds
 

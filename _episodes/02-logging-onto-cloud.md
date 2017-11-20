@@ -5,7 +5,8 @@ exercises: 5
 questions:
 - How do I connect to an AWS instance?
 objectives:
-- Connect to a running instance
+- Log onto to a running instance
+- Log off from a running instance
 keypoints:
 - You can use one set of log-in credentials for many instances
 - Logging off an instance is not the same as turning off an instance

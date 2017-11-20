@@ -72,16 +72,18 @@ We will provide instructions for working on the *Amazon* and the *Atmosphere* cl
 
 #### Sign into AWS and Launch an Instance
 1. Sign into AWS EC2 Dashboard: [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
-2. Click the 'Launch Instance' button<p><img src="../fig/logging-onto-cloud_1.png" width="500"></p>
-3. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for **ami-373ab74d**; select this image
-<p><img src="../fig/logging-onto-cloud_2.png"width="500"></p>
-4. For 'Choose and Instance Type' select **t2.medium**; then click 'Review and Launch' 
-<p><img src="../fig/logging-onto-cloud_3.png"width="500"></p>  
+
+2. Click the 'Launch Instance' button  
+<img src="../fig/logging-onto-cloud_1.png" width="500">
+3. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for **ami-373ab74d**; select this image  
+<img src="../fig/logging-onto-cloud_2.png" width="500">
+4. For 'Choose and Instance Type' select **t2.medium**; then click 'Review and Launch'  
+<img src="../fig/logging-onto-cloud_3.png" width="500">  
   
     > **Tip:** You can select larger instances, but these will cost more to run. Also for the 'Review Instance Launch' you will get some warning about instance security. We will not go into detail here about security groups. However, you should know that when you launch an instance, you will want to take steps to make sure no one maliciously accesses your instance. For example, never give your security credentials (next step) to another user.
 5. For the 'Review Instance Launch' step, click 'Launch'
-6. You will be asked to Select an existing key pair or create a new key pair. Select 'Proceed without a key pair' and select the acknowledgement you are given. Then click 'Launch Instances' 
-    <p><img src="../fig/logging-onto-cloud_4.png"width="500"></p>
+6. You will be asked to Select an existing key pair or create a new key pair. Select 'Proceed without a key pair' and select the acknowledgement you are given. Then click 'Launch Instances'  
+<img src="../fig/logging-onto-cloud_4.png" width="500">
 
 You instance will now be launched. You should follow the links to 'Create billing alerts'. 
 
@@ -90,10 +92,10 @@ You instance will now be launched. You should follow the links to 'Create billin
 **Instructions for MAC**
 
 1. Log into your AWC EC2 Dashboard [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
-2. You should see that you have one instance, to proceed the instance state must be 'running' (if you just launched the instance it will take <5 min for the instance to start running)
- <p><img src="../fig/logging-onto-cloud_5.png"width="500"></p>
-3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect.) 
- <p><img src="../fig/logging-onto-cloud_6.png"width="500"></p>
+2. You should see that you have one instance, to proceed the instance state must be 'running' (if you just launched the instance it will take <5 min for the instance to start running)  
+<img src="../fig/logging-onto-cloud_5.png" width="500">
+3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect.)  
+<img src="../fig/logging-onto-cloud_6.png" width="500">
 4. Open the terminal application on your Mac and use 'ssh' to connect. Your command will be:
 
    ```bash
@@ -119,10 +121,10 @@ $
 
 1. Download the PuTTY application at: [http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
 1. Log into your AWC EC2 Dashboard [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
-2. You should see that you have one instance, make sure instance state is 'running' (if you just launched the instance it will take <5 min for the instance to start running)
-    <p><img src="../fig/logging-onto-cloud_5.png"width="500"></p>
-3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect.) 
-    <p><img src="../fig/logging-onto-cloud_6.png"width="500"></p>
+2. You should see that you have one instance, make sure instance state is 'running' (if you just launched the instance it will take <5 min for the instance to start running)  
+<img src="../fig/logging-onto-cloud_5.png" width="500">
+3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect.)  
+<img src="../fig/logging-onto-cloud_6.png" width="500">
 4. Start PuTTY. In the section 'Specify the destination you want to connect to' for 'Host Name (or IP address)' paste in the DNS address and click 'Open'
 5. When prompted to login as, enter 'dcuser'; you may be notified that the authenticity of the host cannot be verified - if so, ignore the warning an continue connecting
 6. When prompted for a password enter 'data4Carp'
@@ -150,8 +152,8 @@ When you are finished with your instance, you must terminate. Follow the followi
 
 1. Sign into AWS and go to the EC2 Dashboard: [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 2. Under 'Resources' select 'Running Instances'
-3. Select the instance you wish to terminate, then click 'Actions'
-    <p><img src="../fig/logging-onto-cloud_7.png"width="500"></p>
+3. Select the instance you wish to terminate, then click 'Actions'  
+<img src="../fig/logging-onto-cloud_7.png" width="500">
 4. Under 'Instance State' select terminate. 
 
     > **Warning:** This will delete any data on this instance, so you must move any data you wish to save off the instance.
@@ -168,11 +170,11 @@ When you are finished with your instance, you must terminate. Follow the followi
 #### Sign into Atmosphere and launch an instance
 1. Sign into Atmosphere at: [http://atmo.iplantcollaborative.org/](http://atmo.iplantcollaborative.org/)
 2. Select 'Launch New Instance'
-    <p><img src="../fig/logging-onto-cloud_8.png"width="500"></p>
+    <img src="../fig/logging-onto-cloud_8.png" width="500">
 3. Search for the 'TSW Workshop Williams 1.2' image; Select this image. 
-    <p><img src="../fig/logging-onto-cloud_9.png"width="500"></p>
+    <img src="../fig/logging-onto-cloud_9.png" width="500">
 4. Click Launch and then select the following options in the launch wizard:
-    <p><img src="../fig/logging-onto-cloud_10.png"width="500"></p>
+    <img src="../fig/logging-onto-cloud_10.png" width="500">
     - Instance Name:Enter a name(optional) 
     - Base Image Version: 1.0
     - Project: Choose an existing or create a new project. 
@@ -192,7 +194,7 @@ Your instance should be ready in 10-15 minutes. When your instance status is lis
 1. If necessary, log into your Atmosphere at: [https://atmo.iplantcollaborative.org/application/images](https://atmo.iplantcollaborative.org/application/images)
 2. Click on 'Projects' and select the project that contains your instance. 
 3. Verifying that your instance status is **'active'**, copy the IP address (e.g. 128.123.12.34) to your clipboard. 
-    <p><img src="../fig/logging-onto-cloud_11.png"width="500"></p>
+    <img src="../fig/logging-onto-cloud_11.png" width="500">
 3. Open the terminal application  and use 'ssh' to connect. Your command will be:
 
     ```bash
@@ -235,7 +237,7 @@ iplantusername@vm65-164:~$ pwd
 2. If necessary, log into your Atmosphere at: [http://atmo.iplantcollaborative.org/](http://atmo.iplantcollaborative.org/)
 3. Click on 'Projects' and select the project that contains your instance. 
 4. Verifying that your instance status is **'active'**, copy the IP address (e.g. 128.123.12.34) to your clipboard. 
-   <p><img src="../fig/logging-onto-cloud_11.png"width="500"></p>
+   <img src="../fig/logging-onto-cloud_11.png" width="500">
 5. Start PuTTY. In the section 'Specify the destination you want to connect to' for 'Host Name (or IP address)' paste in the DNS address and click 'Open'
 6. When prompted to login as, enter your iPlant username; you may be notified that the authenticity of the host cannot be verified - if so, ignore the warning an continue connecting
 7. When prompted for a password enter your iPlant password. 

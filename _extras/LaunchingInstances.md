@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Launching your own instances
-permalink: /discuss/
+permalink: /LaunchingInstances/
 questions:
 - How do I use cloud resources on my own?
 objectives:

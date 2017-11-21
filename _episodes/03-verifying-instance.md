@@ -167,11 +167,11 @@ dcuser@ip-172-31-62-209 ~ $ tree -L 1
 ## Staying Connected to the Cloud
 
 Depending on how you connect to the cloud, you may have processes and jobs that are
-running, and will need to continue running for sometime. If you have collected to your
+running, and will need to continue running for some time. If you have connected to your
 cloud desktop via VNC, jobs you start will continue to run. If you are connecting via SSH,
-if you end the SSH connection (e.g. you exit your SSH session, you loose your connection
+if you end the SSH connection (e.g. you exit your SSH session, you lose your connection
 to the internet, you close your laptop, etc.), jobs that are still running when you
-disconnect. There are a few ways to keep cloud processes running in the background.
+disconnect will be killed. There are a few ways to keep cloud processes running in the background.
 Many times when we refer to a background process we are talking about what is
 [described at this tutorial](http://www.cyberciti.biz/faq/linux-command-line-run-in-background/) -
 running a command and returning to shell prompt. Here we describe a program that will

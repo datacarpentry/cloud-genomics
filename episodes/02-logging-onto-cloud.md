@@ -5,7 +5,8 @@ exercises: 5
 questions:
 - How do I connect to an AWS instance?
 objectives:
-- Connect to a running instance
+- Log onto to a running instance
+- Log off from a running instance
 keypoints:
 - You can use one set of log-in credentials for many instances
 - Logging off an instance is not the same as turning off an instance
@@ -51,11 +52,9 @@ least once, but now that you're more comfortable with the command line, lets go 
 We have a pre-configured copy of the data needed for this workshop that is always available
 to attach to a new instance on Amazon, as long as you have an account, and the log-in credentials to open it.
 
-To access the pre-configured workshop data, you'll need to use our log-in credentials;
-that is, you need our user name and password:
+To access the pre-configured workshop data, you'll need to use our log-in credentials (user name and password):
 
-**Log-in Credentials**
-Credentials are case sensitive:
+**Log-in Credentials (case-sensitive!)**
 
 - Username: dcuser
 - Password: data4Carp
@@ -94,7 +93,7 @@ operating system, but sometimes requires additional software.
 *Prerequisites*: You must have an SSH client. There are several free options but you should have installed [[PuTTY.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)] at the begining of the workshop, and we're going to continue using that.<br>
 
 
-1. Open PuTTY; In the 'Host Name (or IP address)' section paste in the IP address provided by your instructor (or the ip address of an instance you have provisioned yourself). *Keep the default selection 'SSH' and Port (22)*. <br>
+1. Open PuTTY; In the 'Host Name (or IP address)' section paste in the IP address provided by your instructor (or the IP address of an instance you have provisioned yourself). *Keep the default selection 'SSH' and Port (22)*. <br>
 
 <p><img src="../fig/putty_screenshot_1.png" width="500"></p>
 2. Click 'Open' and you will be presented with a security warning. Select 'Yes' to continue to connect. <br>
@@ -118,7 +117,7 @@ operating system, but sometimes requires additional software.
 ![terminal icon](../fig/terminal.png)<br>
 
 
-1. Open the terminal and type the following command substituting 'ip_address' for the ip address your instructor will provide (or the ip address of an instance you have provisioned yourself). *Be sure to pay attention to capitalization and spaces*<br>
+1. Open the terminal and type the following command substituting 'ip_address' for the IP address your instructor will provide (or the IP address of an instance you have provisioned yourself). *Be sure to pay attention to capitalization and spaces*<br>
 
 ```
         $ ssh dcuser@ip_address
@@ -141,13 +140,13 @@ operating system, but sometimes requires additional software.
 
 ## Logging off a cloud instance
 
-Logging off your instance is a lot like logging out of your local computer, it stops any processes
-that are currently running, but it doesn't shut the computer off. AWS instances acrue charges whenever
-they are running, *even if you are logged off*
+Logging off your instance is a lot like logging out of your local computer: it stops any processes
+that are currently running, but doesn't shut the computer off. AWS instances acrue charges whenever
+they are running, *even if you are logged off*.
 
-If you are *completely* done with your AWS instance, you will need to **terminate** it after you log off. Instructions for terminating an instance are here: [launching cloud instances on your own](../LaunchingInstances)
+If you are *completely* done with your AWS instance, you will need to **terminate** it after you log off. Instructions for terminating an instance are here: [launching cloud instances on your own](../LaunchingInstances).
 
-To log off, use the `exit` command in the same terminal you connected with, this will close the connection, and your terminal will go back to showing your local computer:
+To log off, use the `exit` command in the same terminal you connected with. This will close the connection, and your terminal will go back to showing your local computer:
 
 ```
 dcuser@ip-172-31-62-209 $ exit

@@ -39,7 +39,7 @@ window.onload = set_page_view_defaults;
 Now that you're on the cloud, you'll need data. There are two main places you can get data
 from: your local machine, or other machines in the cloud, like NCBI.
 
-How you get your data, depends on where the data is right now.
+How you get your data depends on where the data is right now.
 
 ### Getting data from the cloud
 
@@ -99,7 +99,7 @@ or
 ```
 
 Since we wanted to *download* the file rather than just view it, we used ``wget`` without
-any modifiers. With ``curl`` however, we had to use the -O flag, which tells ``curl`` to
+any modifiers. With ``curl`` however, we had to use the -O flag, which simultaneously tells ``curl`` to
 download the page instead of showing it to us **and** specifies that it should save the
 file using the same name it had on the server: species_EnsemblBacteria.txt
 
@@ -160,6 +160,8 @@ C:\User\your-pc-username\Downloads> pscp.exe dcuser@ip.address:/home/dcuser/dc_w
 
 
 <div id="div_aws_unix" style="display:block" markdown="1">
+
+### scp
 
 `scp` stands for 'secure copy protocol', and is a widely used UNIX tool for moving files
 between computers. The simplest way to use `scp` is to run it in your local terminal,

@@ -60,13 +60,6 @@ $
 ~~~
 {: .bash}
 
-## Installing additional software
-
-Add stuff about installing software!
-apt-get
-
-Mention also about the fact that you can use apt-get to incorporate O/S security updates etc? 
-
 ## Verifying your environment
 
 Now that we have connected here are a few commands that tell you a little about the machine you have connected to:

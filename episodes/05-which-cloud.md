@@ -57,13 +57,9 @@ However, most HPCCs (High Performance Computing Clusters) put limits on:
 
 ### Commercial Clouds
 
-#### [Amazon EC2 ](http://aws.amazon.com/ec2/)
+#### [Amazon EC2 ](http://aws.amazon.com/ec2/): [getting started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
 
-[Amazon Web Services](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
-
-#### [Google Cloud](https://cloud.google.com/)
-
-[Google Cloud](https://cloud.google.com/compute/docs/quickstart)
+#### [Google Cloud](https://cloud.google.com/): [getting started](https://cloud.google.com/compute/docs/quickstart)
 
 #### [Microsoft Azure](https://azure.microsoft.com/en-us/)
 

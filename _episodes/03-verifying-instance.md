@@ -27,7 +27,7 @@ even started, but this is an important skill for when you start running your own
 
 When you connect, it is typical to receive a welcome screen. The Data Carpentry Amazon instances display this message upon connecting:
 
-```bash
+~~~
 Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
@@ -50,13 +50,15 @@ Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
 
 
 Last login: Sun Jan 24 21:38:36 2016 from
-```
+~~~
+{: .output}
 
 You should also have a blinking cursor awaiting your command
 
-```bash
-dcuser@ip-172-31-62-209 ~ $
-```
+~~~
+$
+~~~
+{: .bash}
 
 ## Installing additional software
 
@@ -71,14 +73,19 @@ Now that we have connected here are a few commands that tell you a little about 
 
 - `whoami` - shows your username on computer you have connected to:
 
-```bash
-dcuser@ip-172-31-62-209 ~ $ whoami
+~~~
+$ whoami
+~~~
+{: .bash}
+
+~~~
 dcuser
-```
+~~~
+{: .output}
 
 -  `df -h` - shows space on hard drive*
 
-```bash
+~~~
 dcuser@ip-172-31-62-209 ~ $ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            2.0G   12K  2.0G   1% /dev
@@ -88,13 +95,14 @@ none            4.0K     0  4.0K   0% /sys/fs/cgroup
 none            5.0M     0  5.0M   0% /run/lock
 none            2.0G  144K  2.0G   1% /run/shm
 none            100M   36K  100M   1% /run/user
-```
+~~~
+{: .output}
 
 \* Under the column 'Mounted on' row that has '/' as the value shows the value for the main disk.
 
 - `cat /proc/cpuinfo` - shows detail information on how many processors (CPUs) the machine has
 
-```bash
+~~~
 dcuser@ip-172-31-62-209 ~ $ cat /proc/cpuinfo
 processor  : 0
 vendor_id	: GenuineIntel
@@ -147,12 +155,17 @@ clflush size	: 64
 cache_alignment	: 64
 address sizes	: 46 bits physical, 48 bits virtual
 power management:
-```
+~~~
+{: .output}
+
 - `tree -L 1` - shows a tree view of the file system 1 level below your current location.
 
-```bash
-dcuser@ip-172-31-62-209 ~ $ tree -L 1
+~~~
+$ tree -L 1
+~~~
+{: .bash}
 
+~~~
 ├── dc_sample_data
 ├── Desktop
 ├── Downloads
@@ -162,7 +175,8 @@ dcuser@ip-172-31-62-209 ~ $ tree -L 1
 └── Trimmomatic-0.32
 
 7 directories, 0 files
-```
+~~~
+{: .output}
 
 ## Staying Connected to the Cloud
 
@@ -186,9 +200,11 @@ allow us to run our entire shell and keep that process running even if we discon
 
 A 'session' can be thought of as a window for `tmux`, you might open an terminal to do one thing on the a computer and then open a new terminal to work on another task at the command line. You can start a session and give it a descriptive name:
 
-```bash
-    $ tmux new -s session_name
-```
+~~~
+$ tmux new -s session_name
+~~~
+{: .bash} 
+
 This creates a session with the name 'session_name'
 
 As you work, this session will stay active until you close this session. Even if you disconnect from your machine, the jobs you start in this session will run till completion.
@@ -197,32 +213,37 @@ As you work, this session will stay active until you close this session. Even if
 
 If you disconnect from your session, or from your ssh into a machine, you will need to reconnect to an existing `tmux` session. You can see a list of existing sessions:
 
-```bash
+~~~
 $ tmux list-sessions
-```
+~~~
+{: .bash} 
 
 **Connecting to a session**
 
 To connect to an existing session:
 
-```bash
+~~~
 $ tmux attach -t session_name
-# -t option = 'target'
-```
+~~~
+{: .bash} 
+
+The `-t` option = 'target'
 
 **Switch sessions**
 You can switch between sessions:
 
-```bash
+~~~
 $ tmux switch -t session_name
-```
+~~~
+{: .bash}
 
 **Kill a session**
 You can end sessions:
 
-```bash
+~~~
 $ tmux kill-session -t session_name
-```
+~~~
+{: .bash}
 
 ### screen
 
@@ -234,9 +255,11 @@ This is another program that has mostly the same capabilities as tmux. It's a lo
 
 A 'session' can be thought of as a window for `screen`, you might open an terminal to do one thing on the a computer and then open a new terminal to work on another task at the command line. You can start a session and give it a descriptive name:
 
-```bash
-    $ screen -S session_name
-```
+~~~
+$ screen -S session_name
+~~~
+{: .bash}
+
 This creates a session with the name 'session_name'
 
 As you work, this session will stay active until you close this session. Even if you disconnect from your machine, the jobs you start in this session will run till completion.
@@ -249,23 +272,27 @@ You can detach from a session by pressing `control + a` followed by `d` (for det
 
 If you disconnect from your session, or from your ssh into a machine, you will need to reconnect to an existing `screen` session. You can see a list of existing sessions:
 
-```bash
+~~~
 $ screen -ls
-```
+~~~
+{: .bash}
 
 **Reconnecting to a session**
 
 To reconnect to an existing session:
 
-```bash
+~~~
 $ screen -r session_name
-# -r option = 'resume  a detached screen session'
-```
+~~~
+{: .bash}
+
+The `-r` option = 'resume  a detached screen session'
 
 **Kill a session**
 To end a session, type `exit` after reconnecting to the session:
 
-```bash
+~~~
 $ screen -r session_name
 $ exit
-```
+~~~
+{: .bash}

@@ -161,6 +161,8 @@ C:\User\your-pc-username\Downloads> pscp.exe dcuser@ip.address:/home/dcuser/dc_w
 
 <div id="div_aws_unix" style="display:block" markdown="1">
 
+### scp
+
 `scp` stands for 'secure copy protocol', and is a widely used UNIX tool for moving files
 between computers. The simplest way to use `scp` is to run it in your local terminal,
 and use it to copy a single file:

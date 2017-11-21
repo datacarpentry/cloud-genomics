@@ -19,7 +19,7 @@ keypoints:
 There are several cloud providers to choose from. Some scientific clouds may either be free or allocate resources competitively. Commercial clouds can be very powerful, but choice can be overwhelming. We will cover as much as we can, but you will ultimately need to learn things not covered here so see the documentation below:
 
 The major tradeoff between platforms is between flexibility and cost. Generally speaking,
-services that allow you more flexibility and autonomy will be more expensive than
+services that allow you more flexibility and autonomy, will be more expensive than
 highly managed services.
 
 ### University/Corporate Computing Clusters
@@ -50,7 +50,7 @@ However, most HPCCs (High Performance Computing Clusters) put limits on:
  fees on instances that are sitting idle. It's often also much easier to pay for HPCC use than to
  pay for Amazon using grant money, however universities are getting better about AWS payments.
 
-### Public Computing Clusters
+### Open Science Clouds
 
 #### [XSEDE](https://www.xsede.org/)
 
@@ -72,23 +72,17 @@ resources you were approved for, for the time frame you requested.
 Don't let that paragraph scare you off though. XSEDE has two different allocation tracks. If
 you aren't sure exactly what you'll need for your big project, you can request a [startup allocation](https://portal.xsede.org/allocations/startup) which only requires an abstract
 rather than a proposal, and grants you a year to try out your new pipeline or analysis. These
-are usually granted in a week or so.
+are usually granted in a week or so, and are intended for you to test your pipeline so you
+know what to ask for in your allocation proposal.
 
 If that still sounds a little too daunting, XSEDE also has [trial allocations](https://iujetstream.atlassian.net/wiki/spaces/JWT/pages/76149919/Jetstream+Trial+Access+Allocation)
 which give you access to only a tiny fraction of XSEDES power, but are plenty large enough to
 test your code and see if a larger allocation is worth pursuing. These allocations are granted
 more or less immediately by simply filling in a form and agreeing to the usage rules.
 
-### Commercial Clouds
-
-#### [Amazon EC2 ](http://aws.amazon.com/ec2/): [getting started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
-
-#### [Google Cloud](https://cloud.google.com/): [getting started](https://cloud.google.com/compute/docs/quickstart)
-
-#### [Microsoft Azure](https://azure.microsoft.com/en-us/)
-
-
-### Open Science Clouds
+If you're interested in using XSEDE, check to see if your workplace has a [Campus Champion](https://www.xsede.org/community-engagement/campus-champions). These are people who
+have had extensive training on both the XSEDE system and the allocation program, and can
+help you figure out how to apply and what you need.
 
 #### [Atmosphere](https://pods.iplantcollaborative.org/wiki/display/atmman/Getting+Started)
 
@@ -97,6 +91,20 @@ more or less immediately by simply filling in a form and agreeing to the usage r
 
 
 #### [JetStream](http://jetstream-cloud.org/)
+
+### Commercial Clouds
+
+#### [Amazon EC2 ](http://aws.amazon.com/ec2/)
+
+The Amazon Web Services (AWS) cloud  
+[getting started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
+
+
+
+#### [Google Cloud](https://cloud.google.com/): [getting started](https://cloud.google.com/compute/docs/quickstart)
+
+#### [Microsoft Azure](https://azure.microsoft.com/en-us/)
+
 
 
 ## Exercise

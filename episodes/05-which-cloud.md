@@ -96,16 +96,71 @@ help you figure out how to apply and what you need.
 
 #### [Amazon EC2 ](http://aws.amazon.com/ec2/)
 
-The Amazon Web Services (AWS) cloud  
-[getting started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
+The Amazon Web Service (AWS) that you've been using is the Elastic Compute (EC2) cloud. There
+are actually lots of other cloud and storage solutions under the AWS umbrella, but when most
+data scientists say AWS, they mean [EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html).
+With EC2, you can rent access to a cloud computing resource as small as your laptop, or as large as a 64 processor
+machine with 488GB of memory, and with a number of different operating systems. These instances can
+be optimized for jobs that are memory intensive, or require a lot of bandwidth, or [almost any other
+specific need](https://aws.amazon.com/ec2/instance-types/). There are so many options that we can't
+cover them all here, but these are a few popular ones:
 
+##### On-Demand
+All this variety and optimization makes EC2 much more expensive than an average HPCC, however,
+depending on your needs it can be [quite affordable](https://aws.amazon.com/ec2/pricing/). If
+you want to start an EC2 instance whenever you want and have instant access, you can
+rent a quite large on-demand instance with 8 processors and 32 GB of memory for ~40 cents
+an hour, and tiny instances are only about half a cent per hour.
 
+##### Spot-Instances
+If your program can tolerate pauses, and you don't need the analysis done as fast as
+possible, you can request a spot instance. Essentially, whenever Amazon has computing
+capacity that no one is paying them for, they lower the prices for renting some systems.
+If you request a spot-instance, that means you specify the size and parameters of
+your machine rental, and set a limit on how much you're willing to spend per hour. Then,
+whenever the rental rate dips below your maximum, your instance turns on and runs until
+the price goes back up. If it's not an important shopping season, and you aren't in a hurry,
+you can often run spot-instances for less than half their normal cost. 
+
+##### Free Tier
+There are also [free options](https://aws.amazon.com/free/), which allow you to test out
+the interface and make sure it will meet your needs before you start renting.
+
+Just remember that with EC2 and all other commercial services, you're paying for renting the computer,
+whether you're using it or not. If you leave an instance on idly for months after your pipeline has finished,
+you'll still have to pay for that time.
 
 #### [Google Cloud](https://cloud.google.com/): [getting started](https://cloud.google.com/compute/docs/quickstart)
 
 #### [Microsoft Azure](https://azure.microsoft.com/en-us/)
 
+## How to Choose
 
+As you can see, highly managed systems (HPCCs, XSEDE, etc) usually are free or cheap, but
+relatively inflexible. There may be certain programs you can't install, or there may be long
+wait times. Commercial systems are generally more flexible because you can make them look
+however you want, but they can be quite expensive, especially if you run for a long time, or have a
+lot of data. However, there are other things to consider.
+
+Another way to think about this is not *whether* you want to spend your time and money, but *where* you
+want to spend them. AWS will let you install anything you want, but that also means that you'll
+have to spend some time up-front installing programs and testing configurations. Your HPCC jobs
+might take a week to start, but you don't have to do any of the systems administration, and you
+can work on other projects while your job sits in the queue.
+
+Your familiarity with the pipeline can also be a factor. Let's say you want to run a program
+you've never run before. If you have no way to estimate how
+long your job will take, a service like AWS might save you money, because you can run your
+program until its done, no matter how long that is. Running it on an HPCC can be really
+frustrating, because you'll need to submit your job with the amount of time and resources it will use.
+An HPCC will only let your job run the amount of time you requested, so if you underestimate the
+amount of time it will take, even by one minute, the system kills your program and you need to resubmit it.
+On the other hand, if you want to run that same program, but you can easily estimate the runtime, an
+HPCC is going to be a much cheaper choice.
+
+In my work, I often use both commercial and non-commercial services. I tend to use AWS for testing,
+with small amounts of data, until I know how the program behaves. Then I port the pipeline to
+my university HPCC for running the full dataset.
 
 ## Exercise
 

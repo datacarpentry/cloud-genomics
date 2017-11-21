@@ -58,11 +58,12 @@ You should also have a blinking cursor awaiting your command
 dcuser@ip-172-31-62-209 ~ $
 ```
 
-## Updating to the latest versions
+## Installing additional software
 
 Add stuff about installing software!
 apt-get
 
+Mention also about the fact that you can use apt-get to incorporate O/S security updates etc? 
 
 ## Verifying your environment
 

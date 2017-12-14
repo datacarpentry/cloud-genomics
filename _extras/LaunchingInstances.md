@@ -142,8 +142,19 @@ and this tutorial is not meant to be exhaustive, but for minor changes:
 <img src="../fig/logging-onto-cloud_3.png" width="500">  
 
     > **Tip:** You can select larger instances, but these will cost more to run. Also for the 'Review Instance Launch' you will get some warning about instance security. We will not go into detail here about security groups. However, you should know that when you launch an instance, you will want to take steps to make sure no one maliciously accesses your instance. For example, never give your security credentials (next step) to another user.
-5. For the 'Review Instance Launch' step, click 'Launch'
-6. You will be asked to Select an existing key pair or create a new key pair. Select 'Proceed without a key pair' and select the acknowledgement you are given. Then click 'Launch Instances'  
+
+
+5. Click "Next: Configure instance details"  
+6. In this step you will be able to specify the number of identical instances you want to create. When teaching a workshop it's useful to have enough for all instructors, helpers, and learners with a few extra as backup.
+7.  Click "Next: Add Storage"
+8.  The default settings are generally enough.  You can increase storage, but this may cost more to run.
+9. Click "Next: Add Tags"
+10. Tags are useful when you'll have multiple instances running for multiple purposes.  Add a tag where Key is "Name" and Value is a meaningful, human readable string such as a workshop slug.
+11. Click "Next: Configure Security Group"
+12. Here you will be able to open additional ports that allow access to things like RStudio. You will not need to do anything here for the Genomics Pipeline Workflow lessons.
+13. Click "Review and Launch"
+14. For the 'Review Instance Launch' step, click 'Launch'
+15. You will be asked to Select an existing key pair or create a new key pair. Select 'Proceed without a key pair' and select the acknowledgement you are given. Then click 'Launch Instances'  
 <img src="../fig/logging-onto-cloud_4.png" width="500">
 
 You instance will now be launched. You should follow the links to 'Create billing alerts'.
@@ -151,7 +162,7 @@ You instance will now be launched. You should follow the links to 'Create billin
 #### Connect to Amazon Instance
 
 1. Log into your AWC EC2 Dashboard [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
-2. You should see that you have one instance, to proceed the instance state must be 'running' (if you just launched the instance it will take <5 min for the instance to start running)  
+2. You should see each of the instances you created. To proceed the instance state must be 'running' (if you just launched the instance it will take <5 min for the instance to start running)  
 <img src="../fig/logging-onto-cloud_5.png" width="500">
 3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect.)  
 <img src="../fig/logging-onto-cloud_6.png" width="500">

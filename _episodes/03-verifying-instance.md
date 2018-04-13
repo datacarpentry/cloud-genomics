@@ -202,6 +202,10 @@ This creates a session with the name 'session_name'
 
 As you work, this session will stay active until you close this session. Even if you disconnect from your machine, the jobs you start in this session will run till completion.
 
+**Detach session (process keeps running in background)**
+
+You can detach from a tmux session by pressing `control + b` followed by `d` (for detach) on your keyboard.
+
 **Seeing active sessions**
 
 If you disconnect from your session, or from your ssh into a machine, you will need to reconnect to an existing `tmux` session. You can see a list of existing sessions:

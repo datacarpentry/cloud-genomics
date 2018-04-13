@@ -293,3 +293,86 @@ $ screen -r session_name
 $ exit
 ~~~
 {: .bash}
+
+### Installing additional software
+
+By default `tmux` is not installed in most cloud linux instances. However you can install new software packages using Package Managers like YUM (for Red Hat and Centos instances) or APT (for Debian or Ubuntu instances). We will explore how to install `tmux` using APT (Advanced Package Tool).
+
+
+#### Searching and installing software using APT
+
+**Update APT**
+
+Before installing or upgrading any system packages, you should always update the local APT cache:
+
+~~~
+$ sudo apt-get update
+Hit:1 http://au.archive.ubuntu.com/ubuntu xenial InRelease
+Get:2 http://au.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]
+...
+Fetched 3,413 kB in 1s (2,233 kB/s)
+Reading package lists... Done
+$
+~~~
+{: .bash}
+
+**Search for APT packages using including software**
+
+Most common software tools will have a package named the same, but this is not always the case. If you know the name of the program you wish to install, but are not sure of the package name, you can use the `apt` program to search packages:
+
+~~~
+$ sudo apt search tmux
+Sorting... Done
+Full Text Search... Done
+abduco/xenial 0.1-2 amd64
+  terminal session manager
+
+powerline/xenial-updates 2.3-1ubuntu0 amd64
+  prompt and statusline utility
+
+tmate/xenial 1.8.10-2build1 amd64
+  terminal multiplexer with instant terminal sharing
+
+tmux/xenial,now 2.1-3build1 amd64
+  terminal multiplexer
+
+tmuxinator/xenial 0.7.0-2 all
+  Create and manage tmux sessions easily
+$
+~~~
+{: .bash}
+
+There is a plain `tmux` package, so we will use that to install.
+
+**Install packages using APT**
+
+Once you know the package name, you can install it using `apt-get install`:
+
+~~~
+$ sudo apt-get install tmux
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  libevent-2.0-5 libutempter0
+The following NEW packages will be installed:
+  libevent-2.0-5 libutempter0 tmux
+0 to upgrade, 3 to newly install, 0 to remove and 0 not to upgrade.
+Need to get 345 kB of archives.
+After this operation, 949 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mirror.overthewire.com.au/ubuntu xenial-updates/main amd64 libevent-2.0-5 amd64 2.0.21-stable-2ubuntu0.16.04.1 [114 kB]
+Get:2 http://mirror.overthewire.com.au/ubuntu xenial/main amd64 libutempter0 amd64 1.1.6-3 [7,898 B]
+Get:3 http://mirror.overthewire.com.au/ubuntu xenial/main amd64 tmux amd64 2.1-3build1 [223 kB]
+Fetched 345 kB in 0s (863 kB/s)
+(Reading database ... 130583 files and directories currently installed.)
+...
+Setting up libevent-2.0-5:amd64 (2.0.21-stable-2ubuntu0.16.04.1) ...
+Setting up libutempter0:amd64 (1.1.6-3) ...
+Setting up tmux (2.1-3build1) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+$
+~~~
+{: .bash}
+
+When this has completed, `tmux` will now be available for use on the instance.

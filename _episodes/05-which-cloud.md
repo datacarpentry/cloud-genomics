@@ -162,28 +162,29 @@ In my work, I often use both commercial and non-commercial services. I tend to u
 with small amounts of data, until I know how the program behaves. Then I port the pipeline to
 my university HPCC for running the full dataset.
 
-## Exercise
-
-In small groups or on your own, plot out your next bioinformatics project. With guidance
-from your instructors and the above references, try to determine not only what types of
-resources you'll need, but what platform will best suit your project.
-
-Some things to consider:
-
-- How much data do you have?
-- What computational steps will it need?
-  - What is the *largest* computational step?
-  - Can any steps be done in parallel?
-- What is your timeframe?
-- Who will be doing most of the computational work?
-  - What computational skills do they have?
-  - Do you need to share the data across many labs?
-- How many times will you need to run this pipeline?
-
+> ## Discussion
+> 
+> In small groups or on your own, plot out your next bioinformatics project. With guidance
+> from your instructors and the above references, try to determine not only what types of
+> resources you'll need, but what platform will best suit your project.
+> 
+> Some things to consider:
+> 
+> - How much data do you have?
+> - What computational steps will it need?
+>   - What is the *largest* computational step?
+>   - Can any steps be done in parallel?
+> - What is your timeframe?
+> - Who will be doing most of the computational work?
+>   - What computational skills do they have?
+>   - Do you need to share the data across many labs?
+> - How many times will you need to run this pipeline?
+{: .challenge}
 
 
 ### Other Resources:
 
 
-Learn more about cloud computing in bioinformatics<br>
-Fusaro VA, Patil P, Gafni E, Wall DP, Tonellato PJ (2011) **Biomedical Cloud Computing With Amazon Web Services**. PLoS Comput Biol 7(8): e1002147. doi: 10.1371/journal.pcbi.1002147
+Learn more about cloud computing in bioinformatics:
+
+Fusaro VA, Patil P, Gafni E, Wall DP, Tonellato PJ (2011) **Biomedical Cloud Computing With Amazon Web Services**. PLoS Comput Biol 7(8): e1002147. doi: [10.1371/journal.pcbi.1002147](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002147)

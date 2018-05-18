@@ -175,117 +175,109 @@ disconnect will be killed. There are a few ways to keep cloud processes running 
 Many times when we refer to a background process we are talking about what is
 [described at this tutorial](http://www.cyberciti.biz/faq/linux-command-line-run-in-background/) -
 running a command and returning to shell prompt. Here we describe a program that will
-allow us to run our entire shell and keep that process running even if we disconnect: `tmux`. If you don't have `tmux` on your system, you should still be able to use `screen`, instructions for which are provided below.
+allow us to run our entire shell and keep that process running even if we disconnect: `tmux`. If you don't have `tmux` on your system, you should still be able to use `screen`. This is another program that has mostly the same capabilities as `tmux`. It's a lot older, though, so can be more clunky to use; however, it is likely to be available on any cloud system you encounter.
 
-### tmux
+In both `tmux` and `screen`, you open a 'session'. A 'session' can be thought of as a window for `tmux` or `screen`, you might open an terminal to do one thing on the a computer and then open a new terminal to work on another task at the command line. 
 
+As you work, an open session will stay active until you close this session. Even if you disconnect from your machine, the jobs you start in this session will run till completion.
 
-#### Starting and attaching to `tmux` sessions
+### Starting and attaching to a session
 
-**Starting a new session**
+You can start a session and give it a descriptive name:
 
-A 'session' can be thought of as a window for `tmux`, you might open an terminal to do one thing on the a computer and then open a new terminal to work on another task at the command line. You can start a session and give it a descriptive name:
+- `tmux`
 
-~~~
-$ tmux new -s session_name
-~~~
-{: .bash} 
+  ```
+  $ tmux new -s session_name
+  ```
+  {: .bash}
 
-This creates a session with the name 'session_name'
+- `screen`
 
-As you work, this session will stay active until you close this session. Even if you disconnect from your machine, the jobs you start in this session will run till completion.
+  ```
+  $ screen -S session_name
+  ```
+  {: .bash}
 
-**Detach session (process keeps running in background)**
+This creates a session with the name `session_name` which will stay active until you close it.
 
-You can detach from a tmux session by pressing `control + b` followed by `d` (for detach) on your keyboard.
+### Detach session (process keeps running in background)
 
-**Seeing active sessions**
+You can detach from a session by pressing on your keyboard:
 
-If you disconnect from your session, or from your ssh into a machine, you will need to reconnect to an existing `tmux` session. You can see a list of existing sessions:
+- `tmux`: `control + b` followed by `d` (for detach)
+- `screen`: `control + a` followed by `d` (for detach)
 
-~~~
-$ tmux list-sessions
-~~~
-{: .bash} 
+#### Seeing active sessions
 
-**Connecting to a session**
+If you disconnect from your session, or from your ssh into a machine, you will need to reconnect to an existing session. You can see a list of existing sessions:
+
+- `tmux`
+
+  ```
+  $ tmux list-sessions
+  ```
+  {: .bash}
+
+- `screen`
+
+  ```
+  $ screen -ls
+  ```
+  {: .bash}
+
+#### Connecting to a session
 
 To connect to an existing session:
 
-~~~
-$ tmux attach -t session_name
-~~~
-{: .bash} 
+- `tmux`
 
-The `-t` option = 'target'
+  ```
+  $ tmux attach -t session_name
+  ```
+  {: .bash} 
 
-**Switch sessions**
+  The `-t` option = 'target'
+
+- `screen`
+
+  ```
+  $ screen -r session_name
+  ```
+  {: .bash}
+
+  The `-r` option = 'resume  a detached screen session'
+
+#### Switch sessions
+
 You can switch between sessions:
 
-~~~
-$ tmux switch -t session_name
-~~~
-{: .bash}
+- `tmux`
 
-**Kill a session**
+  ```
+  $ tmux switch -t session_name
+  ```
+  {: .bash}
+
+#### Kill a session
+
 You can end sessions:
 
-~~~
-$ tmux kill-session -t session_name
-~~~
-{: .bash}
+- `tmux`
 
-### screen
+  ```
+  $ tmux kill-session -t session_name
+  ```
+  {: .bash}
 
-This is another program that has mostly the same capabilities as tmux. It's a lot older, though, so can be more clunky to use; however, it is likely to be available on any cloud system you encounter.
+- `screen`
 
-#### Starting and attaching to `screen` sessions
+  ```
+  $ screen -r session_name
+  $ exit
+  ```
+  {: .bash}
 
-**Starting a new session**
-
-A 'session' can be thought of as a window for `screen`, you might open an terminal to do one thing on the a computer and then open a new terminal to work on another task at the command line. You can start a session and give it a descriptive name:
-
-~~~
-$ screen -S session_name
-~~~
-{: .bash}
-
-This creates a session with the name 'session_name'
-
-As you work, this session will stay active until you close this session. Even if you disconnect from your machine, the jobs you start in this session will run till completion.
-
-**Detach session (process keeps running in background)**
-
-You can detach from a session by pressing `control + a` followed by `d` (for detach) on your keyboard. 
-
-**Seeing active sessions**
-
-If you disconnect from your session, or from your ssh into a machine, you will need to reconnect to an existing `screen` session. You can see a list of existing sessions:
-
-~~~
-$ screen -ls
-~~~
-{: .bash}
-
-**Reconnecting to a session**
-
-To reconnect to an existing session:
-
-~~~
-$ screen -r session_name
-~~~
-{: .bash}
-
-The `-r` option = 'resume  a detached screen session'
-
-**Kill a session**
-To end a session, type `exit` after reconnecting to the session:
-
-~~~
-$ screen -r session_name
-$ exit
-~~~
-{: .bash}
 
 ### Installing additional software
 

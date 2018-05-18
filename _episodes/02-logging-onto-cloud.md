@@ -87,54 +87,73 @@ operating system, but sometimes requires additional software.
 
 <div id="div_aws_win" style="display:block" markdown="1">
 
-## Exercises<br>
+#### Connecting using PC
 
-#### **Connecting using PC**<br>
-*Prerequisites*: You must have an SSH client. There are several free options but you should have installed [[PuTTY.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)] at the begining of the workshop, and we're going to continue using that.
+*Prerequisites*: You must have an SSH client. There are several free options but you should have installed [PuTTY.exe](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) at the begining of the workshop, and we're going to continue using that.
 
-A. Open PuTTY; In the 'Host Name (or IP address)' section paste in the IP address provided by your instructor (or the IP address of an instance you have provisioned yourself). *Keep the default selection 'SSH' and Port (22)*.
 
-<p><img src="../fig/putty_screenshot_1.png" width="500"></p>
-B. Click 'Open' and you will be presented with a security warning. Select 'Yes' to continue to connect. <br>
-<p><img src="../fig/putty_screenshot_2.png" width="500"></p>
+1. Open PuTTY
+2. Paste in the 'Host Name (or IP address)' section the IP address provided by your instructor (or the IP address of an instance you have provisioned yourself)
 
-C. In the final step, you will be asked to provide a login and password. **Note:** When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. ****) or moving cursors. Just continue typing.<br>
-<p><img src="../fig/putty_screenshot_3.png" width="500"></p>
+    *Keep the default selection 'SSH' and Port (22)*
 
-D. You should now be connected!
+    ![](../fig/putty_screenshot_1.png)
+
+2. Click 'Open' 
+    
+    You will be presented with a security warning
+
+    ![](../fig/putty_screenshot_2.png)
+
+3. Select 'Yes' to continue to connect
+3. In the final step, you will be asked to provide a login and password
+    
+    **Note:** When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. `****) or moving cursors. Just continue typing
+
+    ![](../fig/putty_screenshot_3.png)
+
+You should now be connected!
 
 </div>
-
-
 
 
 <div id="div_aws_unix" style="display:block" markdown="1">
 
 
-#### **Connecting using Mac/Linux**<br>
-*Prerequisites*: Mac and Linux operating systems will already have terminals installed. Simply search for 'Terminal' and/or look for the terminal icon.<br>
-![terminal icon](../fig/terminal.png)<br>
+#### Connecting using Mac/Linux
 
+Mac and Linux operating systems will already have terminals installed. 
 
-A. Open the terminal and type the following command substituting 'ip_address' for the IP address your instructor will provide (or the IP address of an instance you have provisioned yourself). *Be sure to pay attention to capitalization and spaces*<br>
+1. Open the terminal
 
-~~~
-$ ssh dcuser@ip_address
-~~~
-{: .bash}
+    Simply search for 'Terminal' and/or look for the terminal icon
 
-B. You will receive a security message that looks something like the message below. Type 'yes' to proceed.
+    ![terminal icon](../fig/terminal.png)
 
-~~~
-The authenticity of host 'ec2-52-91-14-206.compute-1.amazonaws.com (52.91.14.206)' can't be established.
-ECDSA key fingerprint is SHA256:S2mMV8mCThjJHm0sUmK2iOE5DBqs8HiJr6pL3x/XxkI.
-Are you sure you want to continue connecting (yes/no)?
-~~~
-{: .bash}
+2. Type the following command substituting `ip_address` by the IP address your instructor will provide (or the IP address of an instance you have provisioned yourself)
 
-C. In the final step, you will be asked to provide a login and password. **Note:** When typing your password, it is common in Unix/Linux not see any asterisks (e.g. ****) or moving cursors. Just continue typing.
+    ~~~
+    $ ssh dcuser@ip_address
+    ~~~
+    {: .bash}
 
-D. You should now be connected!
+    *Be sure to pay attention to capitalization and spaces*
+
+3. You will receive a security message that looks something like the message below
+
+    ~~~
+    The authenticity of host 'ec2-52-91-14-206.compute-1.amazonaws.com (52.91.14.206)' can't be established.
+    ECDSA key fingerprint is SHA256:S2mMV8mCThjJHm0sUmK2iOE5DBqs8HiJr6pL3x/XxkI.
+    Are you sure you want to continue connecting (yes/no)?
+    ~~~
+    {: .bash}
+
+4. Type `yes` to proceed
+5. In the final step, you will be asked to provide a login and password
+    
+    **Note:** When typing your password, it is common in Unix/Linux not see any asterisks (e.g. `****`) or moving cursors. Just continue typing.
+
+You should now be connected!
 
 </div>
 
@@ -153,7 +172,7 @@ dcuser@ip-172-31-62-209 $ exit
 
 Amandas-MacBook-Pro-3 $
 ~~~
-{: .output}
+{: .bash}
 
 ## Logging back in
 

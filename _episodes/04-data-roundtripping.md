@@ -44,14 +44,14 @@ How you get your data depends on where the data is right now.
 ### Getting data from the cloud
 
 There are two programs that will download data from a remote server to your local
-(or remote) machine: ``wget`` and ``curl``. They were designed to do slightly different
+(or remote) machine: `wget` and `curl`. They were designed to do slightly different
 tasks by default, so you'll need to give the programs somewhat different options to get
 the same behaviour, but they are mostly interchangeable.
 
- - ``wget`` is short for "world wide web get", and it's basic function is to *download*
+ - `wget` is short for "world wide web get", and it's basic function is to *download*
  web pages or data at a web address.
 
- - ``cURL`` is a pun, it is suppose to be read as "see URL", so it's basic function is
+ - `cURL` is a pun, it is suppose to be read as "see URL", so it's basic function is
  to *display* webpages or data at a web address.
 
 Which one you need to use mostly depends on your operating system, as most computers will
@@ -59,7 +59,7 @@ only have one or the other installed by default.
 
 Let's say you want to download some data from Ensembl. We're going to download a very small
 tab-delimited file that just tells us what data is available on the Ensembl bacteria server.
-Before we can start our download, we need to know whether we're using ``curl`` or ``wget``.
+Before we can start our download, we need to know whether we're using `curl` or `wget`.
 
 To see which program you have type:
  
@@ -69,60 +69,68 @@ $ which wget
 ~~~
 {: .bash}
 
-``which`` is a BASH program that looks through everything you have
+`which` is a BASH program that looks through everything you have
 installed, and tells you what folder it is installed to. If it can't
 find the program you asked for, it returns nothing, i.e. gives you no
 results.
 
-On Mac OSX, you'll likely get the following output:
 
-~~~
-$ which curl
-~~~
-{: .bash}
 
-~~~
-/usr/bin/curl
-~~~
-{: .output}
+> ## `wget` or `curl` on Mac OSX
+> 
+> On Mac OSX, you'll likely get the following output:
+> 
+> ~~~
+> $ which curl
+> ~~~
+> {: .bash}
+> 
+> ~~~
+> /usr/bin/curl
+> ~~~
+> {: .output}
+> 
+> ~~~
+> $ which wget
+> ~~~
+> {: .bash}
+> 
+> ~~~
+> $
+> ~~~
+> {: .output}
+> 
+> This output means that you have `curl` installed, but not `wget`.
+> 
+{: .callout}
 
-~~~
-$ which wget
-~~~
-{: .bash}
-
-~~~
-$
-~~~
-{: .output}
-
-This output means that you have ``curl`` installed, but not ``wget``.
-
-Once you know whether you have ``curl`` or ``wget`` use one of the
+Once you know whether you have `curl` or `wget` use one of the
 following commands to download the file:
 
-~~~
-$ cd
-$ wget ftp://ftp.ensemblgenomes.org/pub/release-37/bacteria/species_EnsemblBacteria.txt
-~~~
-{: .bash}
+- `wget`:
 
-or
+    ~~~
+    $ cd
+    $ wget ftp://ftp.ensemblgenomes.org/pub/release-37/bacteria/species_EnsemblBacteria.txt
+    ~~~
+    {: .bash}
 
-~~~
-$ cd
-$ curl -O ftp://ftp.ensemblgenomes.org/pub/release-37/bacteria/species_EnsemblBacteria.txt
-~~~
-{: .bash}
+- `curl`
 
-Since we wanted to *download* the file rather than just view it, we used ``wget`` without
-any modifiers. With ``curl`` however, we had to use the -O flag, which simultaneously tells ``curl`` to
+    ~~~
+    $ cd
+    $ curl -O ftp://ftp.ensemblgenomes.org/pub/release-37/bacteria/species_EnsemblBacteria.txt
+    ~~~
+    {: .bash}
+
+Since we wanted to *download* the file rather than just view it, we used `wget` without
+any modifiers. With `curl` however, we had to use the `-O` flag, which simultaneously tells `curl` to
 download the page instead of showing it to us **and** specifies that it should save the
-file using the same name it had on the server: species_EnsemblBacteria.txt
+file using the same name it had on the server: `species_EnsemblBacteria.txt`.
 
-It's important to note that both ``curl`` and ``wget`` download to the computer that the
+It's important to note that both `curl` and `wget` download to the computer that the
 command line belongs to. So, if you are logged into AWS on the command line and execute
-the ``curl`` command above in the AWS terminal, the file will be downloaded to your AWS
+the `curl` command above in the AWS terminal, the file will be downloaded to your AWS
 machine, not your local one.
 
 ### Moving files between your laptop and your instance
@@ -137,54 +145,58 @@ These directions are platform specific so please follow the instructions for you
 
 **Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws_unix" id="id_aws_unix" selected> AWS_UNIX </option><option value="aws_win" id="id_aws_win" selected> AWS_Windows </option></select>**
 
-
 <div id="div_aws_win" style="display:block" markdown="1">
 
-
-### Uploading Data to your Virtual Machine
+#### Uploading Data to your Virtual Machine
 
 If you're using a PC, we recommend you use the *PSCP* program. This program is from the same suite of
 tools as the putty program we have been using to connect.
 
-1. If you haven't done so, download pscp from [http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)
+1. If you haven't done so, download *PSCP* from [http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)
 2. Make sure the *PSCP* program is somewhere you know on your computer. In this case,
 your Downloads folder is appropriate.
 3. Open the windows [PowerShell](https://en.wikipedia.org/wiki/Windows_PowerShell);
-go to your start menu/search enter the term **'cmd'**; you will be able to start the shell
-(the shell should start from C:\Users\your-pc-username>).
+go to your start menu/search enter the term **'cmd'**
+
+    You will be able to start the shell (the shell should start from `C:\Users\your-pc-username>`).
 4. Change to the download directory
 
-~~~
-> cd Downloads
-~~~
-{: .bash}
+    ~~~
+    > cd Downloads
+    ~~~
+    {: .bash}
 
-5. Locate a file on your computer that you wish to upload (be sure you know the path). Then upload it to your remote machine (**you will need to know your ip address, and login credentials**). You will be prompted to enter a password, and then your upload will begin. **(make sure you use substitute 'your-pc-username' for your actual pc username)**
+5. Locate a file on your computer that you wish to upload (be sure you know the path)
+6. Upload the file to your remote machine 
+    - You will need to know your IP address, and login credentials
+    - You will be prompted to enter a password, and then your upload will begin
+    - Make sure you substitute `your-pc-username` by your actual pc username), same with `ip.address`
 
-~~~
-C:\User\your-pc-username\Downloads> pscp.exe local_file.txt dcuser@ip.address:/home/dcuser/
-~~~
-{: .bash}
+    ~~~
+    C:\User\your-pc-username\Downloads> pscp.exe local_file.txt dcuser@ip.address:/home/dcuser/
+    ~~~
+    {: .bash}
 
-### Downloading Data from your Virtual Machine
+#### Downloading Data from your Virtual Machine
 
 1. Follow the instructions in the Upload section to download (if needed) and access the *PSCP* program (steps 1-3)
-2. Download the zipped fastqc report using the following command **(make sure you use substitute 'your-pc-username' for your actual pc username and dcuser@ ip.address with your remote login credentials)**
+2. Download the zipped fastqc report using the following command 
 
-~~~
-C:\User\your-pc-username\Downloads> pscp.exe dcuser@ip.address:/home/dcuser/dc_workshop/results/fastqc_untrimmed_reads/SRR097977_fastqc.zip C:\User\your-pc-username\Downloads
-~~~
-{: .bash}
+    ~~~
+    C:\User\your-pc-username\Downloads> pscp.exe dcuser@ip.address:/home/dcuser/dc_workshop/results/fastqc_untrimmed_reads/SRR097977_fastqc.zip C:\User\your-pc-username\Downloads
+    ~~~
+    {: .bash}
+
+    Make sure you substitute `your-pc-username` by your actual pc username), same with `ip.address`
 
 </div>
 
 
-
 <div id="div_aws_unix" style="display:block" markdown="1">
 
-### scp
+#### SCP
 
-`scp` stands for 'secure copy protocol', and is a widely used UNIX tool for moving files
+With UNIX we use `scp`. `scp` stands for 'secure copy protocol', and is a widely used UNIX tool for moving files
 between computers. The simplest way to use `scp` is to run it in your local terminal,
 and use it to copy a single file:
 
@@ -194,47 +206,54 @@ scp <file I want to move> <where I want to move it>
 {: .bash}
 
 Note that you are always running `scp` locally, but that *doesn't* mean that
-you can only move files from your local computer. A command like:
+you can only move files from your local computer. 
+
+A command like:
 
 ~~~
 $ scp <local file> <AWS instance>
 ~~~
 {: .bash}
 
-To move it back, you just re-order the to and from fields:
+move from your computer to your AWS instance. To move it back, you just re-order the to and from fields:
 
 ~~~
 $ scp <AWS instance> <local file>
 ~~~
 {: .bash}
 
-### Uploading Data to your Virtual Machine
+#### Uploading Data to your Virtual Machine
 
-1. Open the terminal and use the `scp` command to upload a file (e.g. local_file.txt) to the dcuser home directory:
+1. Open the terminal
+2. Use the `scp` command to upload a file (e.g. `local_file.txt`) to the dcuser home directory:
 
-~~~
-$  scp local_file.txt dcuser@ip.address:/home/dcuser/
-~~~
-{: .bash}
+    ~~~
+    $  scp local_file.txt dcuser@ip.address:/home/dcuser/
+    ~~~
+    {: .bash}
 
-### Downloading Data from your Virtual Machine
+#### Downloading Data from your Virtual Machine
 
-Let's download a zipped file from our remote machine.  You should have a fastqc report in ~/dc_workshop/results/fastqc_untrimmed_reads/SRR097977_fastqc.zip
+Let's download a zipped file from our remote machine. You should have a fastqc report in `~/dc_workshop/results/fastqc_untrimmed_reads/SRR097977_fastqc.zip`
 
-**Tip:** If you are looking for another (or any really) zip file in your home directory to use instead try
+> ## Searching for ZIP file
+> **Tip:** If you are looking for another (or any really) zip file in your home directory to use instead try
+> 
+> ~~~
+> $ find ~ -name *.zip
+> ~~~
+> {: .bash}
+>
+{: .callout}
 
-~~~
-$ find ~ -name *.zip
-~~~
-{: .bash}
+1. Download the fastqc report in `~/dc_workshop/results/fastqc_untrimmed_reads/SRR097977_fastqc.zip` to your home `~/Dowload` directory using the following command
 
+    ~~~
+    $ scp dcuser@ip.address:/home/dcuser/dc_workshop/results/fastqc_untrimmed_reads/SRR097977_fastqc.zip ~/Downloads
+    ~~~
+    {: .bash}
 
-1. Download the fastqc report in ~/dc_workshop/results/fastqc_untrimmed_reads/SRR097977_fastqc.zip to your home ~/Dowload directory using the following command **(make sure you use substitute dcuser@ ip.address with your remote login credentials)**:
-
-~~~
-$ scp dcuser@ip.address:/home/dcuser/dc_workshop/results/fastqc_untrimmed_reads/SRR097977_fastqc.zip ~/Downloads
-~~~
-{: .bash}
+    Make sure you use substitute dcuser@ ip.address with your remote login credentials
 
 Remember that in both instances, the command is run from your local machine, we've just flipped the order of the to and from parts of the command.
 </div>

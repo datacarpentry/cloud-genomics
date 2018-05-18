@@ -27,7 +27,7 @@ even started, but this is an important skill for when you start running your own
 
 When you connect, it is typical to receive a welcome screen. The Data Carpentry Amazon instances display this message upon connecting:
 
-~~~
+```
 Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
@@ -50,14 +50,14 @@ Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
 
 
 Last login: Sun Jan 24 21:38:36 2016 from
-~~~
+```
 {: .output}
 
 You should also have a blinking cursor awaiting your command
 
-~~~
+```
 $
-~~~
+```
 {: .bash}
 
 ## Verifying your environment
@@ -66,115 +66,108 @@ Now that we have connected here are a few commands that tell you a little about 
 
 - `whoami` - shows your username on computer you have connected to:
 
-~~~
-$ whoami
-~~~
-{: .bash}
+  ```
+  dcuser@ip-172-31-62-209 ~ $ whoami
+  dcuser
+  ```
+  {: .output}
 
-~~~
-dcuser
-~~~
-{: .output}
+- `df -h` - shows space on hard drive
 
--  `df -h` - shows space on hard drive*
+  ```
+  dcuser@ip-172-31-62-209 ~ $ df -h
+  Filesystem      Size  Used Avail Use% Mounted on
+  udev            2.0G   12K  2.0G   1% /dev
+  tmpfs           396M  792K  395M   1% /run
+  /dev/xvda1       99G   48G   47G  51% /
+  none            4.0K     0  4.0K   0% /sys/fs/cgroup
+  none            5.0M     0  5.0M   0% /run/lock
+  none            2.0G  144K  2.0G   1% /run/shm
+  none            100M   36K  100M   1% /run/user
+  ```
+  {: .output}
 
-~~~
-dcuser@ip-172-31-62-209 ~ $ df -h
-Filesystem      Size  Used Avail Use% Mounted on
-udev            2.0G   12K  2.0G   1% /dev
-tmpfs           396M  792K  395M   1% /run
-/dev/xvda1       99G   48G   47G  51% /
-none            4.0K     0  4.0K   0% /sys/fs/cgroup
-none            5.0M     0  5.0M   0% /run/lock
-none            2.0G  144K  2.0G   1% /run/shm
-none            100M   36K  100M   1% /run/user
-~~~
-{: .output}
-
-\* Under the column 'Mounted on' row that has '/' as the value shows the value for the main disk.
+  Under the column 'Mounted on row' that has `/` as the value shows the value for the main disk
 
 - `cat /proc/cpuinfo` - shows detail information on how many processors (CPUs) the machine has
 
-~~~
-dcuser@ip-172-31-62-209 ~ $ cat /proc/cpuinfo
-processor  : 0
-vendor_id	: GenuineIntel
-cpu family	: 6
-model		: 62
-model name	: Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
-stepping	: 4
-microcode	: 0x415
-cpu MHz		: 2494.060
-cache size	: 25600 KB
-physical id	: 0
-siblings	: 2
-core id		: 0
-cpu cores	: 2
-apicid		: 0
-initial apicid	: 0
-fpu		: yes
-fpu_exception	: yes
-cpuid level	: 13
-wp		: yes
-flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm xsaveopt fsgsbase smep erms
-bogomips	: 4988.12
-clflush size	: 64
-cache_alignment	: 64
-address sizes	: 46 bits physical, 48 bits virtual
-power management:
+  ```
+  dcuser@ip-172-31-62-209 ~ $ cat /proc/cpuinfo
+  processor  : 0
+  vendor_id	: GenuineIntel
+  cpu family	: 6
+  model		: 62
+  model name	: Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
+  stepping	: 4
+  microcode	: 0x415
+  cpu MHz		: 2494.060
+  cache size	: 25600 KB
+  physical id	: 0
+  siblings	: 2
+  core id		: 0
+  cpu cores	: 2
+  apicid		: 0
+  initial apicid	: 0
+  fpu		: yes
+  fpu_exception	: yes
+  cpuid level	: 13
+  wp		: yes
+  flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm xsaveopt fsgsbase smep erms
+  bogomips	: 4988.12
+  clflush size	: 64
+  cache_alignment	: 64
+  address sizes	: 46 bits physical, 48 bits virtual
+  power management:
 
-processor	: 1
-vendor_id	: GenuineIntel
-cpu family	: 6
-model		: 62
-model name	: Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
-stepping	: 4
-microcode	: 0x415
-cpu MHz		: 2494.060
-cache size	: 25600 KB
-physical id	: 0
-siblings	: 2
-core id		: 1
-cpu cores	: 2
-apicid		: 2
-initial apicid	: 2
-fpu		: yes
-fpu_exception	: yes
-cpuid level	: 13
-wp		: yes
-flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm xsaveopt fsgsbase smep erms
-bogomips	: 4988.12
-clflush size	: 64
-cache_alignment	: 64
-address sizes	: 46 bits physical, 48 bits virtual
-power management:
-~~~
-{: .output}
+  processor	: 1
+  vendor_id	: GenuineIntel
+  cpu family	: 6
+  model		: 62
+  model name	: Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
+  stepping	: 4
+  microcode	: 0x415
+  cpu MHz		: 2494.060
+  cache size	: 25600 KB
+  physical id	: 0
+  siblings	: 2
+  core id		: 1
+  cpu cores	: 2
+  apicid		: 2
+  initial apicid	: 2
+  fpu		: yes
+  fpu_exception	: yes
+  cpuid level	: 13
+  wp		: yes
+  flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology eagerfpu pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm xsaveopt fsgsbase smep erms
+  bogomips	: 4988.12
+  clflush size	: 64
+  cache_alignment	: 64
+  address sizes	: 46 bits physical, 48 bits virtual
+  power management:
+  ```
+  {: .output}
 
 - `tree -L 1` - shows a tree view of the file system 1 level below your current location.
 
-~~~
-$ tree -L 1
-~~~
-{: .bash}
+  ```
+  dcuser@ip-172-31-62-209 ~ $ tree -L 1
+  .
+  ├── dc_sample_data
+  ├── Desktop
+  ├── Downloads
+  ├── FastQC
+  ├── openrefine-2.6-beta.1
+  ├── R
+  └── Trimmomatic-0.32
 
-~~~
-├── dc_sample_data
-├── Desktop
-├── Downloads
-├── FastQC
-├── openrefine-2.6-beta.1
-├── R
-└── Trimmomatic-0.32
-
-7 directories, 0 files
-~~~
-{: .output}
+  7 directories, 0 files
+  ```
+  {: .output}
 
 ## Staying Connected to the Cloud
 
 Depending on how you connect to the cloud, you may have processes and jobs that are
-running, and will need to continue running for some time. If you have connected to your
+running, and will need to continue running for some time. If you are connecting to your
 cloud desktop via VNC, jobs you start will continue to run. If you are connecting via SSH,
 if you end the SSH connection (e.g. you exit your SSH session, you lose your connection
 to the internet, you close your laptop, etc.), jobs that are still running when you
@@ -296,31 +289,27 @@ $ exit
 
 ### Installing additional software
 
-By default `tmux` is not installed in most cloud linux instances. However you can install new software packages using Package Managers like YUM (for Red Hat and Centos instances) or APT (for Debian or Ubuntu instances). We will explore how to install `tmux` using APT (Advanced Package Tool).
+By default `tmux` is not installed in most cloud Linux instances. However you can install new software packages using Package Managers like YUM (for Red Hat and Centos instances) or APT (for Debian or Ubuntu instances). We will explore how to install `tmux` using APT (Advanced Package Tool).
 
-
-#### Searching and installing software using APT
-
-**Update APT**
+####  Update APT
 
 Before installing or upgrading any system packages, you should always update the local APT cache:
 
-~~~
+```
 $ sudo apt-get update
 Hit:1 http://au.archive.ubuntu.com/ubuntu xenial InRelease
 Get:2 http://au.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]
 ...
 Fetched 3,413 kB in 1s (2,233 kB/s)
 Reading package lists... Done
-$
-~~~
+```
 {: .bash}
 
-**Search for APT packages using including software**
+#### Search for APT packages using including software
 
 Most common software tools will have a package named the same, but this is not always the case. If you know the name of the program you wish to install, but are not sure of the package name, you can use the `apt` program to search packages:
 
-~~~
+```
 $ sudo apt search tmux
 Sorting... Done
 Full Text Search... Done
@@ -339,16 +328,16 @@ tmux/xenial,now 2.1-3build1 amd64
 tmuxinator/xenial 0.7.0-2 all
   Create and manage tmux sessions easily
 $
-~~~
+```
 {: .bash}
 
 There is a plain `tmux` package, so we will use that to install.
 
-**Install packages using APT**
+#### Install packages using APT
 
 Once you know the package name, you can install it using `apt-get install`:
 
-~~~
+```
 $ sudo apt-get install tmux
 Reading package lists... Done
 Building dependency tree
@@ -371,8 +360,7 @@ Setting up libevent-2.0-5:amd64 (2.0.21-stable-2ubuntu0.16.04.1) ...
 Setting up libutempter0:amd64 (1.1.6-3) ...
 Setting up tmux (2.1-3build1) ...
 Processing triggers for libc-bin (2.23-0ubuntu10) ...
-$
-~~~
+```
 {: .bash}
 
 When this has completed, `tmux` will now be available for use on the instance.

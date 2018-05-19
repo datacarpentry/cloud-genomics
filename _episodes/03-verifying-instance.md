@@ -27,7 +27,7 @@ even started, but this is an important skill for when you start running your own
 
 When you connect, it is typical to receive a welcome screen. The Data Carpentry Amazon instances display this message upon connecting:
 
-```
+~~~
 Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
@@ -50,14 +50,14 @@ Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
 
 
 Last login: Sun Jan 24 21:38:36 2016 from
-```
+~~~
 {: .output}
 
 You should also have a blinking cursor awaiting your command
 
-```
+~~~
 $
-```
+~~~
 {: .bash}
 
 ## Verifying your environment
@@ -66,15 +66,15 @@ Now that we have connected here are a few commands that tell you a little about 
 
 - `whoami` - shows your username on computer you have connected to:
 
-  ```
+  ~~~
   dcuser@ip-172-31-62-209 ~ $ whoami
   dcuser
-  ```
+  ~~~
   {: .output}
 
 - `df -h` - shows space on hard drive
 
-  ```
+  ~~~
   dcuser@ip-172-31-62-209 ~ $ df -h
   Filesystem      Size  Used Avail Use% Mounted on
   udev            2.0G   12K  2.0G   1% /dev
@@ -84,14 +84,14 @@ Now that we have connected here are a few commands that tell you a little about 
   none            5.0M     0  5.0M   0% /run/lock
   none            2.0G  144K  2.0G   1% /run/shm
   none            100M   36K  100M   1% /run/user
-  ```
+  ~~~
   {: .output}
 
   Under the column 'Mounted on row' that has `/` as the value shows the value for the main disk
 
 - `cat /proc/cpuinfo` - shows detail information on how many processors (CPUs) the machine has
 
-  ```
+  ~~~
   dcuser@ip-172-31-62-209 ~ $ cat /proc/cpuinfo
   processor  : 0
   vendor_id	: GenuineIntel
@@ -144,12 +144,12 @@ Now that we have connected here are a few commands that tell you a little about 
   cache_alignment	: 64
   address sizes	: 46 bits physical, 48 bits virtual
   power management:
-  ```
+  ~~~
   {: .output}
 
 - `tree -L 1` - shows a tree view of the file system 1 level below your current location.
 
-  ```
+  ~~~
   dcuser@ip-172-31-62-209 ~ $ tree -L 1
   .
   ├── dc_sample_data
@@ -161,7 +161,7 @@ Now that we have connected here are a few commands that tell you a little about 
   └── Trimmomatic-0.32
 
   7 directories, 0 files
-  ```
+  ~~~
   {: .output}
 
 ## Staying Connected to the Cloud
@@ -187,16 +187,16 @@ You can start a session and give it a descriptive name:
 
 - `tmux`
 
-  ```
+  ~~~
   $ tmux new -s session_name
-  ```
+  ~~~
   {: .bash}
 
 - `screen`
 
-  ```
+  ~~~
   $ screen -S session_name
-  ```
+  ~~~
   {: .bash}
 
 This creates a session with the name `session_name` which will stay active until you close it.
@@ -214,16 +214,16 @@ If you disconnect from your session, or from your ssh into a machine, you will n
 
 - `tmux`
 
-  ```
+  ~~~
   $ tmux list-sessions
-  ```
+  ~~~
   {: .bash}
 
 - `screen`
 
-  ```
+  ~~~
   $ screen -ls
-  ```
+  ~~~
   {: .bash}
 
 #### Connecting to a session
@@ -232,18 +232,18 @@ To connect to an existing session:
 
 - `tmux`
 
-  ```
+  ~~~
   $ tmux attach -t session_name
-  ```
+  ~~~
   {: .bash} 
 
   The `-t` option = 'target'
 
 - `screen`
 
-  ```
+  ~~~
   $ screen -r session_name
-  ```
+  ~~~
   {: .bash}
 
   The `-r` option = 'resume  a detached screen session'
@@ -254,9 +254,9 @@ You can switch between sessions:
 
 - `tmux`
 
-  ```
+  ~~~
   $ tmux switch -t session_name
-  ```
+  ~~~
   {: .bash}
 
 #### Kill a session
@@ -265,17 +265,17 @@ You can end sessions:
 
 - `tmux`
 
-  ```
+  ~~~
   $ tmux kill-session -t session_name
-  ```
+  ~~~
   {: .bash}
 
 - `screen`
 
-  ```
+  ~~~
   $ screen -r session_name
   $ exit
-  ```
+  ~~~
   {: .bash}
 
 
@@ -287,21 +287,21 @@ By default `tmux` is not installed in most cloud Linux instances. However you ca
 
 Before installing or upgrading any system packages, you should always update the local APT cache:
 
-```
+~~~
 $ sudo apt-get update
 Hit:1 http://au.archive.ubuntu.com/ubuntu xenial InRelease
 Get:2 http://au.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]
 ...
 Fetched 3,413 kB in 1s (2,233 kB/s)
 Reading package lists... Done
-```
+~~~
 {: .bash}
 
 #### Search for APT packages using including software
 
 Most common software tools will have a package named the same, but this is not always the case. If you know the name of the program you wish to install, but are not sure of the package name, you can use the `apt` program to search packages:
 
-```
+~~~
 $ sudo apt search tmux
 Sorting... Done
 Full Text Search... Done
@@ -320,7 +320,7 @@ tmux/xenial,now 2.1-3build1 amd64
 tmuxinator/xenial 0.7.0-2 all
   Create and manage tmux sessions easily
 $
-```
+~~~
 {: .bash}
 
 There is a plain `tmux` package, so we will use that to install.
@@ -329,7 +329,7 @@ There is a plain `tmux` package, so we will use that to install.
 
 Once you know the package name, you can install it using `apt-get install`:
 
-```
+~~~
 $ sudo apt-get install tmux
 Reading package lists... Done
 Building dependency tree
@@ -352,7 +352,7 @@ Setting up libevent-2.0-5:amd64 (2.0.21-stable-2ubuntu0.16.04.1) ...
 Setting up libutempter0:amd64 (1.1.6-3) ...
 Setting up tmux (2.1-3build1) ...
 Processing triggers for libc-bin (2.23-0ubuntu10) ...
-```
+~~~
 {: .bash}
 
 When this has completed, `tmux` will now be available for use on the instance.

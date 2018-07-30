@@ -157,7 +157,7 @@ You instance will now be launched. You should follow the links to 'Create billin
 <img src="../fig/logging-onto-cloud_6.png" width="500">
 4. Open the terminal application on your Mac and use 'ssh' to connect. Your command will be:
 
-   ```bash
+```bash
 $ ssh dcuser@your.amazon.dns
 ```
 5. Your computer will be unable to verify the authenticity of the host; type **yes** to continue connecting
@@ -234,18 +234,33 @@ and this tutorial is not meant to be exhaustive, but for minor changes:
 
 
 #### Sign into AWS and Launch an Instance
+
 1. Sign into AWS EC2 Dashboard: [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 
 2. Click the 'Launch Instance' button  
-<img src="../fig/logging-onto-cloud_1.png" width="500">
+  <img src="../fig/logging-onto-cloud_1.png" width="500">
+  
 3. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for **ami-373ab74d**; select this image  
 <img src="../fig/logging-onto-cloud_2.png" width="500">
-4. For 'Choose and Instance Type' select **t2.medium**; then click 'Review and Launch'  
-<img src="../fig/logging-onto-cloud_3.png" width="500">  
 
-    > **Tip:** You can select larger instances, but these will cost more to run. Also for the 'Review Instance Launch' you will get some warning about instance security. We will not go into detail here about security groups. However, you should know that when you launch an instance, you will want to take steps to make sure no one maliciously accesses your instance. For example, never give your security credentials (next step) to another user.
-5. For the 'Review Instance Launch' step, click 'Launch'
-6. You will be asked to Select an existing key pair or create a new key pair. Select 'Proceed without a key pair' and select the acknowledgement you are given. Then click 'Launch Instances'  
+4. For 'Choose and Instance Type' select **t2.medium**  
+  <img src="../fig/logging-onto-cloud_3.png" width="500">  
+  > **Tip:** You can select larger instances, but these will cost more to run.
+  > Also for the 'Review Instance Launch' you will get some warning about
+  > instance security. We will not go into detail here about security groups.
+  > However, you should know that when you launch an instance, you will want to
+  > take steps to make sure no one maliciously accesses your instance. For
+  > example, never give your security credentials (next step) to another user.  
+  
+5. Click on "6. Configure Security Group" in the top navigation menu. Choose
+   "select an existing security group" under "assign a security group", and
+   choose "sg-a5dba9ef" which has the name "to use with DC genomics AMI".
+
+5. Click "Review and Launch" and the bottom of the screen, and then click
+   'Launch'
+
+6. You will be asked to Select an existing key pair or create a new key pair.  Select 'Proceed without a key pair' and select the acknowledgement you are given. Then click 'Launch Instances'.
+
 <img src="../fig/logging-onto-cloud_4.png" width="500">
 
 You instance will now be launched. You should follow the links to 'Create billing alerts'.

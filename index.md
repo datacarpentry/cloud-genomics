@@ -1,6 +1,7 @@
 ---
 layout: lesson
 ---
+{% include base_path.html %}
 
 The cloud is a fancy name for the huge network of computers that host your favorite websites,
 stream movies, and shop online, but you can also harness all of that computing power for
@@ -17,3 +18,4 @@ and how to interact with one of those services (AWS) via the command line.
 > 
 > Windows users will need to install PuTTY. See the installation instructions in [Setup]({{ relative_root_path }}{% link setup.md %}).
 {: .prereq}
+

@@ -29,11 +29,11 @@ at low or no cost. If your employer maintains a computing cluster, this will alm
 expensive option.
 
 However, most HPCCs (High Performance Computing Clusters) put limits on:
- - the number of processors a user can utilize at once
- - the amount of disk storage per user
- - the amount of time a single process can run
- - what programs can be installed, and by whom
- - who can have accounts and access data
+ - The number of processors a user can utilize at once
+ - The amount of disk storage per user
+ - The amount of time a single process can run
+ - What programs can be installed, and by whom
+ - Who can have accounts and access data
 
  HPCCs are also a shared resource, so even when you have access, your programs are unlikely to run
  immediately. Most HPCCs run some kind of scheduler, that you submit your processing jobs to, and

@@ -32,11 +32,11 @@ Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
 
-  System information as of Sun Jan 24 21:38:35 UTC 2016
+  System information as of Tue Jan 29 22:28:18 UTC 2019
 
-  System load:  0.0                Processes:           151
-  Usage of /:   48.4% of 98.30GB   Users logged in:     0
-  Memory usage: 6%                 IP address for eth0: 172.31.62.209
+  System load:  0.04               Processes:           164
+  Usage of /:   43.1% of 98.30GB   Users logged in:     0
+  Memory usage: 2%                 IP address for eth0: 172.31.41.107
   Swap usage:   0%
 
   Graph this data and manage this system at:
@@ -45,11 +45,8 @@ Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
   Get cloud support with Ubuntu Advantage Cloud Guest:
     http://www.ubuntu.com/business/services/cloud
 
-12 packages can be updated.
-10 updates are security updates.
-
-
-Last login: Sun Jan 24 21:38:36 2016 from
+New release '16.04.5 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
 ~~~
 {: .output}
 

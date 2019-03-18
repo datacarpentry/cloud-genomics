@@ -52,12 +52,8 @@ least once, but now that you're more comfortable with the command line, lets go 
 We have a pre-configured copy of the data needed for this workshop that is always available
 to attach to a new instance on Amazon, as long as you have an account, and the log-in credentials to open it.
 
-To access the pre-configured workshop data, you'll need to use our log-in credentials (user name and password):
-
-**Log-in Credentials (case-sensitive!)**
-
-- Username: dcuser
-- Password: data4Carp
+To access the pre-configured workshop data, you'll need to use our log-in credentials (user name and password). These
+credentials will be supplied by your instructor.
 
 But first, you need a place to log *into*! To find the instance that's attached to that data,
 you'll need something called an IP address. Your instructor should have given this to you

@@ -104,7 +104,7 @@ operating system, but sometimes requires additional software.
 3. Select 'Yes' to continue to connect
 3. In the final step, you will be asked to provide a login and password
     
-    **Note:** When typing your password, it is common in Unix/Linux not see see any asterisks (e.g. `****) or moving cursors. Just continue typing
+    **Note:** When typing your password, it is common in Unix/Linux not see any asterisks (e.g. `****) or moving cursors. Just continue typing
 
     ![](../fig/putty_screenshot_3.png)
 

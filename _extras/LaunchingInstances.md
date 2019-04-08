@@ -3,6 +3,27 @@ layout: page
 title: Launching your own instances
 ---
 
+<script language="javascript" type="text/javascript">
+function set_page_view_defaults() {
+    document.getElementById('div_aws').style.display = 'block';
+    document.getElementById('div_cyverse').style.display = 'none';
+};
+
+function change_content_by_platform(form_control){
+    if (!form_control || document.getElementById(form_control).value == 'aws') {
+        set_page_view_defaults();
+    } else if (document.getElementById(form_control).value == 'cyverse') {
+        document.getElementById('div_aws').style.display = 'none';
+        document.getElementById('div_cyverse').style.display = 'block';
+    } else {
+        alert("Error: Missing platform value for 'change_content_by_platform()' script!");
+    }
+}
+
+window.onload = set_page_view_defaults;
+</script>
+
+
 > ## Do I need to create my own instances?
 > 
 > **If you are:**
@@ -61,6 +82,8 @@ There are several cloud providers to choose from. Some scientific clouds may eit
 * [Atmosphere](https://pods.iplantcollaborative.org/wiki/display/atmman/Getting+Started)
 * [JetStream](http://jetstream-cloud.org/)
 
+<div id="div_aws" style="display:block" markdown="1">
+
 ## AWS (Amazon EC2 instances)
 
 - See [the detailed instructions](https://datacarpentry.org/genomics-workshop/AMI-setup/) on launching an Amazon EC2 instance for this workshop.
@@ -69,6 +92,10 @@ There are several cloud providers to choose from. Some scientific clouds may eit
  - If you want to launch a different set of resources- more processors, more disk space, different operating system, etc;
  you can choose a different option at step 5.
  - For more detailed instructions, and how-tos for other changes consult [EC2 Getting Started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html).
+
+</div>
+
+<div id="div_cyverse" style="display:block" markdown="1">
 
 ## Launching an instance on Atmosphere - These instructions are in beta and not fully tested!
 
@@ -232,3 +259,5 @@ When you are finished with your instance, you must terminate. Follow the followi
 
     > **Warning:** This will delete any data on this instance, so you must move any data you wish to save off the instance (for example by using iCommands).
 5. After reading the warning and confirming you are ready, click 'Terminate' to terminate the instance.
+
+</div>

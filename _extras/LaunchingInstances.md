@@ -25,33 +25,33 @@ window.onload = set_page_view_defaults;
 
 
 > ## Do I need to create my own instances?
-> 
+>
 > **If you are:**
-> 
-> - teaching at or attending a centrally organized Data 
-Carpentry workshop, 
+>
+> - teaching at or attending a centrally organized Data
+Carpentry workshop,
 > - a Maintainer for one of the Genomics lessons, or
 > - contributing to the Genomics lessons,
-> 
+>
 > The Carpentries staff will create AMI instances for you. Please contact
-> team@carpentries.org. 
-> 
+> team@carpentries.org.
+>
 > **If you are:**
-> 
-> - teaching at a self-organized workshop, 
-> - working through these lessons on your own outside of a workshop, 
+>
+> - teaching at a self-organized workshop,
+> - working through these lessons on your own outside of a workshop,
 > - practicing your skills after a workshop, or
 > - using these lessons for a teaching demonstration as part of your Instructor checkout for The Carpentries,
-> 
-> you will need to create your own AMI instances using the [launching your own AMI instance instructions](https://datacarpentry.org/genomics-workshop/AMI-setup/). 
-> 
+>
+> you will need to create your own AMI instances using the [launching your own AMI instance instructions](https://datacarpentry.org/genomics-workshop/AMI-setup/).
+>
 > **If you are:**
-> 
+>
 > - considering what types of cloud computing resources are appropriate for you
 > - interested in modifying the AMI used in this workshop,
 > - want to create your own AMI from scratch, or
 > - want to use these lessons on a different cloud resources,
-> 
+>
 > read the information and instructions below.
 {: .callout}
 
@@ -82,6 +82,8 @@ There are several cloud providers to choose from. Some scientific clouds may eit
 * [Atmosphere](https://pods.iplantcollaborative.org/wiki/display/atmman/Getting+Started)
 * [JetStream](http://jetstream-cloud.org/)
 
+**Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws" id="id_aws" selected> AWS </option><option value="cyverse" id="id_cyverse"> CyVerse </option></select>**
+
 <div id="div_aws" style="display:block" markdown="1">
 
 ## AWS (Amazon EC2 instances)
@@ -100,7 +102,7 @@ There are several cloud providers to choose from. Some scientific clouds may eit
 ## Launching an instance on Atmosphere - These instructions are in beta and not fully tested!
 
 > ## Prerequisites
-> You must have an iPlant account (register at [https://user.cyverse.org/](https://user.cyverse.org/) ) - You must also request access to 
+> You must have an iPlant account (register at [https://user.cyverse.org/](https://user.cyverse.org/) ) - You must also request access to
 > Atmosphere (see [documentation](https://wiki.cyverse.org/wiki/display/atmman/Atmosphere+Manual+Table+of+Contents) **CyVerse requires Atmosphere users to have a valid .edu or .org email address** )
 {: .prereq}
 

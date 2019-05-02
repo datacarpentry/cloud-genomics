@@ -184,14 +184,14 @@ my university HPCC for running the full dataset.
 > ## Human genomic data & Security
 > 
 > Note that if you are working with human genomics data there might be ethical and legal 
-> considerations that affects your choice of cloud resources to use. The terms of use, and/or 
+> considerations that affect your choice of cloud resources to use. The terms of use, and/or 
 > the legislation under which you are handling the genomic data, might impose heightened information 
 > security measures for the computing environment in which you intend to process it. This is a too broad 
 > topic to discuss in detail here, but in general terms you should think through the technical and 
 > procedural measures needed to ensure that the confidentiality and integrity of the human data you work 
 > with is not breached. If there are laws that govern these issues in the jurisdiction in which you work, 
 > be sure that the cloud service provider you use can certify that they support the necessary measures. 
-> Also note that there might exist restrictions of use of cloud service providers that operate in other 
+> Also note that there might exist restrictions for use of cloud service providers that operate in other 
 > jurisdictions than your own, either by how the data was consented by the research subjects or by the 
 > jurisdiction under which you operate. Do consult the legal office of your institution for guidance 
 > when processing human genomic data.

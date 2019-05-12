@@ -11,7 +11,7 @@ keypoints:
 - Cloud computing increases processing speed and efficiency
 ---
 
-There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops or desktops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) are too large to run on these laptops/desktops. This analyses require larger machines, often several of them linked together, where remote access is the only practical solution.
+There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops or desktops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) are too large to run on these laptops/desktops. These analyses require larger machines, often several of them linked together, where remote access is the only practical solution.
 
 In recent years, computational power has become a commodity and entire companies have been built around a business model that allows you to "rent" one or more linked computers for as long as you require, at relatively low cost. This is the basic principle behind the **cloud**. You define your computational requirements and off you go.
 

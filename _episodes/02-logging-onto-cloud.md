@@ -14,16 +14,16 @@ keypoints:
 
 <script language="javascript" type="text/javascript">
 function set_page_view_defaults() {
-    document.getElementById('div_aws_win').style.display = 'block';
-    document.getElementById('div_aws_unix').style.display = 'none';
+    document.getElementById('div_aws_unix').style.display = 'block';
+    document.getElementById('div_aws_win').style.display = 'none';
 };
 
 function change_content_by_platform(form_control){
-    if (!form_control || document.getElementById(form_control).value == 'aws_win') {
+    if (!form_control || document.getElementById(form_control).value == 'aws_unix') {
         set_page_view_defaults();
-    } else if (document.getElementById(form_control).value == 'aws_unix') {
-        document.getElementById('div_aws_win').style.display = 'none';
-        document.getElementById('div_aws_unix').style.display = 'block';
+    } else if (document.getElementById(form_control).value == 'aws_win') {
+        document.getElementById('div_aws_unix').style.display = 'none';
+        document.getElementById('div_aws_win').style.display = 'block';
         document.getElementById('div_hpc').style.display = 'none';
         document.getElementById('div_cyverse').style.display = 'none';
     } else {
@@ -33,6 +33,7 @@ function change_content_by_platform(form_control){
 
 window.onload = set_page_view_defaults;
 </script>
+
 
 ## Important Note
 
@@ -78,7 +79,9 @@ operating system, but sometimes requires additional software.
 
 ## Logging onto a cloud instance
 
-**Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws_unix" id="id_aws_unix" selected="selected"> AWS_UNIX </option><option value="aws_win" id="id_aws_win" selected> AWS_Windows </option></select>**
+
+**Please select the platform you wish to use for the exercises: <select id="id_platform" name="platformlist" onchange="change_content_by_platform('id_platform');return false;"><option value="aws_win" id="id_aws_win" selected> AWS_Windows </option> <option value="aws_unix" id="id_aws_unix" selected> AWS_UNIX </option></select>**
+
 
 
 <div id="div_aws_win" style="display:block" markdown="1">

@@ -21,6 +21,7 @@ You'll know you need to start working on the cloud when:
 - Your computer is taking hours or days to get through an analysis.
 - You cannot install software on your computer (application does not have support for your operating system, conflicts with other existing applications, etc.)
 - You cannot afford the infrastructure (hardware, bandwidth, power supply, administrator) required to acquire and maintain sufficiently large computers for your analysis.
+- Working with large data while travelling
 
 The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or an ATM involves remote computing). The topic is fascinating, but this lesson says '5 minutes or less' so let's get connected.
 

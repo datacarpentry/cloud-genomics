@@ -283,7 +283,11 @@ You can end sessions:
 
 By default `tmux` is not installed in most cloud Linux instances. However when you start a new instance, you can install new software packages using Package Managers like YUM (for Red Hat and Centos instances) or APT (for Debian or Ubuntu instances). 
 
->In this lesson, you are using an Amazon instance owned by someone else, so you *won't* be able to install packages, but we'll show you how to use APT (Advanced Package Tool) to find packages, so you know how to do it when you launch your own instance. {: .callout}
+## Caution
+> In this lesson, you are using an Amazon instance owned by someone else, so you *won't* be able to install packages, but 
+> we'll show you how to use APT (Advanced Package Tool) to find packages, so you know how to do it when you launch your own
+> instance. 
+{: .callout}
 
 ### Search for APT packages using including software
 
@@ -299,10 +303,12 @@ $
 ~~~
 {: .bash}
 
-
 On our system, searching for tmux only gives one result, and it is already installed. 
 
->Check to see whether APT can be used to install your favorite bioinformatics program, or ones you commonly see used in your field. If you can't think of anything, try to search for BLAST. What do you have to search for to get back the results you'd expect? 
+## Exercise
+> Check to see whether APT can be used to install your favorite bioinformatics program, or ones you commonly see used in your 
+> field. If you can't think of anything, try to search for BLAST. What do you have to search for to get back the results you'd 
+> expect? 
 {: .challenge}
 
 ### Install packages using APT
@@ -316,13 +322,16 @@ tmux/trusty,now 1.8-5 amd64 [installed]
 
 which means that it is stored in APT as tmux.
 
->What are the package names for programs you need in your pipeline? Are they the same as the program name? What package name would you need to install the old version of BLAST? 
+## Exercise
+> What are the package names for programs you need in your pipeline? Are they the same as the program name? What package name 
+> would you need to install the old version of BLAST? 
 {: .challenge}
-
 
 Once you know the package name, you could install it using `apt install`:
 
->Remember, the following instructions are for demonstration only, you don't have the administrator password needed to run these commands on your workshop instance. 
+## Reminder
+> Remember, the following instructions are for demonstration only, you don't have the administrator password needed to run 
+> these commands on your workshop instance. 
 {: .callout}
 
 ####  Update APT

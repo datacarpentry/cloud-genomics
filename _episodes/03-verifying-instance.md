@@ -178,6 +178,9 @@ In both `tmux` and `screen`, you open a 'session'. A 'session' can be thought of
 
 As you work, an open session will stay active until you close this session. Even if you disconnect from your machine, the jobs you start in this session will run till completion.
 
+For the following instructions use either `tmux` OR `screen`, not both!
+{: .callout}
+
 ### Starting and attaching to a session
 
 You can start a session and give it a descriptive name:
@@ -276,16 +279,97 @@ You can end sessions:
   {: .bash}
 
 
-### Installing additional software
+## Installing additional software
 
-By default `tmux` is not installed in most cloud Linux instances. However you can install new software packages using Package Managers like YUM (for Red Hat and Centos instances) or APT (for Debian or Ubuntu instances). We will explore how to install `tmux` using APT (Advanced Package Tool).
+By default `tmux` is not installed in most cloud Linux instances. However when you start a new instance, you can install new software packages using Package Managers like YUM (for Red Hat and Centos instances) or APT (for Debian or Ubuntu instances). 
+
+## Caution
+> In this lesson, you are using an Amazon instance owned by someone else, so you *won't* be able to install packages, but 
+> we'll show you how to use APT (Advanced Package Tool) to find packages, so you know how to do it when you launch your own
+> instance. 
+{: .callout}
+
+### Search for APT packages using including software
+
+Most common software tools will have a package named with the same name, but this is not always the case. If you know the name of the program you wish to install, but are not sure of the package name, you can use the `apt` program to search packages:
+
+~~~
+$ apt search tmux
+Sorting... Done
+Full Text Search... Done
+tmux/trusty,now 1.8-5 amd64 [installed]
+  terminal multiplexer
+$
+~~~
+{: .bash}
+
+On our system, searching for tmux only gives one result, and it is already installed. 
+
+## Exercise
+> Check to see whether APT can be used to install your favorite bioinformatics program, or ones you commonly see used in your 
+> field. If you can't think of anything, try to search for BLAST. What do you have to search for to get back the results you'd 
+> expect? 
+{: .challenge}
+
+### Install packages using APT
+
+If you own, or at least have administrator privileges on an instance, you can also use APT to install a package. First you would need the package name, which is whatever is before the `/` in your search result. In our example above with `tmux`, we got
+
+~~~
+tmux/trusty,now 1.8-5 amd64 [installed]
+~~~
+{: .bash}
+
+which means that it is stored in APT as tmux.
+
+## Exercise
+> What are the package names for programs you need in your pipeline? Are they the same as the program name? What package name 
+> would you need to install the old version of BLAST? 
+{: .challenge}
+
+Once you know the package name, you could install it using `apt install`:
+
+## Reminder
+> Remember, the following instructions are for demonstration only, you don't have the administrator password needed to run 
+> these commands on your workshop instance. 
+{: .callout}
 
 ####  Update APT
 
-Before installing or upgrading any system packages, you should always update the local APT cache:
+Before installing or upgrading any system packages, you should always update the local APT cache. That ensures you'll install the latest version. 
+Note that the instructions now start with `sudo`, which is short for 'super user do'. `sudo` is a program that allows a user to users to run programs as an administrator without logging off and then logging back in as the admin. 
+
+So, in this line:
 
 ~~~
-$ sudo apt-get update
+$ sudo apt upgrade
+~~~
+{: .bash}
+
+we are first invoking `sudo`, and then having the `sudo` program run `apt upgrade`. This way, `apt upgrade` is run from the administrator account. You can actually try to run that line if you want, you'll be prompted to input the administrator password:
+
+~~~
+$ sudo apt upgrade
+[sudo] password for dcuser:
+~~~
+{: .bash}
+
+
+Since we don't have the adminstrator password, our request will be rejected:
+
+~~~
+dcuser@ip-172-31-26-134:~$ sudo apt upgrade
+password for dcuser:
+dcuser is not in the sudoers file.  This incident will be reported.
+dcuser@ip-172-31-26-134:~$
+~~~
+{: .bash}
+
+If we *did* have the administrator password, we would have seen this:
+
+~~~
+$ sudo apt upgrade
+password for dcuser:
 Hit:1 http://au.archive.ubuntu.com/ubuntu xenial InRelease
 Get:2 http://au.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]
 ...
@@ -294,40 +378,13 @@ Reading package lists... Done
 ~~~
 {: .bash}
 
-#### Search for APT packages using including software
+And one the cache is updated, we could have then requested that APT install a program. To have APT find packages, we used `apt search`, which told the program APT to run it's sub-program 'search' but to install packages, we need to use the subprogram 'install'. Confusingly, there is also an `apt-get` program with an 'install' subprogram which does exactly the same thing, in 99% of cases, it doesn't matter whether you use `apt install` or `apt-get install`. 
 
-Most common software tools will have a package named the same, but this is not always the case. If you know the name of the program you wish to install, but are not sure of the package name, you can use the `apt` program to search packages:
-
-~~~
-$ sudo apt search tmux
-Sorting... Done
-Full Text Search... Done
-abduco/xenial 0.1-2 amd64
-  terminal session manager
-
-powerline/xenial-updates 2.3-1ubuntu0 amd64
-  prompt and statusline utility
-
-tmate/xenial 1.8.10-2build1 amd64
-  terminal multiplexer with instant terminal sharing
-
-tmux/xenial,now 2.1-3build1 amd64
-  terminal multiplexer
-
-tmuxinator/xenial 0.7.0-2 all
-  Create and manage tmux sessions easily
-$
-~~~
-{: .bash}
-
-There is a plain `tmux` package, so we will use that to install.
-
-#### Install packages using APT
-
-Once you know the package name, you can install it using `apt-get install`:
+As with the 'upgrade' command, this will require the administrator password that we don't have, but on your own machine, you'd get output like this:
 
 ~~~
-$ sudo apt-get install tmux
+$ sudo apt install tmux
+password for dcuser:
 Reading package lists... Done
 Building dependency tree
 Reading state information... Done
@@ -352,4 +409,6 @@ Processing triggers for libc-bin (2.23-0ubuntu10) ...
 ~~~
 {: .bash}
 
-When this has completed, `tmux` will now be available for use on the instance.
+
+
+

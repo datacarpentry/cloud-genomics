@@ -93,6 +93,14 @@ help you figure out how to apply and what you need.
 #### [JetStream](http://jetstream-cloud.org/)
 
 ### Commercial Clouds
+Computing architecture is moving (albeit at a slow pace) to the Model-to-Data paradigm. This means that scientists should be encouraged to bring their compute to where the data is stored, instead of the the other way around. The following outlines the general differences between the three major commercial cloud providers: Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure. 
+
+Essentially all cloud providers provide extremely similar computing and storage options; you can "rent" or provision computing infrastructure with very similar specifications across all three cloud vendors. Even the costs are highly comparable. What governs how to choose the right cloud computing vendor is highly opportunistic: (1)funding options, (2)solidarity with collaborating/similar scientific groups, (3)location of datasets that a particular research group works with and (4)familiarity with cloud vendor services. 
+
+1. Funding options: Does your grant stipulate where you should build your computing pipeline? For example, the NIH often partners with specific cloud vendors to provide cloud credits that allow researchers to compute for free. Some cloud vendors also provide research credits. 
+2. Solidarity with collaborating/similar scientific groups: Are other research groups in your field drawn to a specific cloud vendor? It might make sense to utilize the same cloud service to minimize transfer (egress) costs especially if you are sharing large datasets. You may also be able to make use of existing pipelines without reinventing the wheel if you choose the same cloud provider that your collaborators are using. 
+3. Location of datasets that a particular research group works with: Again, thinking of bringing your models to the where the data is stored helps minimize costs and saves you time in having to download and store data separately.
+4. Services here refer to cloud vendor add-ons that take away the need for a user to set up their own computing infrastructure.  A fully managed database (e.g. AWS RDS, GCP CloudSQL, Azure SQL DB) is an example of a service. If you are used to SQL Server, you may want to look into options provided by Azure. Are you more familiar with Postgres SQL? Then AWS and GCP might provide cheaper options for you. 
 
 #### [Amazon EC2 ](http://aws.amazon.com/ec2/)
 
@@ -131,10 +139,14 @@ whether you're using it or not. If you leave an instance on idly for months afte
 you'll still have to pay for that time.
 
 #### [Google Cloud](https://cloud.google.com/): [getting started](https://cloud.google.com/compute/docs/quickstart)
+GCP offers very competitive prices for compute and storage (as of July 2019, their compute pricing is lower than that of AWS and Azure for instances of comparable specifications). If you are looking to dabble in cloud computing but do not need a vast catalog of services, GCP would be a good place to start looking. 
+
+Their version of "Spot Intances" are known as pre-emptible instances and offer very competitive pricing. GCP also has TPUs. 
 
 #### [Microsoft Azure](https://azure.microsoft.com/en-us/)
+If your software requires Microsoft Windows, it may be cheaper to use MS Azure due to licensing issues. Azure's computing instances are known as Azure Virtual Machines and often come at a slightly higher cost than other cloud computing vendors' offerings. If a lot of your computing pipeling is Windows dependent, it may make sense to build everything on MS Azure from the get go. 
 
-## How to Choose
+## How to Choose 
 
 As you can see, highly managed systems (HPCCs, XSEDE, etc) usually are free or cheap, but
 relatively inflexible. There may be certain programs you can't install, or there may be long

@@ -46,7 +46,7 @@ The most important thing about the **cloud** is choice - instead of purchasing a
 * Form of payment (credit card)*
 * Understanding of Amazon's billing and payment (See: [Getting started with AWS Billing and Cost Management](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-getting-started.html))
 
-\* You can use some of Amazon Web Services (AWS) for free, or see if you qualify for an AWS Grant (See: [https://aws.amazon.com/grants/](https://aws.amazon.com/grants/) ) if you are using AWS for education. The free level of service *will not* be sufficient for working with the amount of data we are using for our lessons.
+\* You can use some of Amazon Web Services (AWS) for free, or see if you qualify for AWS Cloud Credits for Research (See: [https://aws.amazon.com/research-credits/](https://aws.amazon.com/research-credits/) ). The free level of service *will not* be sufficient for working with the amount of data we are using for our lessons.
 
 
 ### Cloud platform choices

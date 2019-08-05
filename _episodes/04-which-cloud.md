@@ -84,6 +84,31 @@ If you're interested in using XSEDE, check to see if your workplace has a [Campu
 have had extensive training on both the XSEDE system and the allocation program, and can
 help you figure out how to apply and what you need.
 
+#### [Open Science Grid](https://opensciencegrid.org)
+
+The Open Science Grid (OSG) is an NSF-funded national network of computing centers that
+have pooled their resources together and made them available to various research groups.
+The OSG is usable by any researcher based at a US institution, and is accessible
+for free without an allocation. It can provide millions of computing hours for researchers
+who have problems that fit well on its setup.
+
+Certain projects and universities have direct access to the Open Science Grid, but any
+researcher can access it through the [OSG Connect](https://osgconnect.net/) entry point.
+If you apply for OSG access through this website, you will have a consultation with
+someone who can help you determine if your analysis is a good fit for and how to get started.
+
+The OSG is a great fit for problems that can be broken into lots of independent pieces.
+One good example is read alignment: the starting read data can be broken into several
+pieces, each of them aligned, and then the results combined. Another good problem type
+for the OSG are multi-start simulations or statistical analyses where you need to run the
+same model or simulation many, many times. The payoff of using this
+approach is being able to run on many hundreds (sometimes thousands!) of computers at
+once, accelerating your analysis.
+
+Note that you don't access a specific computing center through OSG -- unlike XSEDE, where
+you apply for time and then run on a specific HPCC resource, the OSG sits on top of many
+resources and when you submit your work, it could run almost anywhere in the overall system.
+
 #### [Atmosphere](https://pods.iplantcollaborative.org/wiki/display/atmman/Getting+Started)
 
 
@@ -93,14 +118,14 @@ help you figure out how to apply and what you need.
 #### [JetStream](http://jetstream-cloud.org/)
 
 ### Commercial Clouds
-Computing architecture is moving (albeit at a slow pace) to the Model-to-Data paradigm. This means that scientists should be encouraged to bring their compute to where the data is stored, instead of the the other way around. The following outlines the general differences between the three major commercial cloud providers: Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure. 
+Computing architecture is moving (albeit at a slow pace) to the Model-to-Data paradigm. This means that scientists should be encouraged to bring their compute to where the data is stored, instead of the the other way around. The following outlines the general differences between the three major commercial cloud providers: Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure.
 
-Essentially all cloud providers provide extremely similar computing and storage options; you can "rent" or provision computing infrastructure with very similar specifications across all three cloud vendors. Even the costs are highly comparable. What governs how to choose the right cloud computing vendor is highly opportunistic: (1)funding options, (2)solidarity with collaborating/similar scientific groups, (3)location of datasets that a particular research group works with and (4)familiarity with cloud vendor services. 
+Essentially all cloud providers provide extremely similar computing and storage options; you can "rent" or provision computing infrastructure with very similar specifications across all three cloud vendors. Even the costs are highly comparable. What governs how to choose the right cloud computing vendor is highly opportunistic: (1)funding options, (2)solidarity with collaborating/similar scientific groups, (3)location of datasets that a particular research group works with and (4)familiarity with cloud vendor services.
 
-1. Funding options: Does your grant stipulate where you should build your computing pipeline? For example, the NIH often partners with specific cloud vendors to provide cloud credits that allow researchers to compute for free. Some cloud vendors also provide research credits. 
-2. Solidarity with collaborating/similar scientific groups: Are other research groups in your field drawn to a specific cloud vendor? It might make sense to utilize the same cloud service to minimize transfer (egress) costs especially if you are sharing large datasets. You may also be able to make use of existing pipelines without reinventing the wheel if you choose the same cloud provider that your collaborators are using. 
+1. Funding options: Does your grant stipulate where you should build your computing pipeline? For example, the NIH often partners with specific cloud vendors to provide cloud credits that allow researchers to compute for free. Some cloud vendors also provide research credits.
+2. Solidarity with collaborating/similar scientific groups: Are other research groups in your field drawn to a specific cloud vendor? It might make sense to utilize the same cloud service to minimize transfer (egress) costs especially if you are sharing large datasets. You may also be able to make use of existing pipelines without reinventing the wheel if you choose the same cloud provider that your collaborators are using.
 3. Location of datasets that a particular research group works with: Again, thinking of bringing your models to the where the data is stored helps minimize costs and saves you time in having to download and store data separately.
-4. Services here refer to cloud vendor add-ons that take away the need for a user to set up their own computing infrastructure.  A fully managed database (e.g. AWS RDS, GCP CloudSQL, Azure SQL DB) is an example of a service. If you are used to SQL Server, you may want to look into options provided by Azure. Are you more familiar with Postgres SQL? Then AWS and GCP might provide cheaper options for you. 
+4. Services here refer to cloud vendor add-ons that take away the need for a user to set up their own computing infrastructure.  A fully managed database (e.g. AWS RDS, GCP CloudSQL, Azure SQL DB) is an example of a service. If you are used to SQL Server, you may want to look into options provided by Azure. Are you more familiar with Postgres SQL? Then AWS and GCP might provide cheaper options for you.
 
 #### [Amazon EC2 ](http://aws.amazon.com/ec2/)
 
@@ -128,7 +153,7 @@ If you request a spot-instance, that means you specify the size and parameters o
 your machine rental, and set a limit on how much you're willing to spend per hour. Then,
 whenever the rental rate dips below your maximum, your instance turns on and runs until
 the price goes back up. If it's not an important shopping season, and you aren't in a hurry,
-you can often run spot-instances for less than half their normal cost. 
+you can often run spot-instances for less than half their normal cost.
 
 ##### Free Tier
 There are also [free options](https://aws.amazon.com/free/), which allow you to test out
@@ -139,14 +164,14 @@ whether you're using it or not. If you leave an instance on idly for months afte
 you'll still have to pay for that time.
 
 #### [Google Cloud](https://cloud.google.com/): [getting started](https://cloud.google.com/compute/docs/quickstart)
-GCP offers very competitive prices for compute and storage (as of July 2019, their compute pricing is lower than that of AWS and Azure for instances of comparable specifications). If you are looking to dabble in cloud computing but do not need a vast catalog of services, GCP would be a good place to start looking. 
+GCP offers very competitive prices for compute and storage (as of July 2019, their compute pricing is lower than that of AWS and Azure for instances of comparable specifications). If you are looking to dabble in cloud computing but do not need a vast catalog of services, GCP would be a good place to start looking.
 
-Their version of "Spot Intances" are known as pre-emptible instances and offer very competitive pricing. GCP also has TPUs. 
+Their version of "Spot Intances" are known as pre-emptible instances and offer very competitive pricing. GCP also has TPUs.
 
 #### [Microsoft Azure](https://azure.microsoft.com/en-us/)
-If your software requires Microsoft Windows, it may be cheaper to use MS Azure due to licensing issues. Azure's computing instances are known as Azure Virtual Machines and often come at a slightly higher cost than other cloud computing vendors' offerings. If a lot of your computing pipeling is Windows dependent, it may make sense to build everything on MS Azure from the get go. 
+If your software requires Microsoft Windows, it may be cheaper to use MS Azure due to licensing issues. Azure's computing instances are known as Azure Virtual Machines and often come at a slightly higher cost than other cloud computing vendors' offerings. If a lot of your computing pipeling is Windows dependent, it may make sense to build everything on MS Azure from the get go.
 
-## How to Choose 
+## How to Choose
 
 As you can see, highly managed systems (HPCCs, XSEDE, etc) usually are free or cheap, but
 relatively inflexible. There may be certain programs you can't install, or there may be long
@@ -175,13 +200,13 @@ with small amounts of data, until I know how the program behaves. Then I port th
 my university HPCC for running the full dataset.
 
 > ## Discussion
-> 
+>
 > In small groups or on your own, plot out your next bioinformatics project. With guidance
 > from your instructors and the above references, try to determine not only what types of
 > resources you'll need, but what platform will best suit your project.
-> 
+>
 > Some things to consider:
-> 
+>
 > - How much data do you have?
 > - What computational steps will it need?
 >   - What is the *largest* computational step?
@@ -194,18 +219,18 @@ my university HPCC for running the full dataset.
 {: .challenge}
 
 > ## Human genomic data & Security
-> 
-> Note that if you are working with human genomics data there might be ethical and legal 
-> considerations that affect your choice of cloud resources to use. The terms of use, and/or 
-> the legislation under which you are handling the genomic data, might impose heightened information 
-> security measures for the computing environment in which you intend to process it. This is a too broad 
-> topic to discuss in detail here, but in general terms you should think through the technical and 
-> procedural measures needed to ensure that the confidentiality and integrity of the human data you work 
-> with is not breached. If there are laws that govern these issues in the jurisdiction in which you work, 
-> be sure that the cloud service provider you use can certify that they support the necessary measures. 
-> Also note that there might exist restrictions for use of cloud service providers that operate in other 
-> jurisdictions than your own, either by how the data was consented by the research subjects or by the 
-> jurisdiction under which you operate. Do consult the legal office of your institution for guidance 
+>
+> Note that if you are working with human genomics data there might be ethical and legal
+> considerations that affect your choice of cloud resources to use. The terms of use, and/or
+> the legislation under which you are handling the genomic data, might impose heightened information
+> security measures for the computing environment in which you intend to process it. This is a too broad
+> topic to discuss in detail here, but in general terms you should think through the technical and
+> procedural measures needed to ensure that the confidentiality and integrity of the human data you work
+> with is not breached. If there are laws that govern these issues in the jurisdiction in which you work,
+> be sure that the cloud service provider you use can certify that they support the necessary measures.
+> Also note that there might exist restrictions for use of cloud service providers that operate in other
+> jurisdictions than your own, either by how the data was consented by the research subjects or by the
+> jurisdiction under which you operate. Do consult the legal office of your institution for guidance
 > when processing human genomic data.
 {: .callout}
 

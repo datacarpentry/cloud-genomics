@@ -94,7 +94,7 @@ who have problems that fit well on its setup.
 
 Certain projects and universities have direct access to the Open Science Grid, but any
 researcher can access it through the [OSG Connect](https://osgconnect.net/) entry point.
-If you apply for OSG access through this website, you will have a consultation with
+If you apply for OSG access through that website, you will have a consultation with
 someone who can help you determine if your analysis is a good fit for and how to get started.
 
 The OSG is a great fit for problems that can be broken into lots of independent pieces.

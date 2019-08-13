@@ -16,11 +16,13 @@ keypoints:
 
 ## Cloud platform choices
 
-There are several cloud providers to choose from. Some scientific clouds may either be free or allocate resources competitively. Commercial clouds can be very powerful, but choice can be overwhelming. We will cover as much as we can, but you will ultimately need to learn things not covered here so see the documentation below:
+There are several cloud providers to choose from. Some scientific clouds may either be free or allocate resources competitively. Commercial clouds can be very powerful, but choice can be overwhelming. Availablity of public and commercial cloud resources also vary by country and region.
 
 The major tradeoff between platforms is between flexibility and cost. Generally speaking,
 services that allow you more flexibility and autonomy, will be more expensive than
 highly managed services.
+
+Below, we have highlighted the three types of computing resources: Clusters, Open Science Clouds, and Commercial Clouds, which are widely available to researchers around the world. However, the availability of any specific cluster or cloud may be region specific, and this is not meant to be an exhaustive list. We encourage researchers to use this list as a starting point for learning about cloud resources and suggest checking with your local or regional government to see what other Open Science Clouds might be available to you. The cloud resources listed here should be available to any scientist based in the US, but may be unavailable, or have different pricing, in other countries. 
 
 ### University/Corporate Computing Clusters
 
@@ -127,7 +129,7 @@ Essentially all cloud providers provide extremely similar computing and storage 
 3. Location of datasets that a particular research group works with: Again, thinking of bringing your models to the where the data is stored helps minimize costs and saves you time in having to download and store data separately.
 4. Services here refer to cloud vendor add-ons that take away the need for a user to set up their own computing infrastructure.  A fully managed database (e.g. AWS RDS, GCP CloudSQL, Azure SQL DB) is an example of a service. If you are used to SQL Server, you may want to look into options provided by Azure. Are you more familiar with Postgres SQL? Then AWS and GCP might provide cheaper options for you.
 
-#### [Amazon EC2 ](http://aws.amazon.com/ec2/)
+#### [Amazon EC2](http://aws.amazon.com/ec2/)
 
 The Amazon Web Service (AWS) that you've been using is the Elastic Compute (EC2) cloud. There
 are actually lots of other cloud and storage solutions under the AWS umbrella, but when most

@@ -111,7 +111,7 @@ resources and when you submit your work, it could run almost anywhere in the ove
 
 #### [Open Science Data Cloud (OSDC)](https://www.opensciencedatacloud.org/)
 
-The Open Science Data Cloud provides the scientific community with resources for storing, sharing, and analyzing terabyte and petabyte-scale scientific datasets.OSDC's Bionimbus Protected Data Cloud (PDC) is a platform desigend with the sole purpose of analysing and sharing protected genomics data 
+The Open Science Data Cloud provides the scientific community with resources for storing, sharing, and analyzing terabyte and petabyte-scale scientific datasets. OSDC's Bionimbus Protected Data Cloud (PDC) is a platform designed with the sole purpose of analysing and sharing protected genomics data.
 
 #### [Atmosphere](https://pods.iplantcollaborative.org/wiki/display/atmman/Getting+Started)
 

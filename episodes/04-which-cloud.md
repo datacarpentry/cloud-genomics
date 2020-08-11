@@ -111,6 +111,10 @@ Note that you don't access a specific computing center through OSG -- unlike XSE
 you apply for time and then run on a specific HPCC resource, the OSG sits on top of many
 resources and when you submit your work, it could run almost anywhere in the overall system.
 
+#### [Open Science Data Cloud (OSDC)](https://www.opensciencedatacloud.org/)
+
+The Open Science Data Cloud provides the scientific community with resources for storing, sharing, and analyzing terabyte and petabyte-scale scientific datasets. OSDC's Bionimbus Protected Data Cloud (PDC) is a platform designed with the sole purpose of analysing and sharing protected genomics data.
+
 #### [Atmosphere](https://pods.iplantcollaborative.org/wiki/display/atmman/Getting+Started)
 
 
@@ -242,3 +246,11 @@ my university HPCC for running the full dataset.
 Learn more about cloud computing in bioinformatics:
 
 Fusaro VA, Patil P, Gafni E, Wall DP, Tonellato PJ (2011) **Biomedical Cloud Computing With Amazon Web Services**. PLoS Comput Biol 7(8): e1002147. doi: [10.1371/journal.pcbi.1002147](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002147)
+
+Charlebois K, Palmour N, Knoppers BM (2016) **The Adoption of Cloud Computing in the Field of Genomics Research: The Influence of Ethical and Legal Issues**. PLoS ONE 11(10): e0164347. https://doi.org/10.1371/journal.pone.0164347
+
+Langmead B, Nellore A (2018) **Cloud computing for genomic data analysis and collaboration** Nature Reviews Genetics 19 (208). doi: 10.1038/nrg.2017.113 (https://www.nature.com/articles/nrg.2017.113)
+
+
+
+

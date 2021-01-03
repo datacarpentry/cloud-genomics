@@ -84,7 +84,7 @@ Now that we have connected here are a few commands that tell you a little about 
   ~~~
   {: .output}
 
-  Under the column 'Mounted on row' that has `/` as the value shows the value for the main disk
+  Under the column 'Mounted on' row that has `/` as the value shows the value for the main disk
 
 - `cat /proc/cpuinfo` - shows detail information on how many processors (CPUs) the machine has
 

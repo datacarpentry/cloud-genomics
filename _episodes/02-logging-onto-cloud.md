@@ -99,14 +99,14 @@ operating system, but sometimes requires additional software.
     
     You will be presented with a security warning
 
-    ![](../fig/putty_screenshot_2.png)
+    ![Screenshot showing a security warning after opening a PuTTY session.](../fig/putty_screenshot_2.png)
 
 3. Select 'Yes' to continue to connect
 3. In the final step, you will be asked to provide a login and password
     
     **Note:** When typing your password, it is common in Unix/Linux not see any asterisks (e.g. `****) or moving cursors. Just continue typing
 
-    ![](../fig/putty_screenshot_3.png)
+    ![Screenshot of a command line window demonstrating how to type passwords in Unix/Linux](../fig/putty_screenshot_3.png)
 
 You should now be connected!
 

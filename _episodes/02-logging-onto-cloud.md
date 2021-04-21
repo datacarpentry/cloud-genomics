@@ -93,7 +93,7 @@ operating system, but sometimes requires additional software.
 
     *Keep the default selection 'SSH' and Port (22)*
 
-    ![](../fig/putty_screenshot_1.png)
+    ![The location of the Host Name, Port, and Connection Type fields in the PuTTY Configuration](../fig/putty_screenshot_1.png)
 
 2. Click 'Open' 
     

@@ -178,7 +178,7 @@ Their version of "Spot Intances" are known as pre-emptible instances and offer v
 If your software requires Microsoft Windows, it may be cheaper to use MS Azure due to licensing issues. Azure's computing instances are known as Azure Virtual Machines and often come at a slightly higher cost than other cloud computing vendors' offerings. If a lot of your computing pipeling is Windows dependent, it may make sense to build everything on MS Azure from the get go.
 
 #### [IBM Cloud](https://www.ibm.com/cloud)
-IBM Cloud offers more than 11 million bare metal configurations in virtual mode which are customizable RAM and SSDs on bare metal. They also have an onn-demand provisioning for all servers whose management and monitoring included along with the direct and cost-free tech support
+IBM Cloud offers more than 11 million bare metal configurations in virtual mode which are customizable RAM and SSDs on bare metal. They also have an on-demand provisioning for all servers whose management and monitoring included along with the direct and cost-free tech support
 
 ## How to Choose
 

@@ -28,24 +28,25 @@ even started, but this is an important skill for when you start running your own
 When you connect, it is typical to receive a welcome screen. The Data Carpentry Amazon instances display this message upon connecting:
 
 ~~~
-Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
+Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.4.0-137-generic x86_64)
 
- * Documentation:  https://help.ubuntu.com/
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
 
-  System information as of Tue Jan 29 22:28:18 UTC 2019
+  System information as of Wed 25 Jan 2023 05:17:10 AM UTC
 
-  System load:  0.04               Processes:           164
-  Usage of /:   43.1% of 98.30GB   Users logged in:     0
-  Memory usage: 2%                 IP address for eth0: 172.31.41.107
+  System load:  0.9                Processes:             204
+  Usage of /:   19.7% of 98.27GB   Users logged in:       0
+  Memory usage: 6%                 IPv4 address for eth0: 172.31.23.125
   Swap usage:   0%
-
-  Graph this data and manage this system at:
-    https://landscape.canonical.com/
 
   Get cloud support with Ubuntu Advantage Cloud Guest:
     http://www.ubuntu.com/business/services/cloud
 
-New release '16.04.5 LTS' available.
+0 updates can be applied immediately.
+
+New release '22.04.1 LTS' available.
 Run 'do-release-upgrade' to upgrade to it.
 ~~~
 {: .output}

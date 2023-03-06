@@ -1,5 +1,5 @@
 ---
-title: "Which Cloud for my data?"
+title: "Which Cloud Platform for my data?"
 teaching: 10
 exercises: 20
 questions:
@@ -54,36 +54,29 @@ However, most HPCCs (High Performance Computing Clusters) put limits on:
 
 ### Open Science Clouds
 
-#### [XSEDE](https://www.xsede.org/)
+#### [ACCESS](https://access-ci.org/)
 
-The Extreme Science and Engineering Discovery Environment (XSEDE) is an NSF funded HPCC, so
-it is open to any US-based researcher, and shares most of the same benefits and drawbacks
-of a university or corporate HPCC. If your university or corporation doesn't have it's
-own HPCC resources, XSEDE will likely be your cheapest option.
+The NSF’s ACCESS (Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support) program 
+builds upon the successes of the 11-year XSEDE (Extreme Science and Engineering Discovery Environment) project, 
+while also expanding the ecosystem with capabilities for new modes of research and further democratizing participation.
 
-Although any US-based researcher can use XSEDE, first [they'll need an account](https://portal.xsede.org/#/guest).
+Although any US-based researcher can use ACCESS, first [they'll need an account](https://identity.access-ci.org/new-user).
+If you previously had an XCEDE account, you do not need to create a new ACCESS ID.
 Like the HPCC options described above, XSEDE uses a scheduler to start jobs, and puts limits on
 how many resources any one user can utilize at once.
 
-XSEDE can also be a bit intimidating at first because you will need to know what resources
-you need, and for how long, before you get started. XSEDE runs like a mini version of the
-NSF grant system. In order to qualify to submit large jobs, you'll have to submit a [allocation request](https://portal.xsede.org/allocations/research), in the form of a short proposal.
+ACCESS can also be a bit intimidating at first because you will need to know what resources
+you need, and for how long, before you get started. ACCESS runs like a mini version of the
+NSF grant system. In order to qualify to submit large jobs, you'll have to submit a [allocation request](https://allocations.access-ci.org/manage-allocations-overview), in the form of a short proposal.
 Also like an NSF grant, if your proposal is accepted, that means you have access to whatever
 resources you were approved for, for the time frame you requested.
 
-Don't let that paragraph scare you off though. XSEDE has two different allocation tracks. If
-you aren't sure exactly what you'll need for your big project, you can request a [startup allocation](https://portal.xsede.org/allocations/startup) which only requires an abstract
-rather than a proposal, and grants you a year to try out your new pipeline or analysis. These
-are usually granted in a week or so, and are intended for you to test your pipeline so you
-know what to ask for in your allocation proposal.
+Don't let that paragraph scare you off though. ACCESS has four different allocation tracks. If
+you aren't sure exactly what you'll need for your big project, you can request an [explore allocation](https://allocations.access-ci.org/prepare-requests-overview#comparison-table) which only requires an abstract
+rather than a proposal, and grants you a year to try out your new pipeline or analysis. 
 
-If that still sounds a little too daunting, XSEDE also has [trial allocations](https://iujetstream.atlassian.net/wiki/spaces/JWT/pages/76149919/Jetstream+Trial+Access+Allocation)
-which give you access to only a tiny fraction of XSEDES power, but are plenty large enough to
-test your code and see if a larger allocation is worth pursuing. These allocations are granted
-more or less immediately by simply filling in a form and agreeing to the usage rules.
-
-If you're interested in using XSEDE, check to see if your workplace has a [Campus Champion](https://www.xsede.org/community-engagement/campus-champions). These are people who
-have had extensive training on both the XSEDE system and the allocation program, and can
+If you're interested in using ACCESS, check to see if your workplace has a [Campus Champion](https://campuschampions.cyberinfrastructure.org/). These are people who
+have had extensive training on both the XSEDE/ACCESS systems and the allocation program, and can
 help you figure out how to apply and what you need.
 
 #### [Open Science Grid](https://opensciencegrid.org)
@@ -121,7 +114,9 @@ The Open Science Data Cloud provides the scientific community with resources for
 #### [CyVerse (iPlant Collaborative) Atmosphere](http://www.cyverse.org/atmosphere)
 
 
-#### [JetStream](http://jetstream-cloud.org/)
+#### [JetStream2](http://jetstream-cloud.org/)
+Jetstream2 is an update to the NSF’s science and engineering cloud infrastructure and provides 8 petaFLOPS of supercomputing power. It is an NSF-funded cloud environment designed to allow “always on” research infrastructure and to give researchers access to interactive computing and data analysis resources on demand, whenever and wherever they want to analyze their data. Jetstream allocations are awarded through ACCESS. Allocations are free, but require that the Principal Investigator (PI) is a US-based researcher. You can apply for an account here: https://identity.access-ci.org/new-user
+
 
 ### Commercial Clouds
 Computing architecture is moving (albeit at a slow pace) to the Model-to-Data paradigm. This means that scientists should be encouraged to bring their compute to where the data is stored, instead of the the other way around. The following outlines the general differences between the three major commercial cloud providers: Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure.

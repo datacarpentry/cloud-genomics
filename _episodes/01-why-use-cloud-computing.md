@@ -1,5 +1,5 @@
 ---
-title: "Why of cloud computing"
+title: "Why Use Cloud Computing"
 teaching: 5
 exercises: 0
 questions:

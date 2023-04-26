@@ -180,7 +180,7 @@ In both `tmux` and `screen`, you open a 'session'. A 'session' can be thought of
 As you work, an open session will stay active until you close this session. Even if you disconnect from your machine, the jobs you start in this session will run till completion.
 
 For the following instructions use either `tmux` OR `screen`, not both!
-{: .callout}
+
 
 ### Starting and attaching to a session
 

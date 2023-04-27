@@ -134,7 +134,7 @@ Your instance should be ready in 10-15 minutes. When your instance status is lis
 1. If necessary, log into your Atmosphere at: [https://atmo.iplantcollaborative.org/application/images](https://atmo.iplantcollaborative.org/application/images)
 2. Click on 'Projects' and select the project that contains your instance.
 3. Verifying that your instance status is **'active'**, copy the IP address (e.g. 128.123.12.34) to your clipboard.
-    <img src="../fig/logging-onto-cloud_11.png" width="500" alt="Columns in the Instances table display the Status, Activity, and IP Address of an instance">
+   ![Columns in the Instances table display the Status, Activity, and IP Address of an instance](../fig/logging-onto-cloud_11.png)
 3. Open the terminal application  and use 'ssh' to connect. Your command will be:
 
     ```bash

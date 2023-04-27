@@ -89,11 +89,13 @@ There are several cloud providers to choose from. Some scientific clouds may eit
 ## AWS (Amazon EC2 instances)
 
 - See [the detailed instructions](https://datacarpentry.org/genomics-workshop/AMI-setup/) on launching an Amazon EC2 instance for this workshop.
- - You can launch any publicly available image by changing the AMI that you load in step 4 on that page.
- - You can choose not to load an AMI at all, and install your own software later by skipping step 4 on that page.
- - If you want to launch a different set of resources- more processors, more disk space, different operating system, etc;
- you can choose a different option at step 5.
- - For more detailed instructions, and how-tos for other changes consult [EC2 Getting Started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html).
+  - You can launch any publicly available image by changing the AMI that you load in step 4 on that page.
+  - You can choose not to load an AMI at all, and install your own software later by skipping step 4 on that page.
+  - If you want to launch a different set of resources- more processors, more disk space, different operating system, etc;
+    you can choose a different option at step 5.
+  - For more detailed instructions, and how-tos for other changes consult
+    [EC2 Getting 
+Started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html).
 
 </div>
 
@@ -109,7 +111,8 @@ There are several cloud providers to choose from. Some scientific clouds may eit
 #### Sign into Atmosphere and launch an instance
 1. Sign into Atmosphere at: [http://atmo.iplantcollaborative.org/](http://atmo.iplantcollaborative.org/)
 2. Select 'Launch New Instance'
-    <img src="../fig/logging-onto-cloud_8.png" width="500" alt="Screenshot of Atmosphere showing location of the "Launch New Instance" button">
+    <img src="../fig/logging-onto-cloud_8.png" width="500" alt="Screenshot of Atmosphere showing location of the 'Launch New 
+Instance' button">
 3. Search for the 'TSW Workshop Williams 1.2' image; Select this image.
     <img src="../fig/logging-onto-cloud_9.png" width="500" alt="Screenshot of Atmosphere showing location of the Search bar used to search Images">
 4. Click Launch and then select the following options in the launch wizard:
@@ -119,7 +122,7 @@ There are several cloud providers to choose from. Some scientific clouds may eit
     - Project: Choose an existing or create a new project.
     - Provider: iPlant Cloud - Tucson
     - Instance Size: small2
-Click Launch.
+5. Click Launch.
 
     > **Tip:** You can select a larger instance, but you must have sufficient resources (no exceeded quotas). If Atmosphere is at high capacity, you may not be able to launch an instance if the instance size exceeds what is currently free on the cloud provider
 
@@ -127,7 +130,7 @@ Your instance should be ready in 10-15 minutes. When your instance status is lis
 
 #### Connect to Atmosphere instance
 
-**Instructions for Mac\Linux**
+**Instructions for Mac/Linux**
 
 1. If necessary, log into your Atmosphere at: [https://atmo.iplantcollaborative.org/application/images](https://atmo.iplantcollaborative.org/application/images)
 2. Click on 'Projects' and select the project that contains your instance.
@@ -136,8 +139,8 @@ Your instance should be ready in 10-15 minutes. When your instance status is lis
 3. Open the terminal application  and use 'ssh' to connect. Your command will be:
 
     ```bash
-$ ssh iplantusername@your.atmosphere.ipaddress
-```
+    $ ssh iplantusername@your.atmosphere.ipaddress
+    ```
 5. Your computer will be unable to verify the authenticity of the host... type **yes** to continue connecting
 6. When prompted for a password, enter your iPlant username.
 
@@ -223,33 +226,34 @@ iCommands will allow you to quickly transfer data into your Atmosphere instance:
 1. Initialize iCommands using the following command
 
     ```bash
-$ iinit
-```
+    $ iinit
+    ```
 2. You will then be asked to setup your account and will need to enter the following information
-
+   
     |Prompt|Entry|
-|------|-----|
-|irodsHost|data.iplantcollaborative.org|
-|port|1247|
-|zone|iplant|
-|irodsUserName|your iplant username|
-|Current iRODS password|your iplant password|
+    |------|-----|
+    |irodsHost|data.iplantcollaborative.org|
+    |port|1247|
+    |zone|iplant|
+    |irodsUserName|your iplant username|
+    |Current iRODS password|your iplant password|
 3. Verify that you have connected to your iPlant Data Store; view the contents of your home directory using the following the ``ils`` command:
 
     ```bash
-$ ils
-```
+    $ ils
+    ```
+
 ## Copy Sample Data to your instance
 
 1. Enter the following command:
 
     ```bash
-$ iget -rPVT /iplant/home/shared/iplant_training/data_carpentry_ngs/dc_sampledata_lite .
-```
+    $ iget -rPVT /iplant/home/shared/iplant_training/data_carpentry_ngs/dc_sampledata_lite .
+    ```
 2. using ``ls`` you should be able to verify you have downloaded the dc_sampledata_lite directories and files.
 
-
-> **Tip**: You can use iCommands to move data between your computer, a cloud instance, and the CyVerse Data Store. iCommands is installed on the Data Carpentry Amazon AMI. You can download and see documentation for iCommands [here](https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands)
+> **Tip**: You can use iCommands to move data between your computer, a cloud instance, and the CyVerse Data Store. 
+iCommands is installed on the Data Carpentry Amazon AMI. You can download and see documentation for iCommands [here](https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands)
 
 ### Terminating your Atmosphere instance
 

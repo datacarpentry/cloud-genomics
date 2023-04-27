@@ -111,7 +111,8 @@ Started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
 #### Sign into Atmosphere and launch an instance
 1. Sign into Atmosphere at: [http://atmo.iplantcollaborative.org/](http://atmo.iplantcollaborative.org/)
 2. Select 'Launch New Instance'
-    <img src="../fig/logging-onto-cloud_8.png" width="500" alt="Screenshot of Atmosphere showing location of the "Launch New Instance" button">
+    <img src="../fig/logging-onto-cloud_8.png" width="500" alt="Screenshot of Atmosphere showing location of the 'Launch New 
+Instance' button">
 3. Search for the 'TSW Workshop Williams 1.2' image; Select this image.
     <img src="../fig/logging-onto-cloud_9.png" width="500" alt="Screenshot of Atmosphere showing location of the Search bar used to search Images">
 4. Click Launch and then select the following options in the launch wizard:

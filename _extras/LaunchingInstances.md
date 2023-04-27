@@ -111,12 +111,11 @@ Started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
 #### Sign into Atmosphere and launch an instance
 1. Sign into Atmosphere at: [http://atmo.iplantcollaborative.org/](http://atmo.iplantcollaborative.org/)
 2. Select 'Launch New Instance'
-    <img src="../fig/logging-onto-cloud_8.png" width="500" alt="Screenshot of Atmosphere showing location of the 'Launch New 
-Instance' button">
+   ![Screenshot of Atmosphere showing location of the 'Launch New Instance' button](../fig/logging-onto-cloud_8.png)
 3. Search for the 'TSW Workshop Williams 1.2' image; Select this image.
-    <img src="../fig/logging-onto-cloud_9.png" width="500" alt="Screenshot of Atmosphere showing location of the Search bar used to search Images">
+   ![Screenshot of Atmosphere showing location of the Search bar used to search Images](../fig/logging-onto-cloud_9.png)
 4. Click Launch and then select the following options in the launch wizard:
-    <img src="../fig/logging-onto-cloud_10.png" width="500" alt="Screenshot of Atmosphere showing location of the button to Launch the image">
+   ![Screenshot of Atmosphere showing location of the button to Launch the image](../fig/logging-onto-cloud_10.png)
     - Instance Name:Enter a name(optional)
     - Base Image Version: 1.0
     - Project: Choose an existing or create a new project.
@@ -178,7 +177,7 @@ iplantusername@vm65-164:~$ pwd
 2. If necessary, log into your Atmosphere at: [http://atmo.iplantcollaborative.org/](http://atmo.iplantcollaborative.org/)
 3. Click on 'Projects' and select the project that contains your instance.
 4. Verifying that your instance status is **'active'**, copy the IP address (e.g. 128.123.12.34) to your clipboard.
-   <img src="../fig/logging-onto-cloud_11.png" width="500" alt="Columns in the Instances table display the Status, Activity, and IP Address of an instance">
+   ![Columns in the Instances table display the Status, Activity, and IP Address of an instance](../fig/logging-onto-cloud_11.png)
 5. Start PuTTY. In the section 'Specify the destination you want to connect to' for 'Host Name (or IP address)' paste in the DNS address and click 'Open'
 6. When prompted to login as, enter your iPlant username; you may be notified that the authenticity of the host cannot be verified - if so, ignore the warning an continue connecting
 7. When prompted for a password enter your iPlant password.

@@ -228,7 +228,7 @@ iCommands will allow you to quickly transfer data into your Atmosphere instance:
     $ iinit
     ```
 2. You will then be asked to setup your account and will need to enter the following information
-
+   
     |Prompt|Entry|
     |------|-----|
     |irodsHost|data.iplantcollaborative.org|

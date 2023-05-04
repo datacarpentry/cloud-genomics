@@ -1,18 +1,23 @@
 ---
-title: "Which Cloud for my data?"
+title: Which Cloud for my data?
 teaching: 10
 exercises: 20
-questions:
-- What cloud resources are available?
-- How do I choose my resources?
-objectives:
+---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
 - Describe the advantages and disadvantages of various cloud computing platforms.
 - Determine what resources a project will require
 - Match required resources to computing platforms
-keypoints:
-- Choose your cloud resource to best fit your budget and flexibility requirements
----
 
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- What cloud resources are available?
+- How do I choose my resources?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Cloud platform choices
 
@@ -22,7 +27,7 @@ The major tradeoff between platforms is between flexibility and cost. Generally 
 services that allow you more flexibility and autonomy, will be more expensive than
 highly managed services.
 
-Below, we have highlighted the three types of computing resources: Clusters, Open Science Clouds, and Commercial Clouds, which are widely available to researchers around the world. However, the availability of any specific cluster or cloud may be region specific, and this is not meant to be an exhaustive list. We encourage researchers to use this list as a starting point for learning about cloud resources and suggest checking with your local or regional government to see what other Open Science Clouds might be available to you. The cloud resources listed here should be available to any scientist based in the US, but may be unavailable, or have different pricing, in other countries. 
+Below, we have highlighted the three types of computing resources: Clusters, Open Science Clouds, and Commercial Clouds, which are widely available to researchers around the world. However, the availability of any specific cluster or cloud may be region specific, and this is not meant to be an exhaustive list. We encourage researchers to use this list as a starting point for learning about cloud resources and suggest checking with your local or regional government to see what other Open Science Clouds might be available to you. The cloud resources listed here should be available to any scientist based in the US, but may be unavailable, or have different pricing, in other countries.
 
 ### University/Corporate Computing Clusters
 
@@ -31,26 +36,27 @@ at low or no cost. If your employer maintains a computing cluster, this will alm
 expensive option.
 
 However, most HPCCs (High Performance Computing Clusters) put limits on:
- - The number of processors a user can utilize at once
- - The amount of disk storage per user
- - The amount of time a single process can run
- - What programs can be installed, and by whom
- - Who can have accounts and access data
 
- HPCCs are also a shared resource, so even when you have access, your programs are unlikely to run
- immediately. Most HPCCs run some kind of scheduler, that you submit your processing jobs to, and
- it runs them as resources become available. In order to submit a job, you generally will need to
- know not only what program you want to run, but with how many processors and for how long.
- While interacting with the scheduler is no more difficult than interacting with the shell,
- it will have its own set of commands and syntax that you'll need to learn; and these vary
- widely among HPCCs.
+- The number of processors a user can utilize at once
+- The amount of disk storage per user
+- The amount of time a single process can run
+- What programs can be installed, and by whom
+- Who can have accounts and access data
 
- There are also many upsides to using an HPCC. As previously mentioned, they're generally the least
- expensive option, but they often come with more perks. For instance, many HPCCs offer free or low-cost
- training, storage space, back-up options, and technical support. If your HPCC has a scheduler, you
- can also queue up many sequential jobs all at once, and you don't have to worry about racking up
- fees on instances that are sitting idle. It's often also much easier to pay for HPCC use than to
- pay for Amazon using grant money, however universities are getting better about AWS payments.
+HPCCs are also a shared resource, so even when you have access, your programs are unlikely to run
+immediately. Most HPCCs run some kind of scheduler, that you submit your processing jobs to, and
+it runs them as resources become available. In order to submit a job, you generally will need to
+know not only what program you want to run, but with how many processors and for how long.
+While interacting with the scheduler is no more difficult than interacting with the shell,
+it will have its own set of commands and syntax that you'll need to learn; and these vary
+widely among HPCCs.
+
+There are also many upsides to using an HPCC. As previously mentioned, they're generally the least
+expensive option, but they often come with more perks. For instance, many HPCCs offer free or low-cost
+training, storage space, back-up options, and technical support. If your HPCC has a scheduler, you
+can also queue up many sequential jobs all at once, and you don't have to worry about racking up
+fees on instances that are sitting idle. It's often also much easier to pay for HPCC use than to
+pay for Amazon using grant money, however universities are getting better about AWS payments.
 
 ### Open Science Clouds
 
@@ -117,13 +123,12 @@ The Open Science Data Cloud provides the scientific community with resources for
 
 #### [Atmosphere](https://pods.iplantcollaborative.org/wiki/display/atmman/Getting+Started)
 
+#### [CyVerse (iPlant Collaborative) Atmosphere](https://www.cyverse.org/atmosphere)
 
-#### [CyVerse (iPlant Collaborative) Atmosphere](http://www.cyverse.org/atmosphere)
-
-
-#### [JetStream](http://jetstream-cloud.org/)
+#### [JetStream](https://jetstream-cloud.org/)
 
 ### Commercial Clouds
+
 Computing architecture is moving (albeit at a slow pace) to the Model-to-Data paradigm. This means that scientists should be encouraged to bring their compute to where the data is stored, instead of the the other way around. The following outlines the general differences between the three major commercial cloud providers: Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure.
 
 Essentially all cloud providers provide extremely similar computing and storage options; you can "rent" or provision computing infrastructure with very similar specifications across all three cloud vendors. Even the costs are highly comparable. What governs how to choose the right cloud computing vendor is highly opportunistic: (1)funding options, (2)solidarity with collaborating/similar scientific groups, (3)location of datasets that a particular research group works with and (4)familiarity with cloud vendor services.
@@ -133,7 +138,7 @@ Essentially all cloud providers provide extremely similar computing and storage 
 3. Location of datasets that a particular research group works with: Again, thinking of bringing your models to the where the data is stored helps minimize costs and saves you time in having to download and store data separately.
 4. Services here refer to cloud vendor add-ons that take away the need for a user to set up their own computing infrastructure.  A fully managed database (e.g. AWS RDS, GCP CloudSQL, Azure SQL DB) is an example of a service. If you are used to SQL Server, you may want to look into options provided by Azure. Are you more familiar with Postgres SQL? Then AWS and GCP might provide cheaper options for you.
 
-#### [Amazon EC2](http://aws.amazon.com/ec2/)
+#### [Amazon EC2](https://aws.amazon.com/ec2/)
 
 The Amazon Web Service (AWS) that you've been using is the Elastic Compute (EC2) cloud. There
 are actually lots of other cloud and storage solutions under the AWS umbrella, but when most
@@ -145,6 +150,7 @@ specific need](https://aws.amazon.com/ec2/instance-types/). There are so many op
 cover them all here, but these are a few popular ones:
 
 ##### On-Demand
+
 All this variety and optimization makes EC2 much more expensive than an average HPCC, however,
 depending on your needs it can be [quite affordable](https://aws.amazon.com/ec2/pricing/). If
 you want to start an EC2 instance whenever you want and have instant access, you can
@@ -152,6 +158,7 @@ rent a quite large on-demand instance with 8 processors and 32 GB of memory for 
 an hour, and tiny instances are only about half a cent per hour.
 
 ##### Spot-Instances
+
 If your program can tolerate pauses, and you don't need the analysis done as fast as
 possible, you can request a spot instance. Essentially, whenever Amazon has computing
 capacity that no one is paying them for, they lower the prices for renting some systems.
@@ -162,6 +169,7 @@ the price goes back up. If it's not an important shopping season, and you aren't
 you can often run spot-instances for less than half their normal cost.
 
 ##### Free Tier
+
 There are also [free options](https://aws.amazon.com/free/), which allow you to test out
 the interface and make sure it will meet your needs before you start renting.
 
@@ -170,14 +178,17 @@ whether you're using it or not. If you leave an instance on idly for months afte
 you'll still have to pay for that time.
 
 #### [Google Cloud](https://cloud.google.com/): [getting started](https://cloud.google.com/compute/docs/quickstart)
+
 GCP offers very competitive prices for compute and storage (as of July 2019, their compute pricing is lower than that of AWS and Azure for instances of comparable specifications). If you are looking to dabble in cloud computing but do not need a vast catalog of services, GCP would be a good place to start looking.
 
 Their version of "Spot Intances" are known as pre-emptible instances and offer very competitive pricing. GCP also has TPUs.
 
 #### [Microsoft Azure](https://azure.microsoft.com/en-us/)
+
 If your software requires Microsoft Windows, it may be cheaper to use MS Azure due to licensing issues. Azure's computing instances are known as Azure Virtual Machines and often come at a slightly higher cost than other cloud computing vendors' offerings. If a lot of your computing pipeling is Windows dependent, it may make sense to build everything on MS Azure from the get go.
 
 #### [IBM Cloud](https://www.ibm.com/cloud)
+
 IBM Cloud offers more than 11 million bare metal configurations in virtual mode which are customizable RAM and SSDs on bare metal. They also have an on-demand provisioning for all servers whose management and monitoring included along with the direct and cost-free tech support
 
 ## How to Choose
@@ -208,52 +219,63 @@ In my work, I often use both commercial and non-commercial services. I tend to u
 with small amounts of data, until I know how the program behaves. Then I port the pipeline to
 my university HPCC for running the full dataset.
 
-> ## Discussion
->
-> In small groups or on your own, plot out your next bioinformatics project. With guidance
-> from your instructors and the above references, try to determine not only what types of
-> resources you'll need, but what platform will best suit your project.
->
-> Some things to consider:
->
-> - How much data do you have?
-> - What computational steps will it need?
->   - What is the *largest* computational step?
->   - Can any steps be done in parallel?
-> - What is your timeframe?
-> - Who will be doing most of the computational work?
->   - What computational skills do they have?
->   - Do you need to share the data across many labs?
-> - How many times will you need to run this pipeline?
-{: .challenge}
+:::::::::::::::::::::::::::::::::::::::  challenge
 
-> ## Human genomic data & Security
->
-> Note that if you are working with human genomics data there might be ethical and legal
-> considerations that affect your choice of cloud resources to use. The terms of use, and/or
-> the legislation under which you are handling the genomic data, might impose heightened information
-> security measures for the computing environment in which you intend to process it. This is a too broad
-> topic to discuss in detail here, but in general terms you should think through the technical and
-> procedural measures needed to ensure that the confidentiality and integrity of the human data you work
-> with is not breached. If there are laws that govern these issues in the jurisdiction in which you work,
-> be sure that the cloud service provider you use can certify that they support the necessary measures.
-> Also note that there might exist restrictions for use of cloud service providers that operate in other
-> jurisdictions than your own, either by how the data was consented by the research subjects or by the
-> jurisdiction under which you operate. Do consult the legal office of your institution for guidance
-> when processing human genomic data.
-{: .callout}
+## Discussion
+
+In small groups or on your own, plot out your next bioinformatics project. With guidance
+from your instructors and the above references, try to determine not only what types of
+resources you'll need, but what platform will best suit your project.
+
+Some things to consider:
+
+- How much data do you have?
+- What computational steps will it need?
+  - What is the *largest* computational step?
+  - Can any steps be done in parallel?
+- What is your timeframe?
+- Who will be doing most of the computational work?
+  - What computational skills do they have?
+  - Do you need to share the data across many labs?
+- How many times will you need to run this pipeline?
+  
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Human genomic data \& Security
+
+Note that if you are working with human genomics data there might be ethical and legal
+considerations that affect your choice of cloud resources to use. The terms of use, and/or
+the legislation under which you are handling the genomic data, might impose heightened information
+security measures for the computing environment in which you intend to process it. This is a too broad
+topic to discuss in detail here, but in general terms you should think through the technical and
+procedural measures needed to ensure that the confidentiality and integrity of the human data you work
+with is not breached. If there are laws that govern these issues in the jurisdiction in which you work,
+be sure that the cloud service provider you use can certify that they support the necessary measures.
+Also note that there might exist restrictions for use of cloud service providers that operate in other
+jurisdictions than your own, either by how the data was consented by the research subjects or by the
+jurisdiction under which you operate. Do consult the legal office of your institution for guidance
+when processing human genomic data.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Other Resources:
 
-
 Learn more about cloud computing in bioinformatics:
 
-Fusaro VA, Patil P, Gafni E, Wall DP, Tonellato PJ (2011) **Biomedical Cloud Computing With Amazon Web Services**. PLoS Comput Biol 7(8): e1002147. doi: [10.1371/journal.pcbi.1002147](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002147)
+Fusaro VA, Patil P, Gafni E, Wall DP, Tonellato PJ (2011) **Biomedical Cloud Computing With Amazon Web Services**. PLoS Comput Biol 7(8): e1002147. doi: [10\.1371/journal.pcbi.1002147](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002147)
 
-Charlebois K, Palmour N, Knoppers BM (2016) **The Adoption of Cloud Computing in the Field of Genomics Research: The Influence of Ethical and Legal Issues**. PLoS ONE 11(10): e0164347. https://doi.org/10.1371/journal.pone.0164347
+Charlebois K, Palmour N, Knoppers BM (2016) **The Adoption of Cloud Computing in the Field of Genomics Research: The Influence of Ethical and Legal Issues**. PLoS ONE 11(10): e0164347. [https://doi.org/10.1371/journal.pone.0164347](https://doi.org/10.1371/journal.pone.0164347)
 
-Langmead B, Nellore A (2018) **Cloud computing for genomic data analysis and collaboration** Nature Reviews Genetics 19 (208). doi: 10.1038/nrg.2017.113 (https://www.nature.com/articles/nrg.2017.113)
+Langmead B, Nellore A (2018) **Cloud computing for genomic data analysis and collaboration** Nature Reviews Genetics 19 (208). doi: 10.1038/nrg.2017.113 ([https://www.nature.com/articles/nrg.2017.113](https://www.nature.com/articles/nrg.2017.113))
 
+:::::::::::::::::::::::::::::::::::::::: keypoints
 
+- Choose your cloud resource to best fit your budget and flexibility requirements
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 

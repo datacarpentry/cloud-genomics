@@ -1,15 +1,21 @@
 ---
-title: "Why of cloud computing"
+title: Why of cloud computing
 teaching: 5
 exercises: 0
-questions:
+---
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Understand benefits of working on a remote computer system
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
 - What is cloud computing?
 - What are the tradeoffs of cloud computing?
-objectives:
-- Understand benefits of working on a remote computer system
-keypoints:
-- Cloud computing increases processing speed and efficiency
----
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 There are a number of reasons why accessing a remote machine is invaluable to any scientists working with large datasets. In the early history of computing, working on a remote machine was standard practice - computers were bulky and expensive. Today we work on laptops or desktops that are more powerful than the sum of the world's computing capacity 20 years ago, but many analyses (especially in genomics) are too large to run on these laptops/desktops. These analyses require larger machines, often several of them linked together, where remote access is the only practical solution.
 
@@ -25,33 +31,39 @@ You'll know you need to start working on the cloud when:
 
 The cloud is a part of our everyday life (e.g. using Amazon, Google, Netflix, or an ATM involves remote computing). The topic is fascinating, but this lesson says '5 minutes or less' so let's get connected.
 
-
-### Choosing a cloud platform
+## Choosing a cloud platform
 
 The most important thing about the **cloud** is choice - instead of purchasing a physical computer, you can obtain on-demand computing at almost any scale. This power comes with advantages and disadvantages:
 
 **Advantages of Cloud Computing**
 
-* Access large amounts of computing power on demand
-* Full administrative rights - install anything
-* Use pre-configured "images" (machine snapshot where operating system and software are already installed)
-* Your local operating system doesn't matter - once you connect to the cloud you can run any UNIX software
+- Access large amounts of computing power on demand
+- Full administrative rights - install anything
+- Use pre-configured "images" (machine snapshot where operating system and software are already installed)
+- Your local operating system doesn't matter - once you connect to the cloud you can run any UNIX software
 
 **Disadvantages of Cloud Computing**
 
-* It takes time to upload data and download results
-* Cloud computing costs money (you must keep track of your costs)
-* If you need help, you may not have a local system administrator
-* Images may be poorly documented (you may not be clear on what is installed, or how to use it)
-* Form of payment (credit card)*
-* Understanding of Amazon's billing and payment (See: [Getting started with AWS Billing and Cost Management](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-getting-started.html))
+- It takes time to upload data and download results
+- Cloud computing costs money (you must keep track of your costs)
+- If you need help, you may not have a local system administrator
+- Images may be poorly documented (you may not be clear on what is installed, or how to use it)
+- Form of payment (credit card)\*
+- Understanding of Amazon's billing and payment (See: [Getting started with AWS Billing and Cost Management](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-getting-started.html))
 
 \* You can use some of Amazon Web Services (AWS) for free, or see if you qualify for AWS Cloud Credits for Research (See: [https://aws.amazon.com/research-credits/](https://aws.amazon.com/research-credits/) ). The free level of service *will not* be sufficient for working with the amount of data we are using for our lessons.
 
-
-### Cloud platform choices
+## Cloud platform choices
 
 There are several cloud providers to choose from. Some scientific clouds may either be free or allocate resources competitively. Commercial clouds can be very powerful, but choice can be overwhelming. We will come back to this at the end of the lesson, but for right now, we're going to continue using the Amazon Web Services as our resource.
 
 Learn more about cloud computing in bioinformatics<br>
 Fusaro VA, Patil P, Gafni E, Wall DP, Tonellato PJ (2011) **Biomedical Cloud Computing With Amazon Web Services**. PLoS Comput Biol 7(8): e1002147. doi: 10.1371/journal.pcbi.1002147
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- Cloud computing increases processing speed and efficiency
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+

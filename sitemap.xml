@@ -28,7 +28,13 @@
     <loc>https://datacarpentry.github.io/cloud-genomics/LaunchingInstances.html</loc>
   </url>
   <url>
+    <loc>https://datacarpentry.github.io/cloud-genomics/aio.html</loc>
+  </url>
+  <url>
     <loc>https://datacarpentry.github.io/cloud-genomics/discuss.html</loc>
+  </url>
+  <url>
+    <loc>https://datacarpentry.github.io/cloud-genomics/images.html</loc>
   </url>
   <url>
     <loc>https://datacarpentry.github.io/cloud-genomics/index.html</loc>
@@ -61,10 +67,22 @@
     <loc>https://datacarpentry.github.io/cloud-genomics/instructor/LaunchingInstances.html</loc>
   </url>
   <url>
+    <loc>https://datacarpentry.github.io/cloud-genomics/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://datacarpentry.github.io/cloud-genomics/instructor/discuss.html</loc>
   </url>
   <url>
+    <loc>https://datacarpentry.github.io/cloud-genomics/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://datacarpentry.github.io/cloud-genomics/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://datacarpentry.github.io/cloud-genomics/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://datacarpentry.github.io/cloud-genomics/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://datacarpentry.github.io/cloud-genomics/instructor/post-assessment.html</loc>
@@ -77,6 +95,12 @@
   </url>
   <url>
     <loc>https://datacarpentry.github.io/cloud-genomics/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://datacarpentry.github.io/cloud-genomics/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://datacarpentry.github.io/cloud-genomics/key-points.html</loc>
   </url>
   <url>
     <loc>https://datacarpentry.github.io/cloud-genomics/post-assessment.html</loc>

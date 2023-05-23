@@ -252,12 +252,12 @@ function change_content_by_platform(form_control){
 }
 
 window.onload = set_page_view_defaults;
-</script><div id="callout1" class="callout callout">
+</script><div id="do-i-need-to-create-my-own-instances" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="do-i-need-to-create-my-own-instances" class="callout-inner">
-<h3 class="callout-title">Do I need to create my own instances?<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">Do I need to create my own instances?<a class="anchor" aria-label="anchor" href="#do-i-need-to-create-my-own-instances"></a>
 </h3>
 <div class="callout-content">
 <p><strong>If you are:</strong></p>
@@ -350,12 +350,12 @@ Getting Started</a>.</li>
 <div class="section level2">
 <h2 id="launching-an-instance-on-atmosphere---these-instructions-are-in-beta-and-not-fully-tested">Launching an instance on Atmosphere - These instructions are in beta
 and not fully tested!<a class="anchor" aria-label="anchor" href="#launching-an-instance-on-atmosphere---these-instructions-are-in-beta-and-not-fully-tested"></a></h2>
-<div id="prereq1" class="callout prereq">
+<div id="prerequisites" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
 </div>
 <div id="prerequisites" class="callout-inner">
-<h3 class="callout-title">Prerequisites<a class="anchor" aria-label="anchor" href="#prereq1"></a>
+<h3 class="callout-title">Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites"></a>
 </h3>
 <div class="callout-content">
 <p>You must have an iPlant account (register at <a href="https://user.cyverse.org/" class="external-link">https://user.cyverse.org/</a> ) - You
@@ -368,11 +368,11 @@ email address</strong> )</p>
 <div class="section level4">
 <h4 id="sign-into-atmosphere-and-launch-an-instance">Sign into Atmosphere and launch an instance<a class="anchor" aria-label="anchor" href="#sign-into-atmosphere-and-launch-an-instance"></a></h4>
 <ol style="list-style-type: decimal"><li><p>Sign into Atmosphere at: <a href="https://atmo.iplantcollaborative.org/" class="external-link">http://atmo.iplantcollaborative.org/</a></p></li>
-<li><figure>Select ‘Launch New Instance’ <img src="fig/logging-onto-cloud_8.png" alt="Screenshot of Atmosphere showing location of the 'Launch New Instance' button" class="figure mx-auto d-block"></figure></li>
-<li><figure>Search for the ‘TSW Workshop Williams 1.2’ image; Select this
-image. <img src="fig/logging-onto-cloud_9.png" alt="Screenshot of Atmosphere showing location of the Search bar used to search Images" class="figure mx-auto d-block"></figure></li>
-<li><figure>Click Launch and then select the following options in the launch
-wizard: <img src="fig/logging-onto-cloud_10.png" alt="Screenshot of Atmosphere showing location of the button to Launch the image" class="figure mx-auto d-block"></figure></li>
+<li><p>Select ‘Launch New Instance’ <img src="fig/logging-onto-cloud_8.png" alt="Screenshot of Atmosphere showing location of the 'Launch New Instance' button" class="figure"></p></li>
+<li><p>Search for the ‘TSW Workshop Williams 1.2’ image; Select this
+image. <img src="fig/logging-onto-cloud_9.png" alt="Screenshot of Atmosphere showing location of the Search bar used to search Images" class="figure"></p></li>
+<li><p>Click Launch and then select the following options in the launch
+wizard: <img src="fig/logging-onto-cloud_10.png" alt="Screenshot of Atmosphere showing location of the button to Launch the image" class="figure"></p></li>
 </ol><ul><li>Instance Name:Enter a name(optional)</li>
 <li>Base Image Version: 1.0</li>
 <li>Project: Choose an existing or create a new project.</li>
@@ -394,8 +394,8 @@ status is listed as ‘active’ you will be able to connect.</p>
 <ol style="list-style-type: decimal"><li><p>If necessary, log into your Atmosphere at: <a href="https://atmo.iplantcollaborative.org/application/images" class="external-link">https://atmo.iplantcollaborative.org/application/images</a></p></li>
 <li><p>Click on ‘Projects’ and select the project that contains your
 instance.</p></li>
-<li><figure>Verifying that your instance status is <strong>‘active’</strong>,
-copy the IP address (e.g. 128.123.12.34) to your clipboard. <img src="fig/logging-onto-cloud_11.png" alt="Columns in the Instances table display the Status, Activity, and IP Address of an instance" class="figure mx-auto d-block"></figure></li>
+<li><p>Verifying that your instance status is <strong>‘active’</strong>,
+copy the IP address (e.g. 128.123.12.34) to your clipboard. <img src="fig/logging-onto-cloud_11.png" alt="Columns in the Instances table display the Status, Activity, and IP Address of an instance" class="figure"></p></li>
 <li><p>Open the terminal application and use ‘ssh’ to connect. Your
 command will be:</p></li>
 </ol><div class="codewrapper sourceCode" id="cb1">
@@ -446,8 +446,9 @@ your actual iPlant username.</p>
 </li>
 <li>Click on ‘Projects’ and select the project that contains your
 instance.</li>
-<figure>Verifying that your instance status is <strong>‘active’</strong>,
-copy the IP address (e.g. 128.123.12.34) to your clipboard. <img src="fig/logging-onto-cloud_11.png" alt="Columns in the Instances table display the Status, Activity, and IP Address of an instance" class="figure mx-auto d-block"></figure><li>Start PuTTY. In the section ‘Specify the destination you want to
+<li>Verifying that your instance status is <strong>‘active’</strong>,
+copy the IP address (e.g. 128.123.12.34) to your clipboard. <img src="fig/logging-onto-cloud_11.png" alt="Columns in the Instances table display the Status, Activity, and IP Address of an instance" class="figure"></li>
+<li>Start PuTTY. In the section ‘Specify the destination you want to
 connect to’ for ‘Host Name (or IP address)’ paste in the DNS address and
 click ‘Open’</li>
 <li>When prompted to login as, enter your iPlant username; you may be
@@ -599,7 +600,7 @@ by using iCommands).</p>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -623,7 +624,7 @@ by using iCommands).</p>
   "identifier": "https://datacarpentry.github.io/cloud-genomics/LaunchingInstances.html",
   "dateCreated": "2017-07-25",
   "dateModified": "2023-05-04",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>

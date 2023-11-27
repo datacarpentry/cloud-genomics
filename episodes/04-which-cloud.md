@@ -60,37 +60,11 @@ pay for Amazon using grant money, however universities are getting better about 
 
 ### Open Science Clouds
 
-#### [XSEDE](https://www.xsede.org/)
 
-The Extreme Science and Engineering Discovery Environment (XSEDE) is an NSF funded HPCC, so
-it is open to any US-based researcher, and shares most of the same benefits and drawbacks
-of a university or corporate HPCC. If your university or corporation doesn't have it's
-own HPCC resources, XSEDE will likely be your cheapest option.
 
-Although any US-based researcher can use XSEDE, first [they'll need an account](https://portal.xsede.org/#/guest).
-Like the HPCC options described above, XSEDE uses a scheduler to start jobs, and puts limits on
-how many resources any one user can utilize at once.
+#### [ACCESS](https://access-ci.org/)
 
-XSEDE can also be a bit intimidating at first because you will need to know what resources
-you need, and for how long, before you get started. XSEDE runs like a mini version of the
-NSF grant system. In order to qualify to submit large jobs, you'll have to submit a [allocation request](https://portal.xsede.org/allocations/research), in the form of a short proposal.
-Also like an NSF grant, if your proposal is accepted, that means you have access to whatever
-resources you were approved for, for the time frame you requested.
-
-Don't let that paragraph scare you off though. XSEDE has two different allocation tracks. If
-you aren't sure exactly what you'll need for your big project, you can request a [startup allocation](https://portal.xsede.org/allocations/startup) which only requires an abstract
-rather than a proposal, and grants you a year to try out your new pipeline or analysis. These
-are usually granted in a week or so, and are intended for you to test your pipeline so you
-know what to ask for in your allocation proposal.
-
-If that still sounds a little too daunting, XSEDE also has [trial allocations](https://iujetstream.atlassian.net/wiki/spaces/JWT/pages/76149919/Jetstream+Trial+Access+Allocation)
-which give you access to only a tiny fraction of XSEDES power, but are plenty large enough to
-test your code and see if a larger allocation is worth pursuing. These allocations are granted
-more or less immediately by simply filling in a form and agreeing to the usage rules.
-
-If you're interested in using XSEDE, check to see if your workplace has a [Campus Champion](https://www.xsede.org/community-engagement/campus-champions). These are people who
-have had extensive training on both the XSEDE system and the allocation program, and can
-help you figure out how to apply and what you need.
+The successor to XSEDE, ACCESS (Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support) is an HPCC funded by the US National Science Foundation, and is open to any US-based researcher. Using the resources requires first making an account, and then submitting an allocation request (see: [Getting Started on ACCESS](https://access.qltddev.com/about/get-started/#start). While the old XSEDE resource proved intimidating for many users, the new ACCESS organization offers support in the form of a [Knowledge Base](https://support.access-ci.org/knowledge-base), **Support Ticketing System**, and community organizations. Help and advice is also available for creating your allocation request. [Allocation requests can be submitted to one of four tiered tracks](https://allocations.access-ci.org/prepare-requests-overview), with each tier awarding larger maximum amounts of computing credits (processor time) and requiring increasingly more in-depth proposals. A small "pilot" project in the "Explore" tier, for example, requires just a single paragraph overview and awards up to 400 credits, suitable for small projects and testing planned larger workflows. After receiving approval for resource allocation, users may connect to their resources via a web portal or a terminal. A [searchable and filterable list of the different resources](https://allocations.access-ci.org/resources) may help users in determining whether ACCESS can meet their needs. 
 
 #### [Open Science Grid](https://opensciencegrid.org)
 

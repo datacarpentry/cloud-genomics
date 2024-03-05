@@ -263,13 +263,12 @@ function change_content_by_platform(form_control){
 }
 
 window.onload = set_page_view_defaults;
-</script><div id="do-i-need-to-create-my-own-instances" class="callout callout">
+</script><div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="do-i-need-to-create-my-own-instances" class="callout-inner">
-<h3 class="callout-title">Do I need to create my own instances?<a class="anchor" aria-label="anchor" href="#do-i-need-to-create-my-own-instances"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="do-i-need-to-create-my-own-instances">Do I need to create my own instances?<a class="anchor" aria-label="anchor" href="#do-i-need-to-create-my-own-instances"></a></h3>
 <div class="callout-content">
 <p><strong>If you are:</strong></p>
 <ul><li>teaching at or attending a centrally organized Data Carpentry
@@ -412,7 +411,7 @@ command will be:</p></li>
 </ol><div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ssh iplantusername@your.atmosphere.ipaddress</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> ssh iplantusername@your.atmosphere.ipaddress</span></code></pre>
 </div>
 <ol start="5" style="list-style-type: decimal"><li><p>Your computer will be unable to verify the authenticity of the
 host… type <strong>yes</strong> to continue connecting</p></li>
@@ -425,28 +424,28 @@ results:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Welcome</span> to Ubuntu 12.04.2 LTS <span class="er">(</span><span class="ex">GNU/Linux</span> 3.2.0-37-virtual x86_64<span class="kw">)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">New</span> release <span class="st">'14.04.2 LTS'</span> available.</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Run</span> <span class="st">'do-release-upgrade'</span> to upgrade to it.</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="ex">_</span>   _                             _</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>   <span class="ex">/</span> <span class="dt">\ </span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span> _ __ ___   ___  ___ _ __ <span class="kw">|</span> <span class="kw">|</span><span class="ex">__</span>   ___ _ __ ___</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="ex">/</span> _ <span class="dt">\|</span> __<span class="kw">|</span> <span class="st">'_ ` _ \ / _ \/ __| '</span><span class="ex">_</span> <span class="dt">\|</span> <span class="st">'_ \ / _ \ '</span>__/ _ <span class="dt">\</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a> / ___ <span class="dt">\ </span><span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">(</span><span class="ex">_</span><span class="kw">)</span> <span class="ex">\__</span> <span class="dt">\ </span><span class="kw">|</span><span class="ex">_</span><span class="er">)</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span>  <span class="ex">__/</span> <span class="kw">|</span> <span class="kw">|</span>  <span class="ex">__/</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="ex">/_/</span>   <span class="dt">\_\_</span>_<span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span><span class="ex">\___/</span><span class="kw">|</span><span class="ex">___/</span> .__/<span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span><span class="ex">\___</span><span class="kw">|</span><span class="ex">_</span><span class="kw">|</span>  <span class="ex">\___</span><span class="kw">|</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>                               <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ex">iPlant</span> Collaborative</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="ex">The</span> user manual is located here: http://goo.gl/2pT72</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="ex">For</span> assistance, contact support@iplantcollaborative.org.  </span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="ex">Last</span> login: Fri Aug 14 10:16:50 2015 from dhcp140-78.cshl.edu</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="ex">iplantusername@vm65-164:~$</span> whoami</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="ex">iplantusername</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="ex">iplantusername@vm65-164:~$</span> pwd</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="ex">/home/iplantusername</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">Welcome</span> to Ubuntu 12.04.2 LTS <span class="er">(</span><span class="ex">GNU/Linux</span> 3.2.0-37-virtual x86_64<span class="kw">)</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ex">New</span> release <span class="st">'14.04.2 LTS'</span> available.</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="ex">Run</span> <span class="st">'do-release-upgrade'</span> to upgrade to it.</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>    <span class="ex">_</span>   _                             _</span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a>   <span class="ex">/</span> <span class="dt">\ </span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span> _ __ ___   ___  ___ _ __ <span class="kw">|</span> <span class="kw">|</span><span class="ex">__</span>   ___ _ __ ___</span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a>  <span class="ex">/</span> _ <span class="dt">\|</span> __<span class="kw">|</span> <span class="st">'_ ` _ \ / _ \/ __| '</span><span class="ex">_</span> <span class="dt">\|</span> <span class="st">'_ \ / _ \ '</span>__/ _ <span class="dt">\</span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a> / ___ <span class="dt">\ </span><span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">(</span><span class="ex">_</span><span class="kw">)</span> <span class="ex">\__</span> <span class="dt">\ </span><span class="kw">|</span><span class="ex">_</span><span class="er">)</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span>  <span class="ex">__/</span> <span class="kw">|</span> <span class="kw">|</span>  <span class="ex">__/</span></span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a><span class="ex">/_/</span>   <span class="dt">\_\_</span>_<span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span><span class="ex">\___/</span><span class="kw">|</span><span class="ex">___/</span> .__/<span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span><span class="ex">\___</span><span class="kw">|</span><span class="ex">_</span><span class="kw">|</span>  <span class="ex">\___</span><span class="kw">|</span></span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a>                               <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span></span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a><span class="ex">iPlant</span> Collaborative</span>
+<span id="cb2-14"><a href="#cb2-14" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" tabindex="-1"></a><span class="ex">The</span> user manual is located here: http://goo.gl/2pT72</span>
+<span id="cb2-16"><a href="#cb2-16" tabindex="-1"></a><span class="ex">For</span> assistance, contact support@iplantcollaborative.org.  </span>
+<span id="cb2-17"><a href="#cb2-17" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" tabindex="-1"></a><span class="ex">Last</span> login: Fri Aug 14 10:16:50 2015 from dhcp140-78.cshl.edu</span>
+<span id="cb2-19"><a href="#cb2-19" tabindex="-1"></a><span class="ex">iplantusername@vm65-164:~$</span> whoami</span>
+<span id="cb2-20"><a href="#cb2-20" tabindex="-1"></a><span class="ex">iplantusername</span></span>
+<span id="cb2-21"><a href="#cb2-21" tabindex="-1"></a><span class="ex">iplantusername@vm65-164:~$</span> pwd</span>
+<span id="cb2-22"><a href="#cb2-22" tabindex="-1"></a><span class="ex">/home/iplantusername</span></span></code></pre>
 </div>
 <p><strong>Note</strong>: In the above example ‘iplantusername’ will be
 your actual iPlant username.</p>
@@ -473,28 +472,28 @@ results:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Welcome</span> to Ubuntu 12.04.2 LTS <span class="er">(</span><span class="ex">GNU/Linux</span> 3.2.0-37-virtual x86_64<span class="kw">)</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">New</span> release <span class="st">'14.04.2 LTS'</span> available.</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Run</span> <span class="st">'do-release-upgrade'</span> to upgrade to it.</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="ex">_</span>   _                             _</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>   <span class="ex">/</span> <span class="dt">\ </span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span> _ __ ___   ___  ___ _ __ <span class="kw">|</span> <span class="kw">|</span><span class="ex">__</span>   ___ _ __ ___</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="ex">/</span> _ <span class="dt">\|</span> __<span class="kw">|</span> <span class="st">'_ ` _ \ / _ \/ __| '</span><span class="ex">_</span> <span class="dt">\|</span> <span class="st">'_ \ / _ \ '</span>__/ _ <span class="dt">\</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a> / ___ <span class="dt">\ </span><span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">(</span><span class="ex">_</span><span class="kw">)</span> <span class="ex">\__</span> <span class="dt">\ </span><span class="kw">|</span><span class="ex">_</span><span class="er">)</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span>  <span class="ex">__/</span> <span class="kw">|</span> <span class="kw">|</span>  <span class="ex">__/</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ex">/_/</span>   <span class="dt">\_\_</span>_<span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span><span class="ex">\___/</span><span class="kw">|</span><span class="ex">___/</span> .__/<span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span><span class="ex">\___</span><span class="kw">|</span><span class="ex">_</span><span class="kw">|</span>  <span class="ex">\___</span><span class="kw">|</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>                               <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ex">iPlant</span> Collaborative</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="ex">The</span> user manual is located here: http://goo.gl/2pT72</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ex">For</span> assistance, contact support@iplantcollaborative.org.  </span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="ex">Last</span> login: Fri Aug 14 10:16:50 2015 from dhcp140-78.cshl.edu</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="ex">iplantusername@vm65-164:~$</span> whoami</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="ex">iplantusername</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="ex">iplantusername@vm65-164:~$</span> pwd</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="ex">/home/iplantusername</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">Welcome</span> to Ubuntu 12.04.2 LTS <span class="er">(</span><span class="ex">GNU/Linux</span> 3.2.0-37-virtual x86_64<span class="kw">)</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="ex">New</span> release <span class="st">'14.04.2 LTS'</span> available.</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="ex">Run</span> <span class="st">'do-release-upgrade'</span> to upgrade to it.</span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>    <span class="ex">_</span>   _                             _</span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>   <span class="ex">/</span> <span class="dt">\ </span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span> _ __ ___   ___  ___ _ __ <span class="kw">|</span> <span class="kw">|</span><span class="ex">__</span>   ___ _ __ ___</span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>  <span class="ex">/</span> _ <span class="dt">\|</span> __<span class="kw">|</span> <span class="st">'_ ` _ \ / _ \/ __| '</span><span class="ex">_</span> <span class="dt">\|</span> <span class="st">'_ \ / _ \ '</span>__/ _ <span class="dt">\</span></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a> / ___ <span class="dt">\ </span><span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">(</span><span class="ex">_</span><span class="kw">)</span> <span class="ex">\__</span> <span class="dt">\ </span><span class="kw">|</span><span class="ex">_</span><span class="er">)</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span> <span class="kw">|</span>  <span class="ex">__/</span> <span class="kw">|</span> <span class="kw">|</span>  <span class="ex">__/</span></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a><span class="ex">/_/</span>   <span class="dt">\_\_</span>_<span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span><span class="ex">\___/</span><span class="kw">|</span><span class="ex">___/</span> .__/<span class="kw">|</span><span class="ex">_</span><span class="kw">|</span> <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span><span class="ex">\___</span><span class="kw">|</span><span class="ex">_</span><span class="kw">|</span>  <span class="ex">\___</span><span class="kw">|</span></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>                               <span class="kw">|</span><span class="ex">_</span><span class="kw">|</span></span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="ex">iPlant</span> Collaborative</span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="ex">The</span> user manual is located here: http://goo.gl/2pT72</span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a><span class="ex">For</span> assistance, contact support@iplantcollaborative.org.  </span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a><span class="ex">Last</span> login: Fri Aug 14 10:16:50 2015 from dhcp140-78.cshl.edu</span>
+<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a><span class="ex">iplantusername@vm65-164:~$</span> whoami</span>
+<span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a><span class="ex">iplantusername</span></span>
+<span id="cb3-21"><a href="#cb3-21" tabindex="-1"></a><span class="ex">iplantusername@vm65-164:~$</span> pwd</span>
+<span id="cb3-22"><a href="#cb3-22" tabindex="-1"></a><span class="ex">/home/iplantusername</span></span></code></pre>
 </div>
 <p><strong>Note</strong>: In the above example ‘iplantusername’ will be
 your actual CyVerse username.</p>
@@ -517,7 +516,7 @@ Atmosphere instance:</p>
 </ol><div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> iinit</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">$</span> iinit</span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal"><li>You will then be asked to setup your account and will need to enter
 the following information</li>
@@ -539,7 +538,7 @@ command:</li>
 </ol><div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ils</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">$</span> ils</span></code></pre>
 </div>
 </div>
 <div class="section level2">
@@ -548,7 +547,7 @@ command:</li>
 </ol><div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> iget <span class="at">-rPVT</span> /iplant/home/shared/iplant_training/data_carpentry_ngs/dc_sampledata_lite .</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">$</span> iget <span class="at">-rPVT</span> /iplant/home/shared/iplant_training/data_carpentry_ngs/dc_sampledata_lite .</span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal"><li>using <code>ls</code> you should be able to verify you have
 downloaded the dc_sampledata_lite directories and files.</li>
@@ -640,7 +639,7 @@ by using iCommands).</p>
   "identifier": "https://datacarpentry.github.io/cloud-genomics/instructor/LaunchingInstances.html",
   "dateCreated": "2017-07-25",
   "dateModified": "2023-05-04",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

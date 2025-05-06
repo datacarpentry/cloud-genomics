@@ -17,6 +17,7 @@ All participants should agree to abide by [The Carpentries Code of Conduct](http
 - [Wendy Wong](https://github.com/shukwong)
 - [Muhammad Zohaib Anwar](https://github.com/anwarMZ)
 - [Anuj Guruacharya](https://github.com/anuj2054)
+- [Nil Mu](https://github.com/NilaBlueshirt)
 
 ## Contributors:
 

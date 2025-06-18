@@ -60,37 +60,21 @@ pay for Amazon using grant money, however universities are getting better about 
 
 ### Open Science Clouds
 
-#### [XSEDE](https://www.xsede.org/)
 
-The Extreme Science and Engineering Discovery Environment (XSEDE) is an NSF funded HPCC, so
-it is open to any US-based researcher, and shares most of the same benefits and drawbacks
-of a university or corporate HPCC. If your university or corporation doesn't have it's
-own HPCC resources, XSEDE will likely be your cheapest option.
 
-Although any US-based researcher can use XSEDE, first [they'll need an account](https://portal.xsede.org/#/guest).
-Like the HPCC options described above, XSEDE uses a scheduler to start jobs, and puts limits on
-how many resources any one user can utilize at once.
+#### [ACCESS](https://access-ci.org/)
 
-XSEDE can also be a bit intimidating at first because you will need to know what resources
-you need, and for how long, before you get started. XSEDE runs like a mini version of the
-NSF grant system. In order to qualify to submit large jobs, you'll have to submit a [allocation request](https://portal.xsede.org/allocations/research), in the form of a short proposal.
-Also like an NSF grant, if your proposal is accepted, that means you have access to whatever
-resources you were approved for, for the time frame you requested.
+The successor to XSEDE (see: [https://www.xsede.org/](https://www.xsede.org/)), ACCESS (Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support) is an HPCC funded by the US National Science Foundation, and is open to any US-based researcher. Using the resources requires first making an account, and then submitting an allocation request (see: [Getting Started on ACCESS](https://access.qltddev.com/about/get-started/#start). 
 
-Don't let that paragraph scare you off though. XSEDE has two different allocation tracks. If
-you aren't sure exactly what you'll need for your big project, you can request a [startup allocation](https://portal.xsede.org/allocations/startup) which only requires an abstract
-rather than a proposal, and grants you a year to try out your new pipeline or analysis. These
-are usually granted in a week or so, and are intended for you to test your pipeline so you
-know what to ask for in your allocation proposal.
+While the old XSEDE resource proved intimidating for many users, the new ACCESS organization offers support in the form of a [Knowledge Base](https://support.access-ci.org/knowledge-base), Support Ticketing System, and community-led support organizations. Help and advice is also available for creating your allocation request. [Allocation requests can be submitted to one of four tiered tracks](https://allocations.access-ci.org/prepare-requests-overview), with each tier awarding larger maximum amounts of computing credits (processor time) and requiring increasingly more in-depth proposals. A small "pilot" project in the "Explore" tier, for example, requires just a single paragraph overview and awards up to 400 credits, suitable for small projects and testing planned larger workflows. 
 
-If that still sounds a little too daunting, XSEDE also has [trial allocations](https://iujetstream.atlassian.net/wiki/spaces/JWT/pages/76149919/Jetstream+Trial+Access+Allocation)
-which give you access to only a tiny fraction of XSEDES power, but are plenty large enough to
-test your code and see if a larger allocation is worth pursuing. These allocations are granted
-more or less immediately by simply filling in a form and agreeing to the usage rules.
+After receiving approval for resource allocation, users may connect to their resources via a web portal or a terminal. A [searchable and filterable list of the different resources](https://allocations.access-ci.org/resources) may help users in determining whether ACCESS can meet their needs. 
 
-If you're interested in using XSEDE, check to see if your workplace has a [Campus Champion](https://www.xsede.org/community-engagement/campus-champions). These are people who
-have had extensive training on both the XSEDE system and the allocation program, and can
-help you figure out how to apply and what you need.
+##### [JetStream2](https://jetstream-cloud.org/)
+
+Supported by a National Science Foundation grant, JetStream2 is one of the main resources for the aforementioned ACCESS consortium. Users log in  using their ACCESS account on a web interface called **Exosphere**. The Exosphere web app gives a graphical user interface to create a virtual machine instance that they can log into and work interactively. Extensive [documentation and training](https://jetstream-cloud.org/documentation-training/index.html) is available for new users, including a tutorial in [how to create a new instance](https://docs.jetstream-cloud.org/ui/exo/exo/) and [how to attach a storage volume for files](https://docs.jetstream-cloud.org/ui/exo/storage/). As part of the ACCESS resources, Jetstream2 use is cost-free, but requires an allocation request. 
+
+According to the [JetStream2 overview](https://docs.jetstream-cloud.org/overview/overview-doc/), Jetstream2 is primarily for small-scale on-demand processing: "Jetstream2 may be used for **prototyping**, for creating tailored **workflows** to either use at smaller scale with a handful of CPUs or to port to larger environments after doing your **proof of concept** work at a smaller level."
 
 #### [Open Science Grid](https://opensciencegrid.org)
 
@@ -121,15 +105,17 @@ resources and when you submit your work, it could run almost anywhere in the ove
 
 The Open Science Data Cloud provides the scientific community with resources for storing, sharing, and analyzing terabyte and petabyte-scale scientific datasets. OSDC's Bionimbus Protected Data Cloud (PDC) is a platform designed with the sole purpose of analysing and sharing protected genomics data.
 
-#### [Atmosphere](https://pods.iplantcollaborative.org/wiki/display/atmman/Getting+Started)
+#### [OpenStack](https://www.openstack.org/) 
 
-#### [CyVerse (iPlant Collaborative) Atmosphere](https://www.cyverse.org/atmosphere)
+OpenStack is a non-profit alternative to the Commercial Clouds discussed below--that is, OpenStack provides "Infrastructure as a Service" (Iaas). Access is paid for by the hour. However, the infrastructure and resources available are orders of magnitude more than the free cloud services above. If you have prototyped a workflow on a free resource, but need to scale up to much larger RAM and CPU instances, OpenStack could be a good choice. You can [read about scientific research stories using OpenStack](https://www.openstack.org/use-cases/science/) to learn more and consider whether an OpenStack implementation would be a feasible for your project. 
 
-#### [JetStream](https://jetstream-cloud.org/)
+##### [CyVerse](https://learning.cyverse.org/)
+
+One of the projects based in OpenStack, CyVerse was originally the iPlant Collaborative, which was an NSF-funded project to provide cloud infrastructure for plant researchers. Since 2015, CyVerse has expanded its mission to include all life sciences researchers. As infrastructure, CyVerse is the foundation of [a number of cloud-based scientific projects](https://cyverse.org/powered-by-cyverse), including the open Galaxy instance at [usegalaxy.org](https://usegalaxy.org/).  As a platform, CyVerse offers up to 5GB of data storage for free and a fee-based storage system after that and the Data Science Workbench which is an interactive, web-based GUI for running certain kinds of analyses. Perhaps most importantly, CyVerse has an extensive library of education and training resources that can be used modularly for educators. Peruse the extensive [Learning Center](https://learning.cyverse.org/) documents to find out more about this resource. 
 
 ### Commercial Clouds
 
-Computing architecture is moving (albeit at a slow pace) to the Model-to-Data paradigm. This means that scientists should be encouraged to bring their compute to where the data is stored, instead of the the other way around. The following outlines the general differences between the three major commercial cloud providers: Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure.
+Computing architecture is moving (albeit at a slow pace) to the **Model-to-Data paradigm**. This means that scientists should be encouraged to bring their compute to where the data is stored, instead of the the other way around. The following outlines the general differences between the three major commercial cloud providers: Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure.
 
 Essentially all cloud providers provide extremely similar computing and storage options; you can "rent" or provision computing infrastructure with very similar specifications across all three cloud vendors. Even the costs are highly comparable. What governs how to choose the right cloud computing vendor is highly opportunistic: (1)funding options, (2)solidarity with collaborating/similar scientific groups, (3)location of datasets that a particular research group works with and (4)familiarity with cloud vendor services.
 
@@ -143,11 +129,11 @@ Essentially all cloud providers provide extremely similar computing and storage 
 The Amazon Web Service (AWS) that you've been using is the Elastic Compute (EC2) cloud. There
 are actually lots of other cloud and storage solutions under the AWS umbrella, but when most
 data scientists say AWS, they mean [EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html).
+
 With EC2, you can rent access to a cloud computing resource as small as your laptop, or as large as a 64 processor
 machine with 488GB of memory, and with a number of different operating systems. These instances can
 be optimized for jobs that are memory intensive, or require a lot of bandwidth, or [almost any other
-specific need](https://aws.amazon.com/ec2/instance-types/). There are so many options that we can't
-cover them all here, but these are a few popular ones:
+specific need](https://aws.amazon.com/ec2/instance-types/). There are so many options that we can't cover them all here, but these are a few popular ones:
 
 ##### On-Demand
 
@@ -179,9 +165,9 @@ you'll still have to pay for that time.
 
 #### [Google Cloud](https://cloud.google.com/): [getting started](https://cloud.google.com/compute/docs/quickstart)
 
-GCP offers very competitive prices for compute and storage (as of July 2019, their compute pricing is lower than that of AWS and Azure for instances of comparable specifications). If you are looking to dabble in cloud computing but do not need a vast catalog of services, GCP would be a good place to start looking.
+GCP offers very competitive prices for compute and storage (as of January 2024, their compute pricing is still lower than that of AWS and Azure for instances of comparable specifications). If you are looking to dabble in cloud computing but do not need a vast catalog of services, GCP would be a good place to start looking. Google Cloud also offers $300 in cloud credits to new users to test and experiment. 
 
-Their version of "Spot Intances" are known as pre-emptible instances and offer very competitive pricing. GCP also has TPUs.
+Their version of "Spot Instances" are known as pre-emptible instances and offer very competitive pricing. GCP also has TPUs -- Tensor processing unit based instances that are built to handle TensorFlow projects. 
 
 #### [Microsoft Azure](https://azure.microsoft.com/en-us/)
 
@@ -189,11 +175,11 @@ If your software requires Microsoft Windows, it may be cheaper to use MS Azure d
 
 #### [IBM Cloud](https://www.ibm.com/cloud)
 
-IBM Cloud offers more than 11 million bare metal configurations in virtual mode which are customizable RAM and SSDs on bare metal. They also have an on-demand provisioning for all servers whose management and monitoring included along with the direct and cost-free tech support
+IBM Cloud offers more than 11 million bare metal configurations in virtual mode which are customizable RAM and SSDs on bare metal. They also have an on-demand provisioning for all servers with management and monitoring included along with the direct and cost-free tech support
 
 ## How to Choose
 
-As you can see, highly managed systems (HPCCs, XSEDE, etc) usually are free or cheap, but
+As you can see, highly managed systems (HPCCs, ACCESS, Jetstream2, etc) usually are free or cheap, but
 relatively inflexible. There may be certain programs you can't install, or there may be long
 wait times. Commercial systems are generally more flexible because you can make them look
 however you want, but they can be quite expensive, especially if you run for a long time, or have a
@@ -249,7 +235,7 @@ Some things to consider:
 Note that if you are working with human genomics data there might be ethical and legal
 considerations that affect your choice of cloud resources to use. The terms of use, and/or
 the legislation under which you are handling the genomic data, might impose heightened information
-security measures for the computing environment in which you intend to process it. This is a too broad
+security measures for the computing environment in which you intend to process it. This is too broad a 
 topic to discuss in detail here, but in general terms you should think through the technical and
 procedural measures needed to ensure that the confidentiality and integrity of the human data you work
 with is not breached. If there are laws that govern these issues in the jurisdiction in which you work,
@@ -277,5 +263,4 @@ Langmead B, Nellore A (2018) **Cloud computing for genomic data analysis and col
 - Choose your cloud resource to best fit your budget and flexibility requirements
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
 

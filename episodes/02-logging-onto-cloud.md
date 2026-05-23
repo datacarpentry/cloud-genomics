@@ -6,7 +6,7 @@ exercises: 5
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Log onto to a running instance
+- Log on to a running instance
 - Log off from a running instance
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

@@ -14,6 +14,7 @@ All participants should agree to abide by [The Carpentries Code of Conduct](http
 ## Current Maintainers
 
 - [Nil Mu](https://github.com/NilaBlueshirt)
+- [Renee Hui Xin Ng](https://github.com/nghuixin)
 
 ## Contributors:
 

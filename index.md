@@ -18,7 +18,7 @@ and how to interact with one of those services (AWS) via the command line.
 This lesson assumes a working understanding of the bash shell. If you haven't already completed the [Shell Genomics](https://www.datacarpentry.org/shell-genomics/) lesson, and aren't familiar with the bash shell, please review those materials
 before starting this lesson.
 
-Windows users will need to install PuTTY. See the installation instructions in [Setup](learners/setup.md).
+Windows users will need to install PuTTY. See the installation instructions in [Launching cloud instances on your own](learners/LaunchingInstances.md).
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
